@@ -1,47 +1,47 @@
 ﻿const i18n = {
   pt: {
-    "menu.services": "ServiÃ§os",
+    "menu.services": "Serviços",
     "menu.sectors": "Setores",
     "menu.discounts": "Descontos",
     "menu.visualizer": "Visualizador",
     "menu.contact": "Contactos",
     "hero.title": "Pavimentos industriais de alto desempenho",
     "hero.text":
-      "SoluÃ§Ãµes em resina para cargas elevadas, resistÃªncia quÃ­mica e seguranÃ§a anti-derrapante. Mais de 10 anos de experiÃªncia em Portugal e Espanha.",
-    "hero.ctaQuote": "Pedir orÃ§amento",
-    "hero.ctaVisit": "Agendar visita tÃ©cnica",
-    "hero.metricYears": "anos de experiÃªncia comprovada",
+      "Soluções em resina para cargas elevadas, resistência química e segurança anti-derrapante. Mais de 10 anos de experiência em Portugal e Espanha.",
+    "hero.ctaQuote": "Pedir orçamento",
+    "hero.ctaVisit": "Agendar visita técnica",
+    "hero.metricYears": "anos de experiência comprovada",
     "hero.metricCountries": "Portugal e Espanha",
     "services.title": "O que fazemos",
-    "services.s1t": "AplicaÃ§Ã£o de pavimentos industriais",
-    "services.s1d": "InstalaÃ§Ã£o profissional para zonas de alta exigÃªncia mecÃ¢nica e quÃ­mica.",
+    "services.s1t": "Aplicação de pavimentos industriais",
+    "services.s1d": "Instalação profissional para zonas de alta exigência mecânica e química.",
     "services.s2t": "Sistemas anti-derrapantes",
-    "services.s2d": "Acabamentos seguros para Ã¡reas hÃºmidas, oleosas e de trÃ¡fego intenso.",
-    "services.s3t": "ReabilitaÃ§Ã£o e manutenÃ§Ã£o",
-    "services.s3d": "RenovaÃ§Ã£o de pavimentos para prolongar vida Ãºtil e reduzir paragens.",
+    "services.s2d": "Acabamentos seguros para áreas húmidas, oleosas e de tráfego intenso.",
+    "services.s3t": "Reabilitação e manutenção",
+    "services.s3d": "Renovação de pavimentos para prolongar vida útil e reduzir paragens.",
     "sectors.title": "Setores que atendemos",
-    "sectors.a": "FÃ¡bricas, oficinas e indÃºstria pesada",
-    "sectors.b": "ArmazÃ©ns, logÃ­stica e centros de distribuiÃ§Ã£o",
-    "sectors.c": "Hospitais, clÃ­nicas, laboratÃ³rios e indÃºstria farmacÃªutica",
-    "sectors.d": "RestauraÃ§Ã£o, cozinhas industriais e produÃ§Ã£o alimentar",
+    "sectors.a": "Fábricas, oficinas e indústria pesada",
+    "sectors.b": "Armazéns, logística e centros de distribuição",
+    "sectors.c": "Hospitais, clínicas, laboratórios e indústria farmacêutica",
+    "sectors.d": "Restauração, cozinhas industriais e produção alimentar",
     "sectors.e": "Lojas, showrooms e centros comerciais",
-    "sectors.f": "Oficinas auto, parques e Ã¡reas tÃ©cnicas",
+    "sectors.f": "Oficinas auto, parques e áreas técnicas",
     "sectors.g": "Construtoras, promotores e arquitetos",
-    "discounts.title": "Descontos para projetos de maior dimensÃ£o",
+    "discounts.title": "Descontos para projetos de maior dimensão",
     "discounts.text":
-      "Dispomos de um sistema de descontos progressivos para Ã¡reas a partir de 70 mÂ². Quanto maior a Ã¡rea, melhor a proposta comercial, sem comprometer qualidade, seguranÃ§a e durabilidade.",
-    "projects.title": "Exemplos de referÃªncia",
-    "projects.note": "Fotos reais dos seus projetos serÃ£o adicionadas aqui. Estes sÃ£o exemplos ilustrativos temporÃ¡rios.",
-    "viz.title": "Visualizador de pavimento (demo avanÃ§ada)",
-    "viz.text": "Carregue uma imagem, marque a zona do chÃ£o com o pincel e simule o resultado com mistura realista de cor.",
+      "Dispomos de um sistema de descontos progressivos para áreas a partir de 70 m². Quanto maior a área, melhor a proposta comercial, sem comprometer qualidade, segurança e durabilidade.",
+    "projects.title": "Exemplos de referência",
+    "projects.note": "Fotos reais dos seus projetos serão adicionadas aqui. Estes são exemplos ilustrativos temporários.",
+    "viz.title": "Visualizador de pavimento (demo avançada)",
+    "viz.text": "Carregue uma imagem, marque a zona do chão com o pincel e simule o resultado com mistura realista de cor.",
     "viz.brush": "Tamanho do pincel",
-    "viz.reset": "Limpar marcaÃ§Ã£o",
-    "quote.title": "Pedir orÃ§amento",
-    "quote.text": "Preencha o formulÃ¡rio ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
+    "viz.reset": "Limpar marcação",
+    "quote.title": "Pedir orçamento",
+    "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
     "quote.send": "Enviar pedido",
-    "visit.title": "Agendar visita tÃ©cnica",
-    "visit.text": "Para avaliaÃ§Ã£o no local, contacte-nos por email ou WhatsApp. Respondemos com rapidez e proposta tÃ©cnica.",
+    "visit.title": "Agendar visita técnica",
+    "visit.text": "Para avaliação no local, contacte-nos por email ou WhatsApp. Respondemos com rapidez e proposta técnica.",
     "contacts.title": "Contactos",
     "contacts.area": "Atendimento em Portugal e Espanha."
   },
@@ -53,43 +53,43 @@
     "menu.contact": "Contacto",
     "hero.title": "Pavimentos industriales de alto rendimiento",
     "hero.text":
-      "Soluciones en resina para cargas elevadas, resistencia quÃ­mica y seguridad antideslizante. MÃ¡s de 10 aÃ±os de experiencia en Portugal y EspaÃ±a.",
+      "Soluciones en resina para cargas elevadas, resistencia química y seguridad antideslizante. Más de 10 años de experiencia en Portugal y España.",
     "hero.ctaQuote": "Pedir presupuesto",
-    "hero.ctaVisit": "Agendar visita tÃ©cnica",
-    "hero.metricYears": "aÃ±os de experiencia comprobada",
-    "hero.metricCountries": "Portugal y EspaÃ±a",
-    "services.title": "QuÃ© hacemos",
-    "services.s1t": "AplicaciÃ³n de pavimentos industriales",
-    "services.s1d": "InstalaciÃ³n profesional para zonas de alta exigencia mecÃ¡nica y quÃ­mica.",
+    "hero.ctaVisit": "Agendar visita técnica",
+    "hero.metricYears": "años de experiencia comprobada",
+    "hero.metricCountries": "Portugal y España",
+    "services.title": "Qué hacemos",
+    "services.s1t": "Aplicación de pavimentos industriales",
+    "services.s1d": "Instalación profesional para zonas de alta exigencia mecánica y química.",
     "services.s2t": "Sistemas antideslizantes",
-    "services.s2d": "Acabados seguros para Ã¡reas hÃºmedas, aceitosas y de trÃ¡fico intenso.",
-    "services.s3t": "RehabilitaciÃ³n y mantenimiento",
-    "services.s3d": "RenovaciÃ³n de pavimentos para ampliar la vida Ãºtil y reducir paradas.",
+    "services.s2d": "Acabados seguros para áreas húmedas, aceitosas y de tráfico intenso.",
+    "services.s3t": "Rehabilitación y mantenimiento",
+    "services.s3d": "Renovación de pavimentos para ampliar la vida útil y reducir paradas.",
     "sectors.title": "Sectores que atendemos",
-    "sectors.a": "FÃ¡bricas, talleres e industria pesada",
-    "sectors.b": "Almacenes, logÃ­stica y centros de distribuciÃ³n",
-    "sectors.c": "Hospitales, clÃ­nicas, laboratorios y industria farmacÃ©utica",
-    "sectors.d": "RestauraciÃ³n, cocinas industriales y producciÃ³n alimentaria",
+    "sectors.a": "Fábricas, talleres e industria pesada",
+    "sectors.b": "Almacenes, logística y centros de distribución",
+    "sectors.c": "Hospitales, clínicas, laboratorios y industria farmacéutica",
+    "sectors.d": "Restauración, cocinas industriales y producción alimentaria",
     "sectors.e": "Tiendas, showrooms y centros comerciales",
-    "sectors.f": "Talleres auto, parkings y Ã¡reas tÃ©cnicas",
+    "sectors.f": "Talleres auto, parkings y áreas técnicas",
     "sectors.g": "Constructoras, promotores y arquitectos",
-    "discounts.title": "Descuentos para proyectos de mayor tamaÃ±o",
+    "discounts.title": "Descuentos para proyectos de mayor tamaño",
     "discounts.text":
-      "Disponemos de un sistema de descuentos progresivos para Ã¡reas a partir de 70 mÂ². Cuanto mayor sea el Ã¡rea, mejor serÃ¡ la propuesta, sin comprometer calidad, seguridad ni durabilidad.",
+      "Disponemos de un sistema de descuentos progresivos para áreas a partir de 70 m². Cuanto mayor sea el área, mejor será la propuesta, sin comprometer calidad, seguridad ni durabilidad.",
     "projects.title": "Ejemplos de referencia",
-    "projects.note": "Las fotos reales de tus proyectos se aÃ±adirÃ¡n aquÃ­. Estos son ejemplos ilustrativos temporales.",
+    "projects.note": "Las fotos reales de tus proyectos se añadirán aquí. Estos son ejemplos ilustrativos temporales.",
     "viz.title": "Visualizador de pavimento (demo avanzada)",
     "viz.text": "Sube una imagen, marca la zona del suelo con el pincel y simula el resultado con mezcla realista de color.",
-    "viz.brush": "TamaÃ±o del pincel",
+    "viz.brush": "Tamaño del pincel",
     "viz.reset": "Limpiar marcado",
     "quote.title": "Pedir presupuesto",
-    "quote.text": "Completa el formulario o contÃ¡ctanos por email o WhatsApp para recibir una propuesta personalizada.",
-    "quote.upload": "Adjuntar imÃ¡genes/archivos",
+    "quote.text": "Completa el formulario o contáctanos por email o WhatsApp para recibir una propuesta personalizada.",
+    "quote.upload": "Adjuntar imágenes/archivos",
     "quote.send": "Enviar solicitud",
-    "visit.title": "Agendar visita tÃ©cnica",
-    "visit.text": "Para evaluaciÃ³n en el lugar, contÃ¡ctanos por email o WhatsApp. Respondemos rÃ¡pido con propuesta tÃ©cnica.",
+    "visit.title": "Agendar visita técnica",
+    "visit.text": "Para evaluación en el lugar, contáctanos por email o WhatsApp. Respondemos rápido con propuesta técnica.",
     "contacts.title": "Contacto",
-    "contacts.area": "Atendemos en Portugal y EspaÃ±a."
+    "contacts.area": "Atendemos en Portugal y España."
   },
   en: {
     "menu.services": "Services",
@@ -121,7 +121,7 @@
     "sectors.g": "Construction firms, developers and architects",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
-      "We offer a progressive discount system for areas from 70 mÂ². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
+      "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
     "projects.title": "Reference examples",
     "projects.note": "Real photos of your projects will be added here. These are temporary illustrative examples.",
     "viz.title": "Floor visualizer (advanced demo)",
@@ -141,11 +141,11 @@
 
 const legalContent = {
   privacy:
-    "Tratamos os dados pessoais apenas para responder a pedidos comerciais e tÃ©cnicos. Conservamos os dados pelo tempo necessÃ¡rio e garantimos os direitos RGPD: acesso, retificaÃ§Ã£o, apagamento, limitaÃ§Ã£o e oposiÃ§Ã£o.",
+    "Tratamos os dados pessoais apenas para responder a pedidos comerciais e técnicos. Conservamos os dados pelo tempo necessário e garantimos os direitos RGPD: acesso, retificação, apagamento, limitação e oposição.",
   cookies:
-    "Este site utiliza cookies tÃ©cnicos essenciais ao funcionamento e pode usar cookies analÃ­ticos apÃ³s consentimento. Pode gerir preferÃªncias de cookies no seu navegador a qualquer momento.",
+    "Este site utiliza cookies técnicos essenciais ao funcionamento e pode usar cookies analíticos após consentimento. Pode gerir preferências de cookies no seu navegador a qualquer momento.",
   terms:
-    "A informaÃ§Ã£o deste site tem carÃ¡ter informativo. Os orÃ§amentos dependem de visita tÃ©cnica, Ã¡rea, preparaÃ§Ã£o da base e sistema escolhido. Reservamo-nos o direito de atualizaÃ§Ã£o sem aviso prÃ©vio."
+    "A informação deste site tem caráter informativo. Os orçamentos dependem de visita técnica, área, preparação da base e sistema escolhido. Reservamo-nos o direito de atualização sem aviso prévio."
 };
 
 function setLanguage(lang) {
@@ -172,7 +172,7 @@ const legalBody = document.getElementById("legalBody");
 document.querySelectorAll(".legal-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const type = btn.dataset.legal;
-    const titles = { privacy: "PolÃ­tica de Privacidade", cookies: "Cookies", terms: "Termos" };
+    const titles = { privacy: "Política de Privacidade", cookies: "Cookies", terms: "Termos" };
     legalTitle.textContent = titles[type];
     legalBody.textContent = legalContent[type];
     legalDialog.showModal();
@@ -200,7 +200,7 @@ function drawDefault() {
   ctx.fillRect(0, 0, canvas.width, canvas.height);
   ctx.fillStyle = "#ffffff";
   ctx.font = "24px Segoe UI";
-  ctx.fillText("Carregue uma imagem para comeÃ§ar a simulaÃ§Ã£o.", 40, 70);
+  ctx.fillText("Carregue uma imagem para começar a simulação.", 40, 70);
 }
 
 function fitImageToCanvas(image) {
