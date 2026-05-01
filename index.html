@@ -8,6 +8,15 @@
       name="description"
       content="Pavimentos industriais em resina para fábricas, armazéns, clínicas e cozinhas profissionais. Mais de 10 anos de experiência em Portugal e Espanha."
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Rev-Tek | Pavimentos industriais em resina" />
+    <meta
+      property="og:description"
+      content="Soluções profissionais de pavimento em resina para indústria, logística, saúde, restauração e comércio em Portugal e Espanha."
+    />
+    <meta property="og:image" content="./assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#090909" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -144,12 +153,16 @@
           >
             <input type="hidden" name="_subject" value="Novo pedido de orçamento - Rev-Tek" />
             <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_template" value="table" />
             <input type="text" name="nome" placeholder="Nome" required />
             <input type="email" name="email" placeholder="Email" required />
             <textarea name="mensagem" placeholder="Descreva o seu projeto" rows="5" required></textarea>
             <label class="upload-label" data-i18n="quote.upload">Anexar imagens/ficheiros</label>
             <input type="file" name="anexo" multiple />
             <button class="btn btn-primary" type="submit" data-i18n="quote.send">Enviar pedido</button>
+            <p class="form-note" data-i18n="quote.note">
+              Após o envio, poderá ser necessário confirmar o email no primeiro pedido.
+            </p>
           </form>
           <div class="quick-contact">
             <a href="mailto:technipiso@gmail.com">technipiso@gmail.com</a>
@@ -193,6 +206,16 @@
       <p id="legalBody"></p>
       <button class="btn btn-primary" id="closeLegal">Fechar</button>
     </dialog>
+
+    <div class="cookie-banner" id="cookieBanner" hidden>
+      <p data-i18n="cookies.bannerText">
+        Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.
+      </p>
+      <div class="cookie-actions">
+        <button class="btn btn-outline" id="cookieReject" data-i18n="cookies.reject">Rejeitar</button>
+        <button class="btn btn-primary" id="cookieAccept" data-i18n="cookies.accept">Aceitar</button>
+      </div>
+    </div>
 
     <script src="./script.js"></script>
   </body>

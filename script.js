@@ -40,10 +40,14 @@
     "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
     "quote.send": "Enviar pedido",
+    "quote.note": "Após o envio, poderá ser necessário confirmar o email no primeiro pedido.",
     "visit.title": "Agendar visita técnica",
     "visit.text": "Para avaliação no local, contacte-nos por email ou WhatsApp. Respondemos com rapidez e proposta técnica.",
     "contacts.title": "Contactos",
-    "contacts.area": "Atendimento em Portugal e Espanha."
+    "contacts.area": "Atendimento em Portugal e Espanha.",
+    "cookies.bannerText": "Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.",
+    "cookies.accept": "Aceitar",
+    "cookies.reject": "Rejeitar"
   },
   es: {
     "menu.services": "Servicios",
@@ -86,10 +90,14 @@
     "quote.text": "Completa el formulario o contáctanos por email o WhatsApp para recibir una propuesta personalizada.",
     "quote.upload": "Adjuntar imágenes/archivos",
     "quote.send": "Enviar solicitud",
+    "quote.note": "Después del envío, puede ser necesario confirmar el email en la primera solicitud.",
     "visit.title": "Agendar visita técnica",
     "visit.text": "Para evaluación en el lugar, contáctanos por email o WhatsApp. Respondemos rápido con propuesta técnica.",
     "contacts.title": "Contacto",
-    "contacts.area": "Atendemos en Portugal y España."
+    "contacts.area": "Atendemos en Portugal y España.",
+    "cookies.bannerText": "Utilizamos cookies esenciales y, con tu consentimiento, cookies analíticas para mejorar el sitio.",
+    "cookies.accept": "Aceptar",
+    "cookies.reject": "Rechazar"
   },
   en: {
     "menu.services": "Services",
@@ -132,10 +140,14 @@
     "quote.text": "Complete the form or contact us directly by email or WhatsApp for a tailored proposal.",
     "quote.upload": "Attach images/files",
     "quote.send": "Send request",
+    "quote.note": "After submitting, you may need to confirm your email on the first request.",
     "visit.title": "Book a technical visit",
     "visit.text": "For on-site assessment, contact us by email or WhatsApp. We reply quickly with a technical proposal.",
     "contacts.title": "Contact",
-    "contacts.area": "Coverage in Portugal and Spain."
+    "contacts.area": "Coverage in Portugal and Spain.",
+    "cookies.bannerText": "We use essential cookies and, with your consent, analytics cookies to improve the website.",
+    "cookies.accept": "Accept",
+    "cookies.reject": "Reject"
   }
 };
 
@@ -180,6 +192,25 @@ document.querySelectorAll(".legal-btn").forEach((btn) => {
 });
 
 document.getElementById("closeLegal").addEventListener("click", () => legalDialog.close());
+
+const cookieBanner = document.getElementById("cookieBanner");
+const cookieAccept = document.getElementById("cookieAccept");
+const cookieReject = document.getElementById("cookieReject");
+
+function initCookieBanner() {
+  const consent = localStorage.getItem("cookieConsent");
+  if (!consent) cookieBanner.hidden = false;
+}
+
+cookieAccept.addEventListener("click", () => {
+  localStorage.setItem("cookieConsent", "accepted");
+  cookieBanner.hidden = true;
+});
+
+cookieReject.addEventListener("click", () => {
+  localStorage.setItem("cookieConsent", "rejected");
+  cookieBanner.hidden = true;
+});
 
 const canvas = document.getElementById("vizCanvas");
 const ctx = canvas.getContext("2d", { willReadFrequently: true });
@@ -313,5 +344,6 @@ function hexToRgb(hex) {
 }
 
 drawDefault();
+initCookieBanner();
 
 
