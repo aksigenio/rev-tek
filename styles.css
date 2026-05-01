@@ -300,6 +300,10 @@ dialog::backdrop {
   gap: 12px;
 }
 
+.cookie-banner[hidden] {
+  display: none;
+}
+
 .cookie-banner p {
   margin: 0;
   max-width: 760px;
