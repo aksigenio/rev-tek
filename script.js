@@ -1,6 +1,7 @@
 ﻿const i18n = {
   pt: {
     "menu.services": "Serviços",
+    "menu.flooring": "Pavimentos",
     "menu.sectors": "Setores",
     "menu.contact": "Contactos",
     "hero.title": "Pavimentos em resina de alto desempenho",
@@ -20,6 +21,7 @@
     "sectors.e": "Lojas, showrooms e centros comerciais",
     "sectors.f": "Oficinas auto, parques e áreas técnicas",
     "sectors.g": "Construtoras, promotores e arquitetos",
+    "sectors.h": "Habitação, condomínios e espaços residenciais de elevado tráfego",
     "systems.title": "Sistemas que aplicamos",
     "systems.text":
       "Trabalhamos com sistemas em metacrilato, poliuretano e epóxi, selecionados de acordo com os requisitos técnicos de cada projeto.",
@@ -54,8 +56,8 @@
   },
   es: {
     "menu.services": "Servicios",
+    "menu.flooring": "Pavimentos",
     "menu.sectors": "Sectores",
-    "menu.visualizer": "Visualizador",
     "menu.contact": "Contacto",
     "hero.title": "Pavimentos industriales de alto rendimiento",
     "hero.text":
@@ -80,6 +82,7 @@
     "sectors.e": "Tiendas, showrooms y centros comerciales",
     "sectors.f": "Talleres auto, parkings y áreas técnicas",
     "sectors.g": "Constructoras, promotores y arquitectos",
+    "sectors.h": "Vivienda, condominios y espacios residenciales de alto tránsito",
     "systems.title": "Sistemas que aplicamos",
     "systems.text":
       "Trabajamos con sistemas de metacrilato, poliuretano y epoxi, seleccionados según los requisitos técnicos de cada proyecto.",
@@ -118,8 +121,8 @@
   },
   en: {
     "menu.services": "Services",
+    "menu.flooring": "Flooring",
     "menu.sectors": "Sectors",
-    "menu.visualizer": "Visualizer",
     "menu.contact": "Contact",
     "hero.title": "High-performance industrial flooring",
     "hero.text":
@@ -144,6 +147,7 @@
     "sectors.e": "Stores, showrooms and shopping centers",
     "sectors.f": "Auto service, parking and technical areas",
     "sectors.g": "Construction firms, developers and architects",
+    "sectors.h": "Residential properties, condominiums and high-traffic living areas",
     "systems.title": "Systems we install",
     "systems.text":
       "We work with methacrylate, polyurethane and epoxy systems, selected according to the technical requirements of each project.",
