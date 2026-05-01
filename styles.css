@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "RevTekCustom";
+  src: url("./assets/fonts/brand-font.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --bg: #090909;
   --bg-soft: #141414;
@@ -15,7 +23,7 @@
 html,
 body {
   margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: "RevTekCustom", "Segoe UI", Arial, sans-serif;
   background: var(--bg);
   color: var(--fg);
   scroll-behavior: smooth;
