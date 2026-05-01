@@ -6,12 +6,12 @@
     "menu.contact": "Contactos",
     "hero.title": "Pavimentos em resina de alto desempenho",
     "hero.text":
-      "Soluções de pavimentos em resina para cargas elevadas, resistência química e segurança antiderrapante. Mais de 10 anos de experiência em Portugal e em Espanha.",
+      "Soluções de pavimentos em resina para cargas elevadas, resistência química e segurança antiderrapante. Mais de 10 anos de experiência em Portugal.",
     "hero.ctaQuote": "Pedir orçamento",
     "hero.ctaVisit": "Agendar visita técnica",
     "hero.metricYears": "anos de experiência comprovada",
-    "hero.metricCoverageTitle": "Atuamos em Portugal e em Espanha",
-    "hero.metricCountries": "Cobertura nacional em todo o território português e espanhol",
+    "hero.metricCoverageTitle": "Atuamos em Portugal",
+    "hero.metricCountries": "Cobertura nacional em todo o território português",
     "services.title": "As nossas soluções",
     "sectors.title": "Setores que servimos",
     "sectors.a": "Fábricas, oficinas e indústria pesada",
@@ -36,11 +36,15 @@
     "systems.epoxyTitle": "Sistemas em epóxi",
     "systems.epoxyText":
       "Excelente desempenho mecânico, acabamento técnico e manutenção simplificada para áreas industriais e comerciais.",
+    "systems.soon": "Em breve: Pavimento Epóxi Decorativo e Colchão de Pedra.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
     "projects.title": "Exemplos de referência",
-    "projects.note": "Fotos reais dos seus projetos serão adicionadas aqui. Estes são exemplos ilustrativos temporários.",
+    "projects.note": "Alguns exemplos de trabalhos executados em sistema de metacrilato.",
+    "projects.c1": "Sistema em metacrilato - zona técnica",
+    "projects.c2": "Sistema em metacrilato - área clínica",
+    "projects.c3": "Sistema em metacrilato - instalação sanitária",
     "quote.title": "Pedir orçamento",
     "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou por WhatsApp para receber uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
@@ -49,75 +53,10 @@
     "visit.title": "Agendar visita técnica",
     "visit.text": "Para avaliação no local, contacte-nos por email ou por WhatsApp. Respondemos com rapidez e com uma proposta técnica clara.",
     "contacts.title": "Contactos",
-    "contacts.area": "Atendimento em Portugal e em Espanha.",
+    "contacts.area": "Atendimento em Portugal.",
     "cookies.bannerText": "Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.",
     "cookies.accept": "Aceitar",
     "cookies.reject": "Rejeitar"
-  },
-  es: {
-    "menu.services": "Servicios",
-    "menu.flooring": "Pavimentos",
-    "menu.sectors": "Sectores",
-    "menu.contact": "Contacto",
-    "hero.title": "Pavimentos industriales de alto rendimiento",
-    "hero.text":
-      "Soluciones en resina para cargas elevadas, resistencia química y seguridad antideslizante. Más de 10 años de experiencia en Portugal y España.",
-    "hero.ctaQuote": "Pedir presupuesto",
-    "hero.ctaVisit": "Agendar visita técnica",
-    "hero.metricYears": "años de experiencia comprobada",
-    "hero.metricCoverageTitle": "Cobertura en Portugal y España",
-    "hero.metricCountries": "Atendemos proyectos en todo Portugal y España",
-    "services.title": "Qué hacemos",
-    "services.s1t": "Aplicación de pavimentos industriales",
-    "services.s1d": "Instalación profesional para zonas de alta exigencia mecánica y química.",
-    "services.s2t": "Sistemas antideslizantes",
-    "services.s2d": "Acabados seguros para áreas húmedas, aceitosas y de tráfico intenso.",
-    "services.s3t": "Rehabilitación y mantenimiento",
-    "services.s3d": "Renovación de pavimentos para ampliar la vida útil y reducir paradas.",
-    "sectors.title": "Sectores que atendemos",
-    "sectors.a": "Fábricas, talleres e industria pesada",
-    "sectors.b": "Almacenes, logística y centros de distribución",
-    "sectors.c": "Hospitales, clínicas, laboratorios y industria farmacéutica",
-    "sectors.d": "Restauración, cocinas industriales y producción alimentaria",
-    "sectors.e": "Tiendas, showrooms y centros comerciales",
-    "sectors.f": "Talleres auto, parkings y áreas técnicas",
-    "sectors.g": "Constructoras, promotores y arquitectos",
-    "sectors.h": "Vivienda, condominios y espacios residenciales de alto tránsito",
-    "systems.title": "Sistemas que aplicamos",
-    "systems.text":
-      "Trabajamos con sistemas de metacrilato, poliuretano y epoxi, seleccionados según los requisitos técnicos de cada proyecto.",
-    "systems.how":
-      "La selección de la solución ideal se define según el tipo de actividad, las cargas mecánicas, la exposición química, el nivel de humedad y el plazo de ejecución de la obra.",
-    "systems.mmaTitle": "Sistemas de metacrilato (MMA)",
-    "systems.mmaText":
-      "Soluciones de curado rápido para obras con plazos cortos, incluso en condiciones de baja temperatura.",
-    "systems.puTitle": "Sistemas de poliuretano (PU)",
-    "systems.puText":
-      "Alta elasticidad y resistencia térmica/química para ambientes con exigencias intensas.",
-    "systems.epoxyTitle": "Sistemas de epoxi",
-    "systems.epoxyText":
-      "Excelente rendimiento mecánico, acabado técnico y mantenimiento simplificado para áreas industriales y comerciales.",
-    "discounts.title": "Descuentos para proyectos de mayor tamaño",
-    "discounts.text":
-      "Disponemos de un sistema de descuentos progresivos para áreas a partir de 70 m². Cuanto mayor sea el área, mejor será la propuesta, sin comprometer calidad, seguridad ni durabilidad.",
-    "projects.title": "Ejemplos de referencia",
-    "projects.note": "Las fotos reales de tus proyectos se añadirán aquí. Estos son ejemplos ilustrativos temporales.",
-    "viz.title": "Visualizador de pavimento (demo avanzada)",
-    "viz.text": "Sube una imagen, marca la zona del suelo con el pincel y simula el resultado con mezcla realista de color.",
-    "viz.brush": "Tamaño del pincel",
-    "viz.reset": "Limpiar marcado",
-    "quote.title": "Pedir presupuesto",
-    "quote.text": "Completa el formulario o contáctanos por email o WhatsApp para recibir una propuesta personalizada.",
-    "quote.upload": "Adjuntar imágenes/archivos",
-    "quote.send": "Enviar solicitud",
-    "quote.note": "Después del envío, puede ser necesario confirmar el email en la primera solicitud.",
-    "visit.title": "Agendar visita técnica",
-    "visit.text": "Para evaluación en el lugar, contáctanos por email o WhatsApp. Respondemos rápido con propuesta técnica.",
-    "contacts.title": "Contacto",
-    "contacts.area": "Atendemos en Portugal y España.",
-    "cookies.bannerText": "Utilizamos cookies esenciales y, con tu consentimiento, cookies analíticas para mejorar el sitio.",
-    "cookies.accept": "Aceptar",
-    "cookies.reject": "Rechazar"
   },
   en: {
     "menu.services": "Services",
@@ -126,12 +65,12 @@
     "menu.contact": "Contact",
     "hero.title": "High-performance industrial flooring",
     "hero.text":
-      "Resin flooring solutions for heavy loads, chemical resistance and anti-slip safety. Over 10 years of experience in Portugal and Spain.",
+      "Resin flooring solutions for heavy loads, chemical resistance and anti-slip safety. Over 10 years of experience in Portugal.",
     "hero.ctaQuote": "Request a quote",
     "hero.ctaVisit": "Book technical visit",
     "hero.metricYears": "years of proven experience",
-    "hero.metricCoverageTitle": "Coverage in Portugal and Spain",
-    "hero.metricCountries": "We operate across Portugal and Spain",
+    "hero.metricCoverageTitle": "Coverage in Portugal",
+    "hero.metricCountries": "We operate across Portugal",
     "services.title": "What we do",
     "services.s1t": "Industrial flooring installation",
     "services.s1d": "Professional installation for high mechanical and chemical demand areas.",
@@ -162,11 +101,15 @@
     "systems.epoxyTitle": "Epoxy systems",
     "systems.epoxyText":
       "Excellent mechanical performance, technical finish and simplified maintenance for industrial and commercial areas.",
+    "systems.soon": "Coming soon: Decorative Epoxy Flooring and Stone Carpet.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
     "projects.title": "Reference examples",
-    "projects.note": "Real photos of your projects will be added here. These are temporary illustrative examples.",
+    "projects.note": "Some examples of completed works using methacrylate systems.",
+    "projects.c1": "Methacrylate system - technical area",
+    "projects.c2": "Methacrylate system - clinical area",
+    "projects.c3": "Methacrylate system - sanitary installation",
     "viz.title": "Floor visualizer (advanced demo)",
     "viz.text": "Upload an image, paint the floor area with the brush and preview a realistic color blend result.",
     "viz.brush": "Brush size",
@@ -179,7 +122,7 @@
     "visit.title": "Book a technical visit",
     "visit.text": "For on-site assessment, contact us by email or WhatsApp. We reply quickly with a technical proposal.",
     "contacts.title": "Contact",
-    "contacts.area": "Coverage in Portugal and Spain.",
+    "contacts.area": "Coverage in Portugal.",
     "cookies.bannerText": "We use essential cookies and, with your consent, analytics cookies to improve the website.",
     "cookies.accept": "Accept",
     "cookies.reject": "Reject"
@@ -247,7 +190,7 @@ A Rev-Tek não se responsabiliza por danos indiretos resultantes da utilização
 5. Contacto
 Email: technipiso@gmail.com
 Telefone/WhatsApp: +351 969 959 727
-Área de atuação: Portugal e Espanha.`
+Área de atuação: Portugal.`
 };
 
 function setLanguage(lang) {
@@ -303,5 +246,6 @@ cookieReject.addEventListener("click", () => {
 });
 
 initCookieBanner();
+
 
 
