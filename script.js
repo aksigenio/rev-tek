@@ -3,6 +3,7 @@
     "menu.services": "Serviços",
     "menu.flooring": "Pavimentos",
     "menu.sectors": "Setores",
+    "menu.portfolio": "Portfólio",
     "menu.contact": "Contactos",
     "hero.title": "Pavimentos em resina de alto desempenho",
     "hero.text":
@@ -40,7 +41,7 @@
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
-    "projects.title": "Exemplos de referência",
+    "projects.title": "Portfólio",
     "projects.note": "Alguns exemplos de trabalhos executados em sistema de metacrilato.",
     "projects.c1": "Sistema em metacrilato - zona técnica",
     "projects.c2": "Sistema em metacrilato - área clínica",
@@ -62,6 +63,7 @@
     "menu.services": "Services",
     "menu.flooring": "Flooring",
     "menu.sectors": "Sectors",
+    "menu.portfolio": "Portfolio",
     "menu.contact": "Contact",
     "hero.title": "High-performance industrial flooring",
     "hero.text":
@@ -105,7 +107,7 @@
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
-    "projects.title": "Reference examples",
+    "projects.title": "Portfolio",
     "projects.note": "Some examples of completed works using methacrylate systems.",
     "projects.c1": "Methacrylate system - technical area",
     "projects.c2": "Methacrylate system - clinical area",
