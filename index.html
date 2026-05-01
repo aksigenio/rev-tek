@@ -188,15 +188,39 @@
           </p>
           <div class="gallery">
             <figure class="project-item">
-              <img src="./assets/metacrilato-1.png" alt="Pavimento em metacrilato - zona técnica" />
+              <button
+                class="project-open"
+                type="button"
+                data-full="./assets/metacrilato-1.png"
+                data-alt="Pavimento em metacrilato - zona técnica"
+                aria-label="Abrir imagem em tamanho completo"
+              >
+                <img src="./assets/metacrilato-1.png" alt="Pavimento em metacrilato - zona técnica" />
+              </button>
               <figcaption data-i18n="projects.c1">Sistema em metacrilato - zona técnica</figcaption>
             </figure>
             <figure class="project-item">
-              <img src="./assets/metacrilato-2.png" alt="Pavimento em metacrilato - área clínica" />
+              <button
+                class="project-open"
+                type="button"
+                data-full="./assets/metacrilato-2.png"
+                data-alt="Pavimento em metacrilato - área clínica"
+                aria-label="Abrir imagem em tamanho completo"
+              >
+                <img src="./assets/metacrilato-2.png" alt="Pavimento em metacrilato - área clínica" />
+              </button>
               <figcaption data-i18n="projects.c2">Sistema em metacrilato - área clínica</figcaption>
             </figure>
             <figure class="project-item">
-              <img src="./assets/metacrilato-3.png" alt="Pavimento em metacrilato - instalação sanitária" />
+              <button
+                class="project-open"
+                type="button"
+                data-full="./assets/metacrilato-3.png"
+                data-alt="Pavimento em metacrilato - instalação sanitária"
+                aria-label="Abrir imagem em tamanho completo"
+              >
+                <img src="./assets/metacrilato-3.png" alt="Pavimento em metacrilato - instalação sanitária" />
+              </button>
               <figcaption data-i18n="projects.c3">Sistema em metacrilato - instalação sanitária</figcaption>
             </figure>
           </div>
@@ -281,6 +305,11 @@
         <button class="btn btn-primary" id="cookieAccept" data-i18n="cookies.accept">Aceitar</button>
       </div>
     </div>
+
+    <dialog id="lightboxDialog" class="lightbox-dialog">
+      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem">×</button>
+      <img id="lightboxImage" alt="" />
+    </dialog>
 
     <script src="./script.js"></script>
   </body>

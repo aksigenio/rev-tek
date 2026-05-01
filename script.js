@@ -245,6 +245,27 @@ cookieReject.addEventListener("click", () => {
   cookieBanner.hidden = true;
 });
 
+const lightboxDialog = document.getElementById("lightboxDialog");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+const projectButtons = document.querySelectorAll(".project-open");
+
+projectButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    lightboxImage.src = btn.dataset.full;
+    lightboxImage.alt = btn.dataset.alt || "";
+    lightboxDialog.showModal();
+  });
+});
+
+lightboxClose.addEventListener("click", () => lightboxDialog.close());
+lightboxDialog.addEventListener("click", (evt) => {
+  if (evt.target === lightboxDialog) lightboxDialog.close();
+});
+document.addEventListener("keydown", (evt) => {
+  if (evt.key === "Escape" && lightboxDialog.open) lightboxDialog.close();
+});
+
 initCookieBanner();
 
 
