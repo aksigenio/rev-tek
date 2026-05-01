@@ -21,9 +21,9 @@
     "sectors.e": "Lojas, showrooms e centros comerciais",
     "sectors.f": "Oficinas auto, parques e áreas técnicas",
     "sectors.g": "Construtoras, promotores e arquitetos",
-    "discounts.title": "Descontos para projetos de maior dimensão",
+    "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
-      "Dispomos de um sistema de descontos progressivos para áreas a partir de 70 m². Quanto maior a área, mais vantajosa será a proposta comercial, sem comprometer a qualidade, a segurança nem a durabilidade.",
+      "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
     "projects.title": "Exemplos de referência",
     "projects.note": "Fotos reais dos seus projetos serão adicionadas aqui. Estes são exemplos ilustrativos temporários.",
     "quote.title": "Pedir orçamento",
