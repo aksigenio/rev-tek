@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Update domain after publishing
-Sitemap: https://SEU-DOMINIO.pt/sitemap.xml
+Sitemap: https://www.rev-tek.pt/sitemap.xml
