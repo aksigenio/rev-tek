@@ -280,6 +280,13 @@ dialog {
   width: min(680px, 92%);
 }
 
+#legalBody {
+  white-space: pre-line;
+  max-height: 62vh;
+  overflow: auto;
+  padding-right: 6px;
+}
+
 dialog::backdrop {
   background: #000a;
 }

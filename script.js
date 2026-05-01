@@ -152,12 +152,67 @@
 };
 
 const legalContent = {
-  privacy:
-    "Tratamos os dados pessoais apenas para responder a pedidos comerciais e técnicos. Conservamos os dados pelo tempo necessário e garantimos os direitos RGPD: acesso, retificação, apagamento, limitação e oposição.",
-  cookies:
-    "Este site utiliza cookies técnicos essenciais ao funcionamento e pode usar cookies analíticos após consentimento. Pode gerir preferências de cookies no seu navegador a qualquer momento.",
-  terms:
-    "A informação deste site tem caráter informativo. Os orçamentos dependem de visita técnica, área, preparação da base e sistema escolhido. Reservamo-nos o direito de atualização sem aviso prévio."
+  privacy: `Bem-vindo ao website da Rev-Tek.
+
+Valorizamos a sua privacidade e estamos comprometidos em proteger os seus dados pessoais. Esta Política de Privacidade e Cookies descreve como recolhemos, utilizamos, divulgamos e protegemos as informações fornecidas através do nosso website. Ao aceder ou utilizar este website, concorda com os termos aqui descritos.
+
+1. Recolha de informações
+1.1 Informações pessoais: podemos recolher nome, email, telefone e outros dados enviados voluntariamente através de formulários de contacto/pedido de orçamento.
+1.2 Informações de uso: podemos recolher automaticamente dados técnicos como endereço IP, tipo de navegador, páginas visitadas e duração da visita para análise estatística e melhoria do website.
+
+2. Utilização das informações
+2.1 Utilizamos os dados pessoais para responder a pedidos, preparar propostas, prestar apoio técnico e melhorar os nossos serviços.
+2.2 Utilizamos dados de navegação para análises internas, segurança e otimização de desempenho/conteúdo.
+
+3. Partilha de informações
+3.1 Não vendemos nem alugamos os seus dados pessoais a terceiros para fins de marketing.
+3.2 Podemos partilhar dados com prestadores de serviços que apoiam o funcionamento do website e da comunicação comercial, sempre com medidas adequadas de proteção de dados.
+
+4. Segurança
+Implementamos medidas técnicas e organizacionais adequadas para proteger os seus dados contra acesso não autorizado, uso indevido, alteração, divulgação ou destruição.
+
+5. Direitos do titular (RGPD)
+Tem o direito de acesso, retificação, apagamento, limitação, oposição e portabilidade dos seus dados, nos termos legais aplicáveis.
+
+6. Contacto para privacidade
+Para exercer os seus direitos ou esclarecer dúvidas sobre tratamento de dados:
+Email: technipiso@gmail.com
+Telefone/WhatsApp: +351 969 959 727
+
+7. Alterações da política
+Podemos atualizar esta política periodicamente. A versão mais recente estará sempre disponível neste website.`,
+  cookies: `Política de Cookies (Rev-Tek)
+
+1. O que são cookies
+Cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita um website.
+
+2. Que cookies utilizamos
+- Cookies essenciais: necessários para funcionamento básico do website.
+- Cookies analíticos: usados apenas com consentimento para medir desempenho e melhorar experiência.
+
+3. Gestão do consentimento
+Pode aceitar ou rejeitar cookies analíticos através do banner apresentado no website. Pode ainda eliminar ou bloquear cookies nas definições do seu navegador.
+
+4. Conservação
+O tempo de conservação pode variar conforme o tipo de cookie (sessão ou persistente) e a configuração do navegador.`,
+  terms: `Termos de Utilização (Rev-Tek)
+
+1. Conteúdo informativo
+O conteúdo deste website é meramente informativo e pode ser alterado sem aviso prévio.
+
+2. Orçamentos e propostas
+Os orçamentos dependem de análise técnica, área total, estado da base, requisitos de segurança, materiais e condições de obra.
+
+3. Propriedade intelectual
+Textos, marca, logótipo e elementos visuais deste website não podem ser reproduzidos sem autorização prévia.
+
+4. Limitação de responsabilidade
+A Rev-Tek não se responsabiliza por danos indiretos resultantes do uso do website, indisponibilidade temporária ou conteúdo de terceiros.
+
+5. Contacto
+Email: technipiso@gmail.com
+Telefone/WhatsApp: +351 969 959 727
+Área de atuação: Portugal e Espanha.`
 };
 
 function setLanguage(lang) {
