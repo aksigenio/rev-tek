@@ -20,6 +20,20 @@
     "sectors.e": "Lojas, showrooms e centros comerciais",
     "sectors.f": "Oficinas auto, parques e áreas técnicas",
     "sectors.g": "Construtoras, promotores e arquitetos",
+    "systems.title": "Sistemas que aplicamos",
+    "systems.text":
+      "Trabalhamos com sistemas em metacrilato, poliuretano e epóxi, selecionados de acordo com os requisitos técnicos de cada projeto.",
+    "systems.how":
+      "A seleção da solução ideal é definida com base no tipo de atividade, nas cargas mecânicas, na exposição química, no nível de humidade e no prazo de execução da obra.",
+    "systems.mmaTitle": "Sistemas em metacrilato (MMA)",
+    "systems.mmaText":
+      "Soluções de cura rápida para obras com prazos curtos, mesmo em condições de baixa temperatura.",
+    "systems.puTitle": "Sistemas em poliuretano (PU)",
+    "systems.puText":
+      "Elevada elasticidade e resistência térmica/química para ambientes com solicitações intensas.",
+    "systems.epoxyTitle": "Sistemas em epóxi",
+    "systems.epoxyText":
+      "Excelente desempenho mecânico, acabamento técnico e manutenção simplificada para áreas industriais e comerciais.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
@@ -66,6 +80,20 @@
     "sectors.e": "Tiendas, showrooms y centros comerciales",
     "sectors.f": "Talleres auto, parkings y áreas técnicas",
     "sectors.g": "Constructoras, promotores y arquitectos",
+    "systems.title": "Sistemas que aplicamos",
+    "systems.text":
+      "Trabajamos con sistemas de metacrilato, poliuretano y epoxi, seleccionados según los requisitos técnicos de cada proyecto.",
+    "systems.how":
+      "La selección de la solución ideal se define según el tipo de actividad, las cargas mecánicas, la exposición química, el nivel de humedad y el plazo de ejecución de la obra.",
+    "systems.mmaTitle": "Sistemas de metacrilato (MMA)",
+    "systems.mmaText":
+      "Soluciones de curado rápido para obras con plazos cortos, incluso en condiciones de baja temperatura.",
+    "systems.puTitle": "Sistemas de poliuretano (PU)",
+    "systems.puText":
+      "Alta elasticidad y resistencia térmica/química para ambientes con exigencias intensas.",
+    "systems.epoxyTitle": "Sistemas de epoxi",
+    "systems.epoxyText":
+      "Excelente rendimiento mecánico, acabado técnico y mantenimiento simplificado para áreas industriales y comerciales.",
     "discounts.title": "Descuentos para proyectos de mayor tamaño",
     "discounts.text":
       "Disponemos de un sistema de descuentos progresivos para áreas a partir de 70 m². Cuanto mayor sea el área, mejor será la propuesta, sin comprometer calidad, seguridad ni durabilidad.",
@@ -116,6 +144,20 @@
     "sectors.e": "Stores, showrooms and shopping centers",
     "sectors.f": "Auto service, parking and technical areas",
     "sectors.g": "Construction firms, developers and architects",
+    "systems.title": "Systems we install",
+    "systems.text":
+      "We work with methacrylate, polyurethane and epoxy systems, selected according to the technical requirements of each project.",
+    "systems.how":
+      "The optimal system is selected based on the type of activity, mechanical loads, chemical exposure, humidity level and project timeline.",
+    "systems.mmaTitle": "Methacrylate systems (MMA)",
+    "systems.mmaText":
+      "Fast-curing solutions for time-critical projects, even in low-temperature conditions.",
+    "systems.puTitle": "Polyurethane systems (PU)",
+    "systems.puText":
+      "High elasticity and thermal/chemical resistance for demanding environments.",
+    "systems.epoxyTitle": "Epoxy systems",
+    "systems.epoxyText":
+      "Excellent mechanical performance, technical finish and simplified maintenance for industrial and commercial areas.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
