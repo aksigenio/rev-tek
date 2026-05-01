@@ -2,7 +2,6 @@
   pt: {
     "menu.services": "Serviços",
     "menu.sectors": "Setores",
-    "menu.discounts": "Descontos",
     "menu.contact": "Contactos",
     "hero.title": "Pavimentos em resina de alto desempenho",
     "hero.text":
@@ -42,7 +41,6 @@
   es: {
     "menu.services": "Servicios",
     "menu.sectors": "Sectores",
-    "menu.discounts": "Descuentos",
     "menu.visualizer": "Visualizador",
     "menu.contact": "Contacto",
     "hero.title": "Pavimentos industriales de alto rendimiento",
@@ -93,7 +91,6 @@
   en: {
     "menu.services": "Services",
     "menu.sectors": "Sectors",
-    "menu.discounts": "Discounts",
     "menu.visualizer": "Visualizer",
     "menu.contact": "Contact",
     "hero.title": "High-performance industrial flooring",
