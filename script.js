@@ -3,24 +3,17 @@
     "menu.services": "Serviços",
     "menu.sectors": "Setores",
     "menu.discounts": "Descontos",
-    "menu.visualizer": "Visualizador",
     "menu.contact": "Contactos",
-    "hero.title": "Pavimentos industriais de alto desempenho",
+    "hero.title": "Pavimentos em resina de alto desempenho",
     "hero.text":
-      "Soluções em resina para cargas elevadas, resistência química e segurança anti-derrapante. Mais de 10 anos de experiência em Portugal e Espanha.",
+      "Soluções de pavimentos em resina para cargas elevadas, resistência química e segurança antiderrapante. Mais de 10 anos de experiência em Portugal e em Espanha.",
     "hero.ctaQuote": "Pedir orçamento",
     "hero.ctaVisit": "Agendar visita técnica",
     "hero.metricYears": "anos de experiência comprovada",
-    "hero.metricCoverageTitle": "Atuação em Portugal e Espanha",
-    "hero.metricCountries": "Cobertura em todo o território de Portugal e Espanha",
-    "services.title": "O que fazemos",
-    "services.s1t": "Aplicação de pavimentos industriais",
-    "services.s1d": "Instalação profissional para zonas de alta exigência mecânica e química.",
-    "services.s2t": "Sistemas anti-derrapantes",
-    "services.s2d": "Acabamentos seguros para áreas húmidas, oleosas e de tráfego intenso.",
-    "services.s3t": "Reabilitação e manutenção",
-    "services.s3d": "Renovação de pavimentos para prolongar vida útil e reduzir paragens.",
-    "sectors.title": "Setores que atendemos",
+    "hero.metricCoverageTitle": "Atuamos em Portugal e em Espanha",
+    "hero.metricCountries": "Cobertura nacional em todo o território português e espanhol",
+    "services.title": "As nossas soluções",
+    "sectors.title": "Setores que servimos",
     "sectors.a": "Fábricas, oficinas e indústria pesada",
     "sectors.b": "Armazéns, logística e centros de distribuição",
     "sectors.c": "Hospitais, clínicas, laboratórios e indústria farmacêutica",
@@ -30,22 +23,18 @@
     "sectors.g": "Construtoras, promotores e arquitetos",
     "discounts.title": "Descontos para projetos de maior dimensão",
     "discounts.text":
-      "Dispomos de um sistema de descontos progressivos para áreas a partir de 70 m². Quanto maior a área, melhor a proposta comercial, sem comprometer qualidade, segurança e durabilidade.",
+      "Dispomos de um sistema de descontos progressivos para áreas a partir de 70 m². Quanto maior a área, mais vantajosa será a proposta comercial, sem comprometer a qualidade, a segurança nem a durabilidade.",
     "projects.title": "Exemplos de referência",
     "projects.note": "Fotos reais dos seus projetos serão adicionadas aqui. Estes são exemplos ilustrativos temporários.",
-    "viz.title": "Visualizador de pavimento (demo avançada)",
-    "viz.text": "Carregue uma imagem, marque a zona do chão com o pincel e simule o resultado com mistura realista de cor.",
-    "viz.brush": "Tamanho do pincel",
-    "viz.reset": "Limpar marcação",
     "quote.title": "Pedir orçamento",
-    "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
+    "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou por WhatsApp para receber uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
     "quote.send": "Enviar pedido",
-    "quote.note": "Após o envio, poderá ser necessário confirmar o email no primeiro pedido.",
+    "quote.note": "Após o envio, poderá ser necessário confirmar o endereço de email no primeiro pedido.",
     "visit.title": "Agendar visita técnica",
-    "visit.text": "Para avaliação no local, contacte-nos por email ou WhatsApp. Respondemos com rapidez e proposta técnica.",
+    "visit.text": "Para avaliação no local, contacte-nos por email ou por WhatsApp. Respondemos com rapidez e com uma proposta técnica clara.",
     "contacts.title": "Contactos",
-    "contacts.area": "Atendimento em Portugal e Espanha.",
+    "contacts.area": "Atendimento em Portugal e em Espanha.",
     "cookies.bannerText": "Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.",
     "cookies.accept": "Aceitar",
     "cookies.reject": "Rejeitar"
@@ -157,15 +146,15 @@
 const legalContent = {
   privacy: `Bem-vindo ao website da Rev-Tek.
 
-Valorizamos a sua privacidade e estamos comprometidos em proteger os seus dados pessoais. Esta Política de Privacidade e Cookies descreve como recolhemos, utilizamos, divulgamos e protegemos as informações fornecidas através do nosso website. Ao aceder ou utilizar este website, concorda com os termos aqui descritos.
+Valorizamos a sua privacidade e estamos comprometidos com a proteção dos seus dados pessoais. Esta Política de Privacidade e Cookies descreve como recolhemos, utilizamos, divulgamos e protegemos as informações fornecidas através do nosso website. Ao aceder ou utilizar este website, concorda com os termos aqui descritos.
 
 1. Recolha de informações
-1.1 Informações pessoais: podemos recolher nome, email, telefone e outros dados enviados voluntariamente através de formulários de contacto/pedido de orçamento.
-1.2 Informações de uso: podemos recolher automaticamente dados técnicos como endereço IP, tipo de navegador, páginas visitadas e duração da visita para análise estatística e melhoria do website.
+1.1 Informações pessoais: podemos recolher o nome, o email, o número de telefone e outros dados enviados voluntariamente através de formulários de contacto/pedido de orçamento.
+1.2 Informações de utilização: podemos recolher automaticamente dados técnicos como o endereço IP, o tipo de navegador, as páginas visitadas e a duração da visita para análise estatística e melhoria do website.
 
 2. Utilização das informações
 2.1 Utilizamos os dados pessoais para responder a pedidos, preparar propostas, prestar apoio técnico e melhorar os nossos serviços.
-2.2 Utilizamos dados de navegação para análises internas, segurança e otimização de desempenho/conteúdo.
+2.2 Utilizamos dados de navegação para análises internas, segurança e otimização do desempenho e do conteúdo.
 
 3. Partilha de informações
 3.1 Não vendemos nem alugamos os seus dados pessoais a terceiros para fins de marketing.
@@ -187,30 +176,30 @@ Podemos atualizar esta política periodicamente. A versão mais recente estará 
   cookies: `Política de Cookies (Rev-Tek)
 
 1. O que são cookies
-Cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita um website.
+Os cookies são pequenos ficheiros de texto armazenados no seu dispositivo quando visita um website.
 
 2. Que cookies utilizamos
-- Cookies essenciais: necessários para funcionamento básico do website.
-- Cookies analíticos: usados apenas com consentimento para medir desempenho e melhorar experiência.
+- Cookies essenciais: necessários para o funcionamento básico do website.
+- Cookies analíticos: usados apenas com consentimento para medir o desempenho e melhorar a experiência.
 
 3. Gestão do consentimento
-Pode aceitar ou rejeitar cookies analíticos através do banner apresentado no website. Pode ainda eliminar ou bloquear cookies nas definições do seu navegador.
+Pode aceitar ou rejeitar os cookies analíticos através do banner apresentado no website. Pode ainda eliminar ou bloquear cookies nas definições do seu navegador.
 
 4. Conservação
-O tempo de conservação pode variar conforme o tipo de cookie (sessão ou persistente) e a configuração do navegador.`,
+O período de conservação pode variar conforme o tipo de cookie (sessão ou persistente) e a configuração do navegador.`,
   terms: `Termos de Utilização (Rev-Tek)
 
 1. Conteúdo informativo
 O conteúdo deste website é meramente informativo e pode ser alterado sem aviso prévio.
 
 2. Orçamentos e propostas
-Os orçamentos dependem de análise técnica, área total, estado da base, requisitos de segurança, materiais e condições de obra.
+Os orçamentos dependem da análise técnica, da área total, do estado da base, dos requisitos de segurança, dos materiais e das condições de obra.
 
 3. Propriedade intelectual
 Textos, marca, logótipo e elementos visuais deste website não podem ser reproduzidos sem autorização prévia.
 
 4. Limitação de responsabilidade
-A Rev-Tek não se responsabiliza por danos indiretos resultantes do uso do website, indisponibilidade temporária ou conteúdo de terceiros.
+A Rev-Tek não se responsabiliza por danos indiretos resultantes da utilização do website, da indisponibilidade temporária ou de conteúdos de terceiros.
 
 5. Contacto
 Email: technipiso@gmail.com
