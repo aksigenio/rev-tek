@@ -453,15 +453,54 @@ dialog::backdrop {
   }
 }
 
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  margin-left: auto;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--fg);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.burger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity: 0; }
+.burger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
 @media (max-width: 768px) {
-  .menu {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    gap: 12px;
-    padding-bottom: 4px;
+  .burger {
+    display: flex;
   }
 
-  .menu a {
-    white-space: nowrap;
+  .lang-switcher {
+    margin-left: 0;
+  }
+
+  .menu {
+    display: none;
+    position: absolute;
+    top: 78px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: #090909f0;
+    backdrop-filter: blur(6px);
+    border-bottom: 1px solid var(--line);
+    padding: 16px 24px;
+    gap: 16px;
+  }
+
+  .menu.open {
+    display: flex;
   }
 }
