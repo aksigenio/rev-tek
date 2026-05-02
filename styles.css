@@ -452,3 +452,16 @@ dialog::backdrop {
     align-items: flex-start;
   }
 }
+
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    padding-bottom: 4px;
+  }
+
+  .menu a {
+    white-space: nowrap;
+  }
+}
