@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio | Rev-Tek — Pavimentos industriais em resina</title>
+    <meta
+      name="description"
+      content="Veja os nossos trabalhos executados em pavimentos de resina epóxi, metacrilato e poliuretano em Portugal. Projetos industriais, clínicos e comerciais."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.rev-tek.pt/portfolio.html" />
+    <meta property="og:locale" content="pt_PT" />
+    <meta property="og:url" content="https://www.rev-tek.pt/portfolio.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Portfólio | Rev-Tek — Pavimentos industriais em resina" />
+    <meta property="og:description" content="Trabalhos executados em pavimentos de resina em Portugal. Epóxi, metacrilato e poliuretano para indústria, clínicas e restauração." />
+    <meta property="og:image" content="https://www.rev-tek.pt/assets/logo.png" />
+    <meta name="theme-color" content="#090909" />
+    <link rel="stylesheet" href="./styles.css" />
+    <style>
+      .portfolio-hero {
+        padding: 48px 0 32px;
+        background: radial-gradient(circle at 20% 20%, #2a0c10 0%, #090909 45%);
+      }
+      .portfolio-hero h1 {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        margin-bottom: 12px;
+      }
+      .portfolio-hero p {
+        max-width: 600px;
+      }
+      .filter-row {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+      }
+      .filter-btn {
+        border: 1px solid var(--line);
+        background: transparent;
+        color: var(--fg);
+        padding: 7px 16px;
+        border-radius: 999px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.2s;
+      }
+      .filter-btn.active,
+      .filter-btn:hover {
+        background: var(--red);
+        border-color: var(--red);
+      }
+      .gallery-large {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 18px;
+      }
+      .project-label {
+        display: inline-block;
+        font-size: 0.75rem;
+        background: var(--red);
+        color: #fff;
+        padding: 3px 10px;
+        border-radius: 999px;
+        margin-bottom: 8px;
+      }
+      .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        color: var(--muted);
+        text-decoration: none;
+        font-size: 0.9rem;
+        margin-bottom: 24px;
+      }
+      .back-link:hover { color: var(--fg); }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="logo-wrap">
+          <a href="./index.html">
+            <img src="./assets/logo.png" alt="Rev-Tek" class="logo" />
+          </a>
+          <span class="logo-tagline">Revestimentos técnicos de superfícies</span>
+        </div>
+        <button class="burger" id="burger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="menu" id="menu">
+          <a href="./index.html#servicos">Serviços</a>
+          <a href="./index.html#sistemas">Pavimentos</a>
+          <a href="./index.html#setores">Setores</a>
+          <a href="./portfolio.html" style="color: var(--red);">Portfólio</a>
+          <a href="./index.html#contactos">Contactos</a>
+        </nav>
+        <div class="lang-switcher">
+          <button class="lang-btn active" data-lang="pt">PT</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="portfolio-hero">
+        <div class="container">
+          <a href="./index.html" class="back-link">← Voltar ao início</a>
+          <h1>Portfólio de obras</h1>
+          <p style="color: var(--muted);">
+            Exemplos de trabalhos executados em pavimentos de resina — metacrilato, epóxi e poliuretano — em todo o Portugal.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-row">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="metacrilato">Metacrilato</button>
+            <button class="filter-btn" data-filter="epoxi">Epóxi</button>
+            <button class="filter-btn" data-filter="poliuretano">Poliuretano</button>
+          </div>
+
+          <div class="gallery-large" id="gallery">
+
+            <figure class="project-item" data-type="metacrilato">
+              <button
+                class="project-open"
+                type="button"
+                data-full="./assets/metacrilato-1.png"
+                data-alt="Pavimento em metacrilato - zona técnica"
+                aria-label="Abrir imagem em tamanho completo"
+              >
+                <img src="./assets/metacrilato-1.png" alt="Pavimento em metacrilato aplicado em zona técnica industrial, Portugal" />
+              </button>
+              <figcaption>
+                <span class="project-label">Metacrilato</span><br/>
+                Sistema em metacrilato — zona técnica
+              </figcaption>
+            </figure>
+
+            <figure class="project-item" data-type="metacrilato">
+              <button
+                class="project-open"
+                type="button"
+                data-full="./assets/metacrilato-2.png"
+                data-alt="Pavimento em metacrilato - área clínica"
+                aria-label="Abrir imagem em tamanho completo"
+              >
+                <img src="./assets/metacrilato-2.png" alt="Pavimento em metacrilato aplicado em área clínica, Portugal" />
+              </button>
+              <figcaption>
+                <span class="project-label">Metacrilato</span><br/>
+                Sistema em metacrilato — área clínica
+              </figcaption>
+            </figure>
+
+            <figure class="project-item" data-type="metacrilato">
+              <button
+                class="project-open"
+                type="button"
+                data-full="./assets/metacrilato-3.png"
+                data-alt="Pavimento em metacrilato - instalação sanitária"
+                aria-label="Abrir imagem em tamanho completo"
+              >
+                <img src="./assets/metacrilato-3.png" alt="Pavimento em metacrilato aplicado em instalação sanitária, Portugal" />
+              </button>
+              <figcaption>
+                <span class="project-label">Metacrilato</span><br/>
+                Sistema em metacrilato — instalação sanitária
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <div style="margin-top: 48px; padding: 24px; border: 1px dashed var(--line); border-radius: 14px; text-align: center;">
+            <p style="color: var(--muted); margin: 0 0 16px;">Tem um projeto e quer ver resultados semelhantes ao seu caso?</p>
+            <a href="./index.html#orcamento" class="btn btn-primary">Pedir orçamento gratuito</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> Rev-Tek</p>
+        <div class="legal-links">
+          <button class="legal-btn" data-legal="privacy">Política de Privacidade</button>
+          <button class="legal-btn" data-legal="cookies">Cookies</button>
+          <button class="legal-btn" data-legal="terms">Termos</button>
+        </div>
+      </div>
+    </footer>
+
+    <dialog id="legalDialog">
+      <h3 id="legalTitle"></h3>
+      <p id="legalBody"></p>
+      <button class="btn btn-primary" id="closeLegal">Fechar</button>
+    </dialog>
+
+    <div class="cookie-banner" id="cookieBanner" hidden>
+      <p>Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-outline" id="cookieReject">Rejeitar</button>
+        <button class="btn btn-primary" id="cookieAccept">Aceitar</button>
+      </div>
+    </div>
+
+    <dialog id="lightboxDialog" class="lightbox-dialog">
+      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem">×</button>
+      <img id="lightboxImage" alt="" />
+    </dialog>
+
+    <script src="./script.js"></script>
+    <script>
+      // Filter buttons
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          const filter = btn.dataset.filter;
+          document.querySelectorAll('.project-item').forEach(item => {
+            item.style.display = (filter === 'all' || item.dataset.type === filter) ? '' : 'none';
+          });
+        });
+      });
+
+      // Burger menu
+      const burger = document.getElementById('burger');
+      const menu = document.getElementById('menu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('open');
+        menu.classList.toggle('open');
+      });
+      menu.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+          burger.classList.remove('open');
+          menu.classList.remove('open');
+        });
+      });
+    </script>
+  </body>
+</html>
