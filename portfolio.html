@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | Rev-Tek - Pavimentos industriais em resina</title>
+    <title>Portfólio | Rev-Tek — Pavimentos industriais em resina</title>
     <meta
       name="description"
       content="Veja os nossos trabalhos executados em pavimentos de resina epóxi, metacrilato e poliuretano em Portugal. Projetos industriais, clínicos e comerciais."
@@ -13,7 +13,7 @@
     <meta property="og:locale" content="pt_PT" />
     <meta property="og:url" content="https://www.rev-tek.pt/portfolio.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Portfólio | Rev-Tek - Pavimentos industriais em resina" />
+    <meta property="og:title" content="Portfólio | Rev-Tek — Pavimentos industriais em resina" />
     <meta property="og:description" content="Trabalhos executados em pavimentos de resina em Portugal. Epóxi, metacrilato e poliuretano para indústria, clínicas e restauração." />
     <meta property="og:image" content="https://www.rev-tek.pt/assets/logo.png" />
     <meta name="theme-color" content="#090909" />
@@ -75,6 +75,23 @@
         margin-bottom: 24px;
       }
       .back-link:hover { color: var(--fg); }
+      .video-item {
+        border: 1px solid var(--line);
+        border-radius: 12px;
+        overflow: hidden;
+        background: #0f0f0f;
+      }
+      .video-item iframe {
+        width: 100%;
+        aspect-ratio: 9/16;
+        display: block;
+        border: none;
+      }
+      .video-item figcaption {
+        padding: 10px 12px;
+        color: #e3e3e3;
+        font-size: 0.93rem;
+      }
     </style>
   </head>
   <body>
@@ -107,9 +124,9 @@
       <section class="portfolio-hero">
         <div class="container">
           <a href="./index.html" class="back-link">← Voltar ao início</a>
-          <h1>Portfólio</h1>
+          <h1>Portfólio de obras</h1>
           <p style="color: var(--muted);">
-            Exemplos de trabalhos realizados em metacrilato, epóxi e poliuretano em todo o Portugal.
+            Exemplos de trabalhos executados em pavimentos de resina — metacrilato, epóxi e poliuretano — em todo o Portugal.
           </p>
         </div>
       </section>
@@ -121,6 +138,7 @@
             <button class="filter-btn" data-filter="metacrilato">Metacrilato</button>
             <button class="filter-btn" data-filter="epoxi">Epóxi</button>
             <button class="filter-btn" data-filter="poliuretano">Poliuretano</button>
+            <button class="filter-btn" data-filter="video">Vídeo</button>
           </div>
 
           <div class="gallery-large" id="gallery">
@@ -137,7 +155,7 @@
               </button>
               <figcaption>
                 <span class="project-label">Metacrilato</span><br/>
-                Sistema em metacrilato - zona técnica
+                Sistema em metacrilato — zona técnica
               </figcaption>
             </figure>
 
@@ -153,7 +171,7 @@
               </button>
               <figcaption>
                 <span class="project-label">Metacrilato</span><br/>
-                Sistema em metacrilato - área clínica
+                Sistema em metacrilato — área clínica
               </figcaption>
             </figure>
 
@@ -169,13 +187,25 @@
               </button>
               <figcaption>
                 <span class="project-label">Metacrilato</span><br/>
-                Sistema em metacrilato - instalação sanitária
+                Sistema em metacrilato — instalação sanitária
               </figcaption>
             </figure>
 
-          </div>
+            <figure class="project-item video-item" data-type="video">
+              <iframe
+                src="https://www.youtube.com/embed/JgPaKToBf58"
+                title="Rev-Tek — Pavimento em resina, trabalho executado em Portugal"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+                loading="lazy"
+              ></iframe>
+              <figcaption>
+                <span class="project-label">Vídeo</span><br/>
+                Trabalho executado — pavimento em resina
+              </figcaption>
+            </figure>
 
-          <div style="margin-top: 48px; padding: 24px; border: 1px dashed var(--line); border-radius: 14px; text-align: center;">
+          </div> padding: 24px; border: 1px dashed var(--line); border-radius: 14px; text-align: center;">
             <p style="color: var(--muted); margin: 0 0 16px;">Tem um projeto e quer ver resultados semelhantes ao seu caso?</p>
             <a href="./index.html#orcamento" class="btn btn-primary">Pedir orçamento gratuito</a>
           </div>
