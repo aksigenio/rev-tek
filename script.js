@@ -191,7 +191,7 @@ A Rev-Tek não se responsabiliza por danos indiretos resultantes da utilização
 
 5. Contacto
 Email: technipiso@gmail.com
-Telefone/WhatsApp: +351 969 959 727
+Telefone/WhatsApp: +351 913 151 960
 Área de atuação: Portugal.`
 };
 
