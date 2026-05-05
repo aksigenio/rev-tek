@@ -1,19 +1,26 @@
 ﻿const i18n = {
   pt: {
-    "menu.services": "Serviços",
+    "menu.systems": "Sistemas",
     "menu.flooring": "Pavimentos",
     "menu.sectors": "Setores",
     "menu.portfolio": "Portfólio",
     "menu.contact": "Contactos",
-    "hero.title": "Pavimentos em resina de alto desempenho",
+    "hero.title": "Pavimentos industriais de alto desempenho",
     "hero.text":
-      "Soluções de pavimentos em resina para cargas elevadas, resistência química e segurança antiderrapante. Mais de 10 anos de experiência em Portugal.",
+      "Soluções de pavimentos em resina de alto desempenho, resistência química e máxima segurança antiderrapante.",
     "hero.ctaQuote": "Pedir orçamento",
     "hero.ctaVisit": "Agendar visita técnica",
     "hero.metricYears": "anos de experiência comprovada",
     "hero.metricCoverageTitle": "Atuamos em Portugal",
     "hero.metricCountries": "Cobertura nacional em todo o território português",
-    "services.title": "As nossas soluções",
+    "solucoes.title": "Sistemas / Soluções",
+    "sol.mmaTeaser":
+      "Revestimento e pavimento em metacrilato (MMA): piso de resina de cura rápida para indústria, armazéns e restauração em Portugal - ideal quando o calendário da obra é exigente.",
+    "sol.puTeaser":
+      "Piso e revestimento em poliuretano (PU): camada elástica e resistente para áreas com tráfego pesado, choques térmicos e exposição a produtos químicos.",
+    "sol.epoxyTeaser":
+      "Pavimento em epóxi: revestimento contínuo para piso industrial e comercial, com elevada durabilidade mecânica e higiene fácil.",
+    "sol.cta": "Saber mais - características técnicas",
     "sectors.title": "Setores que servimos",
     "sectors.a": "Fábricas, oficinas e indústria pesada",
     "sectors.b": "Armazéns, logística e centros de distribuição",
@@ -28,15 +35,7 @@
       "Trabalhamos com sistemas em metacrilato, poliuretano e epóxi, selecionados de acordo com os requisitos técnicos de cada projeto.",
     "systems.how":
       "A seleção da solução ideal é definida com base no tipo de atividade, nas cargas mecânicas, na exposição química, no nível de humidade e no prazo de execução da obra.",
-    "systems.mmaTitle": "Sistemas em metacrilato (MMA)",
-    "systems.mmaText":
-      "Soluções de cura rápida para obras com prazos curtos, mesmo em condições de baixa temperatura.",
-    "systems.puTitle": "Sistemas em poliuretano (PU)",
-    "systems.puText":
-      "Elevada elasticidade e resistência térmica/química para ambientes com solicitações intensas.",
-    "systems.epoxyTitle": "Sistemas em epóxi",
-    "systems.epoxyText":
-      "Excelente desempenho mecânico, acabamento técnico e manutenção simplificada para áreas industriais e comerciais.",
+    "systems.seePages": "Ver sistemas Metacrilato, Poliuretano e Epóxi",
     "systems.soon": "Em breve: Pavimento Epóxi Decorativo e Colchão de Pedra.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
@@ -47,12 +46,12 @@
     "projects.c2": "Sistema em metacrilato - área clínica",
     "projects.c3": "Sistema em metacrilato - instalação sanitária",
     "quote.title": "Pedir orçamento",
-    "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou por WhatsApp para receber uma proposta personalizada.",
+    "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
     "quote.send": "Enviar pedido",
-    "quote.note": "Após o envio, poderá ser necessário confirmar o endereço de email no primeiro pedido.",
+    "quote.note": "Após o envio, poderá ser necessário confirmar o email no primeiro pedido.",
     "visit.title": "Agendar visita técnica",
-    "visit.text": "Para avaliação no local, contacte-nos por email ou por WhatsApp. Respondemos com rapidez e com uma proposta técnica clara.",
+    "visit.text": "Para avaliação no local, contacte-nos por email ou WhatsApp. Respondemos com rapidez e proposta técnica.",
     "contacts.title": "Contactos",
     "contacts.area": "Atendimento em Portugal.",
     "cookies.bannerText": "Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.",
@@ -60,26 +59,27 @@
     "cookies.reject": "Rejeitar"
   },
   en: {
-    "menu.services": "Services",
+    "menu.systems": "Systems",
     "menu.flooring": "Flooring",
     "menu.sectors": "Sectors",
     "menu.portfolio": "Portfolio",
     "menu.contact": "Contact",
     "hero.title": "High-performance industrial flooring",
     "hero.text":
-      "Resin flooring solutions for heavy loads, chemical resistance and anti-slip safety. Over 10 years of experience in Portugal.",
+      "High-performance resin flooring solutions, chemical resistance and maximum anti-slip safety.",
     "hero.ctaQuote": "Request a quote",
     "hero.ctaVisit": "Book technical visit",
     "hero.metricYears": "years of proven experience",
     "hero.metricCoverageTitle": "Coverage in Portugal",
     "hero.metricCountries": "We operate across Portugal",
-    "services.title": "What we do",
-    "services.s1t": "Industrial flooring installation",
-    "services.s1d": "Professional installation for high mechanical and chemical demand areas.",
-    "services.s2t": "Anti-slip systems",
-    "services.s2d": "Safe finishes for wet, oily and high-traffic environments.",
-    "services.s3t": "Rehabilitation and maintenance",
-    "services.s3d": "Floor renovation to extend service life and reduce downtime.",
+    "solucoes.title": "Systems / Solutions",
+    "sol.mmaTeaser":
+      "Methacrylate flooring and coating (MMA): fast-curing resin floors for industry, warehouses and food service in Portugal - ideal when the schedule is tight.",
+    "sol.puTeaser":
+      "Polyurethane floor and coating (PU): elastic, hard-wearing layers for heavy traffic, thermal stress and chemical exposure.",
+    "sol.epoxyTeaser":
+      "Epoxy flooring: seamless industrial and commercial surfaces with strong mechanical performance and easy hygiene.",
+    "sol.cta": "Learn more - technical specifications",
     "sectors.title": "Sectors we serve",
     "sectors.a": "Factories, workshops and heavy industry",
     "sectors.b": "Warehouses, logistics and distribution centers",
@@ -94,15 +94,7 @@
       "We work with methacrylate, polyurethane and epoxy systems, selected according to the technical requirements of each project.",
     "systems.how":
       "The optimal system is selected based on the type of activity, mechanical loads, chemical exposure, humidity level and project timeline.",
-    "systems.mmaTitle": "Methacrylate systems (MMA)",
-    "systems.mmaText":
-      "Fast-curing solutions for time-critical projects, even in low-temperature conditions.",
-    "systems.puTitle": "Polyurethane systems (PU)",
-    "systems.puText":
-      "High elasticity and thermal/chemical resistance for demanding environments.",
-    "systems.epoxyTitle": "Epoxy systems",
-    "systems.epoxyText":
-      "Excellent mechanical performance, technical finish and simplified maintenance for industrial and commercial areas.",
+    "systems.seePages": "View Methacrylate, Polyurethane and Epoxy systems",
     "systems.soon": "Coming soon: Decorative Epoxy Flooring and Stone Carpet.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
@@ -122,7 +114,7 @@
     "quote.send": "Send request",
     "quote.note": "After submitting, you may need to confirm your email on the first request.",
     "visit.title": "Book a technical visit",
-    "visit.text": "For on-site assessment, contact us by email or WhatsApp. We reply quickly with a technical proposal.",
+    "visit.text": "For on-site assessment, contact us by email or WhatsApp. We respond quickly with a technical proposal.",
     "contacts.title": "Contact",
     "contacts.area": "Coverage in Portugal.",
     "cookies.bannerText": "We use essential cookies and, with your consent, analytics cookies to improve the website.",

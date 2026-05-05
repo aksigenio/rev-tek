@@ -177,6 +177,114 @@ p {
   background: #0f0f0f;
 }
 
+.solucoes-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.sol-card {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s ease, transform 0.15s ease;
+  min-height: 100%;
+}
+
+.sol-card:hover {
+  border-color: var(--red);
+  transform: translateY(-2px);
+}
+
+.sol-card h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 1.22rem;
+}
+
+.sol-card p {
+  flex: 1;
+  margin: 0 0 14px;
+  line-height: 1.55;
+}
+
+.sol-card-cta {
+  font-weight: 600;
+  color: var(--red);
+  margin-top: auto;
+  font-size: 0.95rem;
+}
+
+.sol-card:hover .sol-card-cta {
+  text-decoration: underline;
+}
+
+.systems-hub-link {
+  margin: 12px 0 0;
+}
+
+.systems-hub-link a {
+  color: var(--red);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.systems-hub-link a:hover {
+  text-decoration: underline;
+}
+
+.subpage-hero {
+  padding: 42px 0 12px;
+  background: radial-gradient(circle at 20% 20%, #2a0c10 0%, #090909 45%);
+}
+
+.subpage-hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.45rem);
+  margin-bottom: 14px;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin-bottom: 18px;
+}
+
+.back-link:hover {
+  color: var(--fg);
+}
+
+.related-systems {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 18px;
+  margin-top: 32px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+}
+
+.related-systems span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.related-systems a {
+  color: var(--fg);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.related-systems a:hover {
+  color: var(--red);
+  text-decoration: underline;
+}
+
 .services-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
@@ -457,6 +565,10 @@ dialog::backdrop {
 
 @media (max-width: 900px) {
   .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solucoes-row {
     grid-template-columns: 1fr;
   }
 
