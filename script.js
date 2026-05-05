@@ -14,8 +14,9 @@
     "hero.metricCoverageTitle": "Atuamos em Portugal",
     "hero.metricCountries": "Cobertura nacional em todo o território português",
     "solucoes.title": "Sistemas / Soluções",
+    "sol.mmaTitle": "Metacrilato (MMA)",
     "sol.mmaTeaser":
-      "Revestimento e pavimento em metacrilato (MMA): piso de resina de cura rápida para indústria, armazéns e restauração em Portugal - ideal quando o calendário da obra é exigente.",
+      "Sistema de secagem rápida, com aplicação possível em apenas 1 dia. Soluções adaptadas a condições normais e exigentes.",
     "sol.puTeaser":
       "Piso e revestimento em poliuretano (PU): camada elástica e resistente para áreas com tráfego pesado, choques térmicos e exposição a produtos químicos.",
     "sol.epoxyTeaser":
@@ -73,8 +74,9 @@
     "hero.metricCoverageTitle": "Coverage in Portugal",
     "hero.metricCountries": "We operate across Portugal",
     "solucoes.title": "Systems / Solutions",
+    "sol.mmaTitle": "Methacrylate (MMA)",
     "sol.mmaTeaser":
-      "Methacrylate flooring and coating (MMA): fast-curing resin floors for industry, warehouses and food service in Portugal - ideal when the schedule is tight.",
+      "Fast-drying system with installation possible in as little as one day. Solutions adapted to standard and demanding conditions.",
     "sol.puTeaser":
       "Polyurethane floor and coating (PU): elastic, hard-wearing layers for heavy traffic, thermal stress and chemical exposure.",
     "sol.epoxyTeaser":
