@@ -5,7 +5,8 @@
     "menu.sectors": "Setores",
     "menu.portfolio": "Portfólio",
     "menu.contact": "Contactos",
-    "hero.eyebrow": "Pavimentos técnicos em resina · Indústria, logística e retalho",
+    "hero.eyebrow":
+      "Pavimentos técnicos em resina · Espaços industriais, comerciais e residenciais",
     "hero.title": "Pavimentos industriais em resina, executados para durar.",
     "hero.lead":
       "Projetamos e aplicamos sistemas em epóxi, poliuretano e metacrilato (MMA) para operações que exigem resistência mecânica, higiene e segurança. Proposta técnica clara, preparação rigorosa do suporte e acompanhamento em obra — com cobertura em todo o território nacional.",
@@ -22,7 +23,7 @@
       "Processos orientados para ambientes industriais, logísticos, de saúde e restauração.",
     "hero.panel3":
       "Garantias e recomendações de manutenção articuladas com as condições de utilização.",
-    "hero.statYears": "anos de experiência comprovada",
+    "hero.statYears": "Mais de uma década de experiência em projetos de elevada exigência",
     "hero.statCoverage": "Cobertura nacional — projetos de norte a sul",
     "solucoes.title": "Sistemas / Soluções",
     "sol.mmaTitle": "Metacrilato (MMA)",
@@ -76,7 +77,8 @@
     "menu.sectors": "Sectors",
     "menu.portfolio": "Portfolio",
     "menu.contact": "Contact",
-    "hero.eyebrow": "Technical resin flooring · Industry, logistics & retail",
+    "hero.eyebrow":
+      "Technical resin flooring · Industrial, commercial and residential spaces",
     "hero.title": "Industrial resin flooring, engineered to last.",
     "hero.lead":
       "We design and install epoxy, polyurethane and methacrylate (MMA) systems for operations that demand mechanical performance, hygiene and safety. Clear technical proposals, rigorous substrate preparation and on-site coordination — with nationwide coverage in Portugal.",
@@ -93,7 +95,7 @@
       "Processes tailored to industrial, logistics, healthcare and food-service environments.",
     "hero.panel3":
       "Warranties and maintenance guidance matched to operating conditions.",
-    "hero.statYears": "years of proven experience",
+    "hero.statYears": "More than a decade of experience in demanding projects",
     "hero.statCoverage": "Nationwide coverage — projects from north to south",
     "solucoes.title": "Systems / Solutions",
     "sol.mmaTitle": "Methacrylate (MMA)",
