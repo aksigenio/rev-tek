@@ -348,6 +348,17 @@ body {
   color: var(--muted);
 }
 
+.hero-stat--experience {
+  justify-content: center;
+}
+
+.hero-stat-label--experience {
+  font-size: 0.875rem;
+  line-height: 1.45;
+  color: var(--muted-bright);
+  font-weight: 500;
+}
+
 .btn-hero-primary {
   padding: 0.9rem 1.45rem;
   font-size: 0.9375rem;

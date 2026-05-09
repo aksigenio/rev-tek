@@ -10,7 +10,7 @@
     "hero.title": "Pavimentos industriais em resina, executados para durar.",
     "hero.lead":
       "Projetamos e aplicamos sistemas em epóxi, poliuretano e metacrilato (MMA) para operações que exigem resistência mecânica, higiene e segurança. Proposta técnica clara, preparação rigorosa do suporte e acompanhamento em obra — com cobertura em todo o território nacional.",
-    "hero.trust1": "+10 anos de experiência no setor",
+    "hero.trust1": "Experiência consolidada no setor",
     "hero.trust2": "Proposta alinhada ao uso real do pavimento",
     "hero.trust3": "Resposta ágil a pedidos B2B",
     "hero.ctaQuote": "Pedido de Orçamento",
@@ -82,7 +82,7 @@
     "hero.title": "Industrial resin flooring, engineered to last.",
     "hero.lead":
       "We design and install epoxy, polyurethane and methacrylate (MMA) systems for operations that demand mechanical performance, hygiene and safety. Clear technical proposals, rigorous substrate preparation and on-site coordination — with nationwide coverage in Portugal.",
-    "hero.trust1": "10+ years of sector experience",
+    "hero.trust1": "Consolidated experience in the sector",
     "hero.trust2": "Proposals aligned with real-world floor use",
     "hero.trust3": "Responsive handling of B2B enquiries",
     "hero.ctaQuote": "Request a quotation",
