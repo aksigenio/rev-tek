@@ -5,14 +5,25 @@
     "menu.sectors": "Setores",
     "menu.portfolio": "Portfólio",
     "menu.contact": "Contactos",
-    "hero.title": "Pavimentos industriais de alto desempenho",
-    "hero.text":
-      "Soluções de pavimentos em resina de alto desempenho, resistência química e máxima segurança antiderrapante.",
-    "hero.ctaQuote": "Pedir orçamento",
-    "hero.ctaVisit": "Agendar visita técnica",
-    "hero.metricYears": "anos de experiência comprovada",
-    "hero.metricCoverageTitle": "Atuamos em Portugal",
-    "hero.metricCountries": "Cobertura nacional em todo o território português",
+    "hero.eyebrow": "Pavimentos técnicos em resina · Indústria, logística e retalho",
+    "hero.title": "Pavimentos industriais em resina, executados para durar.",
+    "hero.lead":
+      "Projetamos e aplicamos sistemas em epóxi, poliuretano e metacrilato (MMA) para operações que exigem resistência mecânica, higiene e segurança. Proposta técnica clara, preparação rigorosa do suporte e acompanhamento em obra — com cobertura em todo o território nacional.",
+    "hero.trust1": "+10 anos de experiência no setor",
+    "hero.trust2": "Proposta alinhada ao uso real do pavimento",
+    "hero.trust3": "Resposta ágil a pedidos B2B",
+    "hero.ctaQuote": "Pedido de Orçamento",
+    "hero.ctaContact": "Fale connosco",
+    "hero.ctaVisit": "Preferência por visita técnica no local? Agende connosco.",
+    "hero.panelLabel": "Execução técnica de confiança",
+    "hero.panel1":
+      "Seleção do sistema em função de cargas, exposição química, humidade e prazo de obra.",
+    "hero.panel2":
+      "Processos orientados para ambientes industriais, logísticos, de saúde e restauração.",
+    "hero.panel3":
+      "Garantias e recomendações de manutenção articuladas com as condições de utilização.",
+    "hero.statYears": "anos de experiência comprovada",
+    "hero.statCoverage": "Cobertura nacional — projetos de norte a sul",
     "solucoes.title": "Sistemas / Soluções",
     "sol.mmaTitle": "Metacrilato (MMA)",
     "sol.mmaTeaser":
@@ -65,14 +76,25 @@
     "menu.sectors": "Sectors",
     "menu.portfolio": "Portfolio",
     "menu.contact": "Contact",
-    "hero.title": "High-performance industrial flooring",
-    "hero.text":
-      "High-performance resin flooring solutions, chemical resistance and maximum anti-slip safety.",
-    "hero.ctaQuote": "Request a quote",
-    "hero.ctaVisit": "Book technical visit",
-    "hero.metricYears": "years of proven experience",
-    "hero.metricCoverageTitle": "Coverage in Portugal",
-    "hero.metricCountries": "We operate across Portugal",
+    "hero.eyebrow": "Technical resin flooring · Industry, logistics & retail",
+    "hero.title": "Industrial resin flooring, engineered to last.",
+    "hero.lead":
+      "We design and install epoxy, polyurethane and methacrylate (MMA) systems for operations that demand mechanical performance, hygiene and safety. Clear technical proposals, rigorous substrate preparation and on-site coordination — with nationwide coverage in Portugal.",
+    "hero.trust1": "10+ years of sector experience",
+    "hero.trust2": "Proposals aligned with real-world floor use",
+    "hero.trust3": "Responsive handling of B2B enquiries",
+    "hero.ctaQuote": "Request a quotation",
+    "hero.ctaContact": "Contact us",
+    "hero.ctaVisit": "Prefer an on-site technical visit? Get in touch to schedule one.",
+    "hero.panelLabel": "Trusted technical delivery",
+    "hero.panel1":
+      "System selection based on loads, chemical exposure, moisture and construction schedule.",
+    "hero.panel2":
+      "Processes tailored to industrial, logistics, healthcare and food-service environments.",
+    "hero.panel3":
+      "Warranties and maintenance guidance matched to operating conditions.",
+    "hero.statYears": "years of proven experience",
+    "hero.statCoverage": "Nationwide coverage — projects from north to south",
     "solucoes.title": "Systems / Solutions",
     "sol.mmaTitle": "Methacrylate (MMA)",
     "sol.mmaTeaser":

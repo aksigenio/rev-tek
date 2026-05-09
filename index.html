@@ -74,24 +74,69 @@
     </header>
 
     <main>
-      <section class="hero">
-        <div class="container hero-grid">
-          <div>
-            <h1 data-i18n="hero.title">Pavimentos industriais de alto desempenho</h1>
-            <p data-i18n="hero.text">
-              Soluções de pavimentos em resina de alto desempenho, resistência química e máxima
-              segurança antiderrapante.
-            </p>
-            <div class="cta-row">
-              <a href="#orcamento" class="btn btn-primary" data-i18n="hero.ctaQuote">Pedir orçamento</a>
-              <a href="#agendar" class="btn btn-outline" data-i18n="hero.ctaVisit">Agendar visita técnica</a>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="hero-eyebrow" data-i18n="hero.eyebrow">
+                Pavimentos técnicos em resina · Indústria, logística e retalho
+              </p>
+              <h1 id="hero-heading" data-i18n="hero.title">
+                Pavimentos industriais em resina, executados para durar.
+              </h1>
+              <p class="hero-lead" data-i18n="hero.lead">
+                Projetamos e aplicamos sistemas em epóxi, poliuretano e metacrilato (MMA) para operações que
+                exigem resistência mecânica, higiene e segurança. Proposta técnica clara, preparação rigorosa do
+                suporte e acompanhamento em obra — com cobertura em todo o território nacional.
+              </p>
+              <ul class="hero-trust-chips" role="list">
+                <li data-i18n="hero.trust1">+10 anos de experiência no setor</li>
+                <li data-i18n="hero.trust2">Proposta alinhada ao uso real do pavimento</li>
+                <li data-i18n="hero.trust3">Resposta ágil a pedidos B2B</li>
+              </ul>
+              <div class="hero-cta-row">
+                <a href="#orcamento" class="btn btn-primary btn-hero-primary" data-i18n="hero.ctaQuote"
+                  >Pedido de Orçamento</a
+                >
+                <a href="#contactos" class="btn btn-outline btn-hero-secondary" data-i18n="hero.ctaContact"
+                  >Fale connosco</a
+                >
+              </div>
+              <p class="hero-cta-note">
+                <a href="#agendar" class="hero-subtle-link" data-i18n="hero.ctaVisit"
+                  >Preferência por visita técnica no local? Agende connosco.</a
+                >
+              </p>
             </div>
-          </div>
-          <div class="card metric-card">
-            <h3>10+</h3>
-            <p data-i18n="hero.metricYears">anos de experiência comprovada</p>
-            <h3 data-i18n="hero.metricCoverageTitle">Atuamos em Portugal</h3>
-            <p data-i18n="hero.metricCountries">Cobertura nacional em todo o território português</p>
+            <aside class="hero-aside" aria-label="Informações de credibilidade">
+              <div class="hero-panel">
+                <p class="hero-panel-label" data-i18n="hero.panelLabel">Execução técnica de confiança</p>
+                <ul class="hero-panel-list" role="list">
+                  <li data-i18n="hero.panel1">
+                    Seleção do sistema em função de cargas, exposição química, humidade e prazo de obra.
+                  </li>
+                  <li data-i18n="hero.panel2">
+                    Processos orientados para ambientes industriais, logísticos, de saúde e restauração.
+                  </li>
+                  <li data-i18n="hero.panel3">
+                    Garantias e recomendações de manutenção articuladas com as condições de utilização.
+                  </li>
+                </ul>
+                <div class="hero-panel-stats">
+                  <div class="hero-stat">
+                    <span class="hero-stat-value">10+</span>
+                    <span class="hero-stat-label" data-i18n="hero.statYears">anos de experiência comprovada</span>
+                  </div>
+                  <div class="hero-stat">
+                    <span class="hero-stat-value hero-stat-value--pt">PT</span>
+                    <span class="hero-stat-label" data-i18n="hero.statCoverage"
+                      >Cobertura nacional — projetos de norte a sul</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
