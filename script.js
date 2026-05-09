@@ -28,7 +28,7 @@
     "solhub.sectionTitle": "Sistemas / Soluções",
     "solhub.explore": "Explorar soluções",
     "solind.title": "Soluções industriais e comerciais",
-    "solres.title": "Soluções residenciais e decorativas",
+    "solres.title": "Soluções residenciais",
     "sectors.title": "Setores que servimos",
     "sectors.a": "Fábricas, oficinas e indústria pesada",
     "sectors.b": "Armazéns, logística e centros de distribuição",
@@ -38,16 +38,6 @@
     "sectors.f": "Oficinas auto, parques e áreas técnicas",
     "sectors.g": "Construtoras, promotores e arquitetos",
     "sectors.h": "Habitação, condomínios e espaços residenciais de elevado tráfego",
-    "systems.title": "Sistemas que aplicamos",
-    "systems.text":
-      "Trabalhamos com metacrilato (MMA), epóxi e poliuretano — em registos industriais ou decorativos — e com microcimento, conforme o tipo de espaço e o nível de exigência técnica ou estética.",
-    "systems.how":
-      "A seleção da solução ideal é definida com base no tipo de atividade, nas cargas mecânicas, na exposição química, no nível de humidade e no prazo de execução da obra.",
-    "systems.linkInd": "Pavimentos industriais e comerciais",
-    "systems.linkRes": "Pavimentos residenciais e decorativos",
-    "systems.seeHub": "Ver resumo das duas linhas no início da página",
-    "systems.soon":
-      "Novidades em acabamentos decorativos: consulte a linha residencial ou fale connosco sobre o seu projeto.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
@@ -98,7 +88,7 @@
     "solhub.sectionTitle": "Systems / Solutions",
     "solhub.explore": "Explore solutions",
     "solind.title": "Industrial and commercial solutions",
-    "solres.title": "Residential and decorative solutions",
+    "solres.title": "Residential solutions",
     "sectors.title": "Sectors we serve",
     "sectors.a": "Factories, workshops and heavy industry",
     "sectors.b": "Warehouses, logistics and distribution centers",
@@ -108,16 +98,6 @@
     "sectors.f": "Auto service, parking and technical areas",
     "sectors.g": "Construction firms, developers and architects",
     "sectors.h": "Residential properties, condominiums and high-traffic living areas",
-    "systems.title": "Systems we install",
-    "systems.text":
-      "We work with methacrylate (MMA), epoxy and polyurethane — in industrial or decorative specifications — and with microcement, depending on the space and technical or aesthetic requirements.",
-    "systems.how":
-      "The optimal system is selected based on the type of activity, mechanical loads, chemical exposure, humidity level and project timeline.",
-    "systems.linkInd": "Industrial and commercial flooring",
-    "systems.linkRes": "Residential and decorative flooring",
-    "systems.seeHub": "See both lines summarised at the top of the page",
-    "systems.soon":
-      "New decorative finishes: explore the residential line or contact us about your project.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",

@@ -819,14 +819,6 @@ p {
   margin-bottom: 8px;
 }
 
-.systems-soon {
-  margin-top: 14px;
-  padding: 10px 12px;
-  border-left: 3px solid var(--red);
-  background: #120a0b;
-  border-radius: 8px;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
