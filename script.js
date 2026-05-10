@@ -24,7 +24,7 @@
     "hero.panel3":
       "Garantias e recomendações de manutenção articuladas com as condições de utilização.",
     "hero.statYears": "Mais de uma década de experiência em projetos de elevada exigência",
-    "hero.statCoverage": "Cobertura nacional — projetos de norte a sul",
+    "hero.statCoverage": "Cobertura nacional - projetos de norte a sul",
     "solhub.sectionTitle": "Sistemas / Soluções",
     "solhub.explore": "Explorar soluções",
     "solind.title": "Soluções industriais e comerciais",
@@ -86,7 +86,7 @@
     "hero.panel3":
       "Warranties and maintenance guidance matched to operating conditions.",
     "hero.statYears": "More than a decade of experience in demanding projects",
-    "hero.statCoverage": "Nationwide coverage — projects from north to south",
+    "hero.statCoverage": "Nationwide coverage - projects from north to south",
     "solhub.sectionTitle": "Systems / Solutions",
     "solhub.explore": "Explore solutions",
     "solind.title": "Industrial and commercial solutions",

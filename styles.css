@@ -562,7 +562,7 @@ p {
   display: block;
 }
 
-/* Ficha metacrilato — listagens em duas colunas */
+/* Ficha metacrilato - listagens em duas colunas */
 .ficha-mma-lists {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -613,7 +613,7 @@ p {
   color: var(--red);
 }
 
-/* Ficha epóxi — tabelas */
+/* Ficha epóxi - tabelas */
 .epoxi-ficha {
   display: flex;
   flex-direction: column;
@@ -748,7 +748,7 @@ p {
   }
 }
 
-/* Carrossel — página metacrilato */
+/* Carrossel - página metacrilato */
 .mma-projetos {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
@@ -898,7 +898,7 @@ p {
   text-decoration: underline;
 }
 
-/* —— Sistemas / Soluções: duas entradas —— */
+/* -- Sistemas / Soluções: duas entradas -- */
 .sol-hub-simple h2 {
   margin-bottom: 1.35rem;
 }
