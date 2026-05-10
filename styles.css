@@ -648,6 +648,69 @@ p {
   font-weight: 600;
 }
 
+.epoxi-ficha__vantagens {
+  border-radius: 16px;
+  border: 1px solid var(--line-bright);
+  background: linear-gradient(165deg, rgba(18, 18, 22, 0.88) 0%, rgba(10, 10, 12, 0.95) 100%);
+  padding: clamp(1.25rem, 3vw, 1.65rem) clamp(1.15rem, 2.5vw, 1.5rem);
+  padding-left: clamp(1.35rem, 3vw, 1.75rem);
+  position: relative;
+  overflow: hidden;
+}
+
+.epoxi-ficha__vantagens::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(180deg, var(--red) 0%, var(--red-deep) 100%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.epoxi-ficha__vantagens-title {
+  margin: 0 0 1.25rem;
+  font-size: clamp(1.02rem, 1.2vw + 0.82rem, 1.22rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+}
+
+.epoxi-ficha__vantagem {
+  margin-bottom: 1.15rem;
+}
+
+.epoxi-ficha__vantagem:last-child {
+  margin-bottom: 0;
+}
+
+.epoxi-ficha__vantagem-title {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.epoxi-ficha__vantagem p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--muted-bright);
+}
+
+.epoxi-ficha__tabelas-heading {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.2vw + 0.85rem, 1.28rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: var(--fg);
+}
+
 .epoxi-ficha__block {
   border-radius: 16px;
   border: 1px solid var(--line-bright);
