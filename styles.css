@@ -544,8 +544,7 @@ p {
   text-decoration: underline;
 }
 
-.sol-card-mma .sol-card-visual,
-.sol-card-epoxi .sol-card-visual {
+.sol-card-mma .sol-card-visual {
   margin: -4px -4px 14px;
   border-radius: 12px;
   overflow: hidden;
@@ -553,8 +552,7 @@ p {
   border: 1px solid #2b2b2b;
 }
 
-.sol-card-mma .sol-card-visual img,
-.sol-card-epoxi .sol-card-visual img {
+.sol-card-mma .sol-card-visual img {
   width: 100%;
   height: auto;
   display: block;
