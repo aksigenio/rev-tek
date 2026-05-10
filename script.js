@@ -58,7 +58,11 @@
     "contacts.area": "Atendimento em Portugal.",
     "cookies.bannerText": "Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.",
     "cookies.accept": "Aceitar",
-    "cookies.reject": "Rejeitar"
+    "cookies.reject": "Rejeitar",
+    "mma.projetosTitle": "Projetos realizados",
+    "mma.projetosLead":
+      "Exemplos reais de obras em metacrilato (MMA) do nosso portfólio. Clique na imagem para ampliar.",
+    "mma.projetosVerPortfolio": "Ver portfólio completo →"
   },
   en: {
     "menu.systems": "Systems",
@@ -123,7 +127,11 @@
     "contacts.area": "Coverage in Portugal.",
     "cookies.bannerText": "We use essential cookies and, with your consent, analytics cookies to improve the website.",
     "cookies.accept": "Accept",
-    "cookies.reject": "Reject"
+    "cookies.reject": "Reject",
+    "mma.projetosTitle": "Completed projects",
+    "mma.projetosLead":
+      "Real-world methacrylate (MMA) projects from our portfolio. Click the image to enlarge.",
+    "mma.projetosVerPortfolio": "View full portfolio →"
   }
 };
 
@@ -246,38 +254,133 @@ cookieReject.addEventListener("click", () => {
 const lightboxDialog = document.getElementById("lightboxDialog");
 const lightboxImage = document.getElementById("lightboxImage");
 const lightboxClose = document.getElementById("lightboxClose");
-const projectButtons = document.querySelectorAll(".project-open");
 
-projectButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    lightboxImage.src = btn.dataset.full;
-    lightboxImage.alt = btn.dataset.alt || "";
-    lightboxDialog.showModal();
+document.addEventListener("click", (evt) => {
+  const btn = evt.target.closest(".project-open");
+  if (!btn || !lightboxDialog || !lightboxImage) return;
+  const full = btn.dataset.full;
+  if (!full) return;
+  evt.preventDefault();
+  lightboxImage.src = full;
+  lightboxImage.alt = btn.dataset.alt || "";
+  lightboxDialog.showModal();
+});
+
+if (lightboxClose && lightboxDialog) {
+  lightboxClose.addEventListener("click", () => lightboxDialog.close());
+  lightboxDialog.addEventListener("click", (evt) => {
+    if (evt.target === lightboxDialog) lightboxDialog.close();
   });
-});
-
-lightboxClose.addEventListener("click", () => lightboxDialog.close());
-lightboxDialog.addEventListener("click", (evt) => {
-  if (evt.target === lightboxDialog) lightboxDialog.close();
-});
+}
 document.addEventListener("keydown", (evt) => {
-  if (evt.key === "Escape" && lightboxDialog.open) lightboxDialog.close();
+  if (evt.key === "Escape" && lightboxDialog?.open) lightboxDialog.close();
 });
 
 initCookieBanner();
 
-const burger = document.getElementById('burger');
-const menu = document.getElementById('menu');
-burger.addEventListener('click', () => {
-  burger.classList.toggle('open');
-  menu.classList.toggle('open');
-});
-menu.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    burger.classList.remove('open');
-    menu.classList.remove('open');
+const burger = document.getElementById("burger");
+const menu = document.getElementById("menu");
+if (burger && menu) {
+  burger.addEventListener("click", () => {
+    burger.classList.toggle("open");
+    menu.classList.toggle("open");
   });
-});
+  menu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      burger.classList.remove("open");
+      menu.classList.remove("open");
+    });
+  });
+}
 
+function initMmaProjetosCarousel() {
+  const carousel = document.getElementById("mmaProjetosCarousel");
+  const track = document.getElementById("mmaProjetosTrack");
+  if (!carousel || !track) return;
 
+  const prev = carousel.querySelector(".mma-projetos__arrow--prev");
+  const next = carousel.querySelector(".mma-projetos__arrow--next");
+  let slideIdx = 0;
+  let maxIdx = 0;
+
+  function createCard(p) {
+    const fig = document.createElement("figure");
+    fig.className = "mma-projetos__card";
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "project-open mma-projetos__open";
+    btn.dataset.full = p.full;
+    btn.dataset.alt = p.alt || "";
+    btn.setAttribute("aria-label", "Abrir imagem em tamanho completo");
+    const img = document.createElement("img");
+    img.src = p.src;
+    img.alt = p.alt || "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    if (p.width) img.width = p.width;
+    if (p.height) img.height = p.height;
+    btn.appendChild(img);
+    const cap = document.createElement("figcaption");
+    cap.className = "mma-projetos__caption";
+    const lbl = document.createElement("span");
+    lbl.className = "project-label";
+    lbl.textContent = "Metacrilato";
+    cap.appendChild(lbl);
+    cap.appendChild(document.createElement("br"));
+    cap.appendChild(document.createTextNode(p.caption || ""));
+    fig.appendChild(btn);
+    fig.appendChild(cap);
+    return fig;
+  }
+
+  fetch(new URL("assets/portfolio-metacrilato.json", window.location.href).href)
+    .then((r) => {
+      if (!r.ok) throw new Error("fetch");
+      return r.json();
+    })
+    .then((data) => {
+      const items = data.projects || [];
+      if (!items.length) return;
+      const slides = [];
+      for (let i = 0; i < items.length; i += 2) {
+        slides.push(items.slice(i, i + 2));
+      }
+      maxIdx = Math.max(0, slides.length - 1);
+      track.innerHTML = "";
+      slides.forEach((pair) => {
+        const slide = document.createElement("div");
+        slide.className = "mma-projetos__slide";
+        pair.forEach((p) => slide.appendChild(createCard(p)));
+        if (pair.length === 1) {
+          const spacer = document.createElement("div");
+          spacer.className = "mma-projetos__spacer";
+          spacer.setAttribute("aria-hidden", "true");
+          slide.appendChild(spacer);
+        }
+        track.appendChild(slide);
+      });
+
+      function update() {
+        track.style.transform = `translate3d(-${slideIdx * 100}%, 0, 0)`;
+        if (prev) prev.disabled = slideIdx <= 0;
+        if (next) next.disabled = slideIdx >= maxIdx;
+      }
+
+      if (prev) prev.addEventListener("click", () => {
+        slideIdx = Math.max(0, slideIdx - 1);
+        update();
+      });
+      if (next) next.addEventListener("click", () => {
+        slideIdx = Math.min(maxIdx, slideIdx + 1);
+        update();
+      });
+      update();
+    })
+    .catch(() => {
+      track.innerHTML =
+        "<p class=\"mma-projetos__error\">Não foi possível carregar a galeria. Consulte o portfólio completo.</p>";
+    });
+}
+
+initMmaProjetosCarousel();
 
