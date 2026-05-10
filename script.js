@@ -304,8 +304,8 @@ function initMmaProjetosCarousel() {
   let maxIdx = 0;
 
   function createCard(p) {
-    const fig = document.createElement("figure");
-    fig.className = "mma-projetos__card";
+    const tile = document.createElement("div");
+    tile.className = "mma-projetos__tile";
     const btn = document.createElement("button");
     btn.type = "button";
     btn.className = "project-open mma-projetos__open";
@@ -320,17 +320,8 @@ function initMmaProjetosCarousel() {
     if (p.width) img.width = p.width;
     if (p.height) img.height = p.height;
     btn.appendChild(img);
-    const cap = document.createElement("figcaption");
-    cap.className = "mma-projetos__caption";
-    const lbl = document.createElement("span");
-    lbl.className = "project-label";
-    lbl.textContent = "Metacrilato";
-    cap.appendChild(lbl);
-    cap.appendChild(document.createElement("br"));
-    cap.appendChild(document.createTextNode(p.caption || ""));
-    fig.appendChild(btn);
-    fig.appendChild(cap);
-    return fig;
+    tile.appendChild(btn);
+    return tile;
   }
 
   fetch(new URL("assets/portfolio-metacrilato.json", window.location.href).href)
@@ -362,18 +353,20 @@ function initMmaProjetosCarousel() {
 
       function update() {
         track.style.transform = `translate3d(-${slideIdx * 100}%, 0, 0)`;
-        if (prev) prev.disabled = slideIdx <= 0;
-        if (next) next.disabled = slideIdx >= maxIdx;
       }
 
-      if (prev) prev.addEventListener("click", () => {
-        slideIdx = Math.max(0, slideIdx - 1);
-        update();
-      });
-      if (next) next.addEventListener("click", () => {
-        slideIdx = Math.min(maxIdx, slideIdx + 1);
-        update();
-      });
+      if (prev) {
+        prev.addEventListener("click", () => {
+          slideIdx = slideIdx <= 0 ? maxIdx : slideIdx - 1;
+          update();
+        });
+      }
+      if (next) {
+        next.addEventListener("click", () => {
+          slideIdx = slideIdx >= maxIdx ? 0 : slideIdx + 1;
+          update();
+        });
+      }
       update();
     })
     .catch(() => {
