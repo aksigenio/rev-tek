@@ -559,7 +559,7 @@ p {
 .sol-card-epoxi .sol-card-visual,
 .sol-card-pu .sol-card-visual,
 .sol-card-decor .sol-card-visual,
-.sol-card-colchao .sol-card-visual {
+.sol-card-tapete .sol-card-visual {
   margin: -4px -4px 14px;
   border-radius: 12px;
   overflow: hidden;
@@ -571,7 +571,7 @@ p {
 .sol-card-epoxi .sol-card-visual img,
 .sol-card-pu .sol-card-visual img,
 .sol-card-decor .sol-card-visual img,
-.sol-card-colchao .sol-card-visual img {
+.sol-card-tapete .sol-card-visual img {
   width: 100%;
   height: auto;
   display: block;
