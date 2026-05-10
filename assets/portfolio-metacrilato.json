@@ -1,0 +1,24 @@
+{
+  "projects": [
+    {
+      "src": "./assets/portfolio-mma-lisboa.png",
+      "full": "./assets/portfolio-mma-lisboa.png",
+      "alt": "Piso em resina de metacrilato (MMA) em Lisboa, Portugal - acabamento texturado contínuo e rodapé sanitário, Rev-Tek",
+      "caption": "Piso em MMA / metacrilato - Lisboa",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "src": "./assets/metacrilato-1.png",
+      "full": "./assets/metacrilato-1.png",
+      "alt": "Pavimento em metacrilato aplicado em zona técnica industrial, Portugal",
+      "caption": "Sistema em metacrilato - zona técnica"
+    },
+    {
+      "src": "./assets/metacrilato-3.png",
+      "full": "./assets/metacrilato-3.png",
+      "alt": "Pavimentos industriais em metacrilato, Portugal",
+      "caption": "Sistema de revestimento em metacrilato"
+    }
+  ]
+}
