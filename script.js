@@ -59,9 +59,6 @@
     "cookies.bannerText": "Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.",
     "cookies.accept": "Aceitar",
     "cookies.reject": "Rejeitar",
-    "mma.projetosTitle": "Projetos realizados",
-    "mma.projetosLead":
-      "Exemplos reais de obras em metacrilato (MMA) do nosso portfólio. Clique na imagem para ampliar.",
     "mma.projetosVerPortfolio": "Ver portfólio completo →"
   },
   en: {
@@ -128,9 +125,6 @@
     "cookies.bannerText": "We use essential cookies and, with your consent, analytics cookies to improve the website.",
     "cookies.accept": "Accept",
     "cookies.reject": "Reject",
-    "mma.projetosTitle": "Completed projects",
-    "mma.projetosLead":
-      "Real-world methacrylate (MMA) projects from our portfolio. Click the image to enlarge.",
     "mma.projetosVerPortfolio": "View full portfolio →"
   }
 };

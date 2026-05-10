@@ -613,23 +613,7 @@ p {
   color: var(--red);
 }
 
-/* Carrossel Projetos realizados — página metacrilato */
-.mma-projetos__heading {
-  margin: 0 0 0.65rem;
-  font-size: clamp(1.2rem, 2vw + 0.9rem, 1.55rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  color: var(--fg);
-}
-
-.mma-projetos__lead {
-  margin: 0 0 1.5rem;
-  max-width: 40rem;
-  color: var(--muted-bright);
-  line-height: 1.6;
-  font-size: 0.98rem;
-}
-
+/* Carrossel — página metacrilato */
 .mma-projetos {
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
