@@ -326,42 +326,75 @@ function initMmaProjetosCarousel() {
     .then((data) => {
       const items = data.projects || [];
       if (!items.length) return;
-      const slides = [];
-      for (let i = 0; i < items.length; i += 2) {
-        slides.push(items.slice(i, i + 2));
-      }
-      maxIdx = Math.max(0, slides.length - 1);
+      const viewport = carousel.querySelector(".mma-projetos__viewport");
+      maxIdx = Math.max(0, items.length - 1);
       track.innerHTML = "";
-      slides.forEach((pair) => {
+      items.forEach((p) => {
         const slide = document.createElement("div");
         slide.className = "mma-projetos__slide";
-        pair.forEach((p) => slide.appendChild(createCard(p)));
-        if (pair.length === 1) {
-          const spacer = document.createElement("div");
-          spacer.className = "mma-projetos__spacer";
-          spacer.setAttribute("aria-hidden", "true");
-          slide.appendChild(spacer);
-        }
+        slide.appendChild(createCard(p));
         track.appendChild(slide);
       });
 
-      function update() {
-        track.style.transform = `translate3d(-${slideIdx * 100}%, 0, 0)`;
+      function slidesPerView() {
+        return window.matchMedia("(max-width: 640px)").matches ? 1 : 2;
+      }
+
+      function getTrackGapPx() {
+        const g = getComputedStyle(track).gap || "14px";
+        const m = String(g).match(/([\d.]+)px/);
+        return m ? parseFloat(m[1]) : 14;
+      }
+
+      function applyLayout() {
+        if (!viewport) return;
+        const gap = getTrackGapPx();
+        const vw = viewport.clientWidth;
+        const spv = slidesPerView();
+        const slideW = spv === 1 ? vw : (vw - gap) / 2;
+        track.querySelectorAll(".mma-projetos__slide").forEach((el) => {
+          el.style.flex = `0 0 ${slideW}px`;
+        });
+        const step = slideW + gap;
+        track.style.transform = `translate3d(-${slideIdx * step}px, 0, 0)`;
+      }
+
+      if (viewport && typeof ResizeObserver !== "undefined") {
+        const ro = new ResizeObserver(() => applyLayout());
+        ro.observe(viewport);
+      } else {
+        let t;
+        window.addEventListener("resize", () => {
+          clearTimeout(t);
+          t = setTimeout(applyLayout, 100);
+        });
+      }
+
+      const mqlMobile = window.matchMedia("(max-width: 640px)");
+      const onBpChange = () => {
+        slideIdx = Math.min(slideIdx, maxIdx);
+        applyLayout();
+      };
+      if (typeof mqlMobile.addEventListener === "function") {
+        mqlMobile.addEventListener("change", onBpChange);
+      } else if (typeof mqlMobile.addListener === "function") {
+        mqlMobile.addListener(onBpChange);
       }
 
       if (prev) {
         prev.addEventListener("click", () => {
           slideIdx = slideIdx <= 0 ? maxIdx : slideIdx - 1;
-          update();
+          applyLayout();
         });
       }
       if (next) {
         next.addEventListener("click", () => {
           slideIdx = slideIdx >= maxIdx ? 0 : slideIdx + 1;
-          update();
+          applyLayout();
         });
       }
-      update();
+
+      requestAnimationFrame(() => requestAnimationFrame(applyLayout));
     })
     .catch(() => {
       track.innerHTML =
