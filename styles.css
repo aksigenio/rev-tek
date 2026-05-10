@@ -598,22 +598,29 @@ p {
   color: #e8d5bc;
 }
 
-/* Ícones técnicos REV-TEK (sprite exportado) — 22px, alinhamento com texto */
-.feat-icon {
+/* Ícones técnicos REV-TEK — PNG @256px+ com contain; contraste em fundo escuro */
+.feat-icon,
+.feature-icon,
+.system-icon,
+.benefit-icon {
   display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
   flex-shrink: 0;
+  box-sizing: border-box;
   background: transparent center / contain no-repeat;
   vertical-align: middle;
-  transition: opacity 0.2s ease, filter 0.2s ease;
+  opacity: 1;
+  transition: filter 0.2s ease;
+  filter: drop-shadow(0 0 2px rgba(255, 77, 77, 0.38)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.07));
 }
 
 .feat-icon-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
   margin-bottom: 0.35rem;
 }
 
@@ -633,12 +640,13 @@ p {
 .ficha-mma-list--features li {
   display: flex;
   align-items: flex-start;
-  gap: 0.65rem;
+  gap: 14px;
   margin-bottom: 0.65rem;
 }
 
 .ficha-mma-list--features .feat-icon {
-  margin-top: 0.12em;
+  margin-top: 0.06em;
+  align-self: flex-start;
 }
 
 .ficha-mma-list--features .ficha-mma-list__text {
@@ -650,8 +658,19 @@ p {
   .feat-icon--interactive:hover,
   .ficha-mma-list--features li:hover .feat-icon,
   .epoxi-ficha__vantagem:hover .feat-icon-row .feat-icon {
-    opacity: 0.9;
-    filter: brightness(1.12);
+    filter: drop-shadow(0 0 3px rgba(255, 77, 77, 0.48)) drop-shadow(0 0 12px rgba(255, 255, 255, 0.1))
+      brightness(1.09) contrast(1.05);
+  }
+}
+
+@media (max-width: 639px) {
+  .feat-icon,
+  .feature-icon,
+  .system-icon,
+  .benefit-icon {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
   }
 }
 
