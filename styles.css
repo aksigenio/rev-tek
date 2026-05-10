@@ -598,6 +598,150 @@ p {
   color: #e8d5bc;
 }
 
+/* Ícones técnicos REV-TEK (sprite exportado) — 22px, alinhamento com texto */
+.feat-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  background: transparent center / contain no-repeat;
+  vertical-align: middle;
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.feat-icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 0.35rem;
+}
+
+.feat-icon-row:last-child {
+  margin-bottom: 0;
+}
+
+.feat-icon-row + .epoxi-ficha__vantagem-title {
+  margin-top: 0;
+}
+
+.ficha-mma-list--features {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ficha-mma-list--features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin-bottom: 0.65rem;
+}
+
+.ficha-mma-list--features .feat-icon {
+  margin-top: 0.12em;
+}
+
+.ficha-mma-list--features .ficha-mma-list__text {
+  flex: 1;
+  min-width: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .feat-icon--interactive:hover,
+  .ficha-mma-list--features li:hover .feat-icon,
+  .epoxi-ficha__vantagem:hover .feat-icon-row .feat-icon {
+    opacity: 0.9;
+    filter: brightness(1.12);
+  }
+}
+
+.feat-icon--resistencia-quimica {
+  background-image: url("./assets/icons/icon-resistencia-quimica.png");
+}
+.feat-icon--resistencia-mecanica {
+  background-image: url("./assets/icons/icon-resistencia-mecanica.png");
+}
+.feat-icon--facil-limpeza {
+  background-image: url("./assets/icons/icon-facil-limpeza.png");
+}
+.feat-icon--durabilidade {
+  background-image: url("./assets/icons/icon-durabilidade.png");
+}
+.feat-icon--trafego-intenso {
+  background-image: url("./assets/icons/icon-trafego-intenso.png");
+}
+.feat-icon--acabamento-liso {
+  background-image: url("./assets/icons/icon-acabamento-liso.png");
+}
+.feat-icon--antiderrapante {
+  background-image: url("./assets/icons/icon-antiderrapante.png");
+}
+.feat-icon--impermeavel {
+  background-image: url("./assets/icons/icon-impermeavel.png");
+}
+.feat-icon--aplicacao-rapida {
+  background-image: url("./assets/icons/icon-aplicacao-rapida.png");
+}
+.feat-icon--cura-rapida {
+  background-image: url("./assets/icons/icon-cura-rapida.png");
+}
+.feat-icon--baixas-temperaturas {
+  background-image: url("./assets/icons/icon-baixas-temperaturas.png");
+}
+.feat-icon--uv {
+  background-image: url("./assets/icons/icon-uv.png");
+}
+.feat-icon--resistencia-termica {
+  background-image: url("./assets/icons/icon-resistencia-termica.png");
+}
+.feat-icon--impacto {
+  background-image: url("./assets/icons/icon-impacto.png");
+}
+.feat-icon--absorcao-vibracoes {
+  background-image: url("./assets/icons/icon-absorcao-vibracoes.png");
+}
+.feat-icon--elasticidade {
+  background-image: url("./assets/icons/icon-elasticidade.png");
+}
+.feat-icon--conforto {
+  background-image: url("./assets/icons/icon-conforto.png");
+}
+.feat-icon--industria-alimentar {
+  background-image: url("./assets/icons/icon-industria-alimentar.png");
+}
+.feat-icon--manutencao {
+  background-image: url("./assets/icons/icon-manutencao.png");
+}
+.feat-icon--armazens-logistica {
+  background-image: url("./assets/icons/icon-armazens-logistica.png");
+}
+.feat-icon--uso-industrial {
+  background-image: url("./assets/icons/icon-uso-industrial.png");
+}
+.feat-icon--fogo {
+  background-image: url("./assets/icons/icon-fogo.svg");
+}
+
+/* Aliases (mesmo estilo visual; ícone equivalente no sprite) */
+.feat-icon--protecao-sol {
+  background-image: url("./assets/icons/icon-uv.png");
+}
+.feat-icon--abrasao {
+  background-image: url("./assets/icons/icon-durabilidade.png");
+}
+.feat-icon--multisuperficie {
+  background-image: url("./assets/icons/icon-acabamento-liso.png");
+}
+.feat-icon--aderencia {
+  background-image: url("./assets/icons/icon-elasticidade.png");
+}
+.feat-icon--exterior {
+  background-image: url("./assets/icons/icon-uv.png");
+}
+.feat-icon--personalizacao {
+  background-image: url("./assets/icons/icon-acabamento-liso.png");
+}
+
 .ficha-ideal-para {
   margin-top: clamp(2rem, 4vw, 2.75rem);
   padding-top: clamp(1.5rem, 3vw, 2rem);
