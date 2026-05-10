@@ -5,7 +5,9 @@ Add-Type -AssemblyName System.Drawing
 $root = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $srcPath = Join-Path $root 'assets\icons\sprite-source.png'
 $outDir = Join-Path $root 'assets\icons'
-$iconFrac = 0.54
+# Incluir quase toda a área do ícone; a legenda costuma ocupar só ~15–22% na base da célula.
+# Valores baixos (ex. 0.54) cortavam o desenho.
+$iconFrac = 0.9
 $slugs = @(
   'resistencia-quimica','resistencia-mecanica','facil-limpeza','durabilidade','trafego-intenso',
   'acabamento-liso','antiderrapante','impermeavel','aplicacao-rapida','cura-rapida',
