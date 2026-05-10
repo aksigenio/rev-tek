@@ -42,7 +42,9 @@
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
     "projects.title": "Portfólio",
-    "projects.note": "Alguns exemplos de trabalhos executados em sistema de metacrilato.",
+    "projects.note":
+      "Alguns exemplos de piso em sistema de metacrilato (MMA), com projeto em Lisboa e outros trabalhos em Portugal.",
+    "projects.c4": "Piso em MMA / metacrilato - Lisboa",
     "projects.c1": "Sistema em metacrilato - zona técnica",
     "projects.c2": "Sistema em metacrilato - área clínica",
     "projects.c3": "Sistema em metacrilato - instalação sanitária",
@@ -102,7 +104,9 @@
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
     "projects.title": "Portfolio",
-    "projects.note": "Some examples of completed works using methacrylate systems.",
+    "projects.note":
+      "Examples of MMA / methacrylate flooring, including a project in Lisbon and other work across Portugal.",
+    "projects.c4": "MMA / methacrylate floor - Lisbon",
     "projects.c1": "Methacrylate system - technical area",
     "projects.c2": "Methacrylate system - clinical area",
     "projects.c3": "Methacrylate system - sanitary installation",
