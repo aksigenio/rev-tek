@@ -287,9 +287,9 @@ if (burger && menu) {
   });
 }
 
-function initMmaProjetosCarousel() {
-  const carousel = document.getElementById("mmaProjetosCarousel");
-  const track = document.getElementById("mmaProjetosTrack");
+function initPortfolioImageCarousel(carouselId, trackId, jsonFile) {
+  const carousel = document.getElementById(carouselId);
+  const track = document.getElementById(trackId);
   if (!carousel || !track) return;
 
   const prev = carousel.querySelector(".mma-projetos__arrow--prev");
@@ -318,7 +318,7 @@ function initMmaProjetosCarousel() {
     return tile;
   }
 
-  fetch(new URL("assets/portfolio-metacrilato.json", window.location.href).href)
+  fetch(new URL(`assets/${jsonFile}`, window.location.href).href)
     .then((r) => {
       if (!r.ok) throw new Error("fetch");
       return r.json();
@@ -402,5 +402,6 @@ function initMmaProjetosCarousel() {
     });
 }
 
-initMmaProjetosCarousel();
+initPortfolioImageCarousel("mmaProjetosCarousel", "mmaProjetosTrack", "portfolio-metacrilato.json");
+initPortfolioImageCarousel("epoxiProjetosCarousel", "epoxiProjetosTrack", "portfolio-epoxi.json");
 
