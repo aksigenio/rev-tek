@@ -544,18 +544,59 @@ p {
   text-decoration: underline;
 }
 
-.sol-card-mma .sol-card-visual {
-  margin: -4px -4px 14px;
-  border-radius: 12px;
+/* Cartões com diagrama circular (Metacrilato e Epóxi — mesma estrutura e medidas) */
+.sol-card.sol-card-premium {
+  padding: 0 0 18px;
   overflow: hidden;
-  background: #f2f2f2;
-  border: 1px solid #2b2b2b;
 }
 
-.sol-card-mma .sol-card-visual img {
+.sol-card.sol-card-premium .sol-card-visual--cream {
+  margin: 0;
+  padding: clamp(1.35rem, 3.5vw, 1.85rem) 1.25rem;
+  background: linear-gradient(175deg, #faf6ef 0%, #efe8dd 55%, #e8e0d4 100%);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sol-card-ring {
+  width: min(248px, 78vw);
+  max-width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid rgba(30, 30, 30, 0.14);
+  box-shadow:
+    0 8px 28px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+  background: #f0ebe4;
+}
+
+.sol-card-ring img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
   display: block;
+}
+
+.sol-card.sol-card-premium h3 {
+  margin: 0;
+  padding: 1.05rem 18px 0;
+}
+
+.sol-card.sol-card-premium p {
+  margin: 0;
+  padding: 0.65rem 18px 0;
+  flex: 1;
+}
+
+.sol-card.sol-card-premium .sol-card-cta {
+  margin: 0;
+  padding: 0.85rem 18px 0;
+  display: inline-block;
 }
 
 .systems-hub-link {
