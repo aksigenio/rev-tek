@@ -507,6 +507,17 @@ p {
   margin-top: 10px;
 }
 
+.solucoes-row--pair {
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: clamp(1rem, 3vw, 1.35rem);
+}
+
+@media (max-width: 720px) {
+  .solucoes-row--pair {
+    grid-template-columns: 1fr;
+  }
+}
+
 .sol-card {
   display: flex;
   flex-direction: column;
@@ -546,7 +557,9 @@ p {
 
 .sol-card-mma .sol-card-visual,
 .sol-card-epoxi .sol-card-visual,
-.sol-card-pu .sol-card-visual {
+.sol-card-pu .sol-card-visual,
+.sol-card-decor .sol-card-visual,
+.sol-card-colchao .sol-card-visual {
   margin: -4px -4px 14px;
   border-radius: 12px;
   overflow: hidden;
@@ -556,10 +569,31 @@ p {
 
 .sol-card-mma .sol-card-visual img,
 .sol-card-epoxi .sol-card-visual img,
-.sol-card-pu .sol-card-visual img {
+.sol-card-pu .sol-card-visual img,
+.sol-card-decor .sol-card-visual img,
+.sol-card-colchao .sol-card-visual img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.epoxi-decor-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-top: 0.5rem;
+}
+
+.epoxi-decor-gallery figure {
+  margin: 0;
+}
+
+.epoxi-decor-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  border: 1px solid var(--line-bright);
 }
 
 /* Ficha metacrilato - listagens em duas colunas */
