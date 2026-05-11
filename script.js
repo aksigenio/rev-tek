@@ -110,7 +110,7 @@
     "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
     "quote.send": "Enviar pedido",
-    "quote.note": "Após o envio, poderá ser necessário confirmar o email no primeiro pedido.",
+    "quote.note": "Responderemos ao seu pedido o mais rapidamente possível.",
     "quote.emailInvalid":
       "Introduza um endereço de email válido (ex.: nome@empresa.pt). Verifique se não falta o @ ou o domínio.",
     "visit.title": "Agendar visita técnica",
@@ -237,7 +237,7 @@
     "quote.text": "Complete the form or contact us directly by email or WhatsApp for a tailored proposal.",
     "quote.upload": "Attach images/files",
     "quote.send": "Send request",
-    "quote.note": "After submitting, you may need to confirm your email on the first request.",
+    "quote.note": "We'll respond to your request as soon as possible.",
     "quote.emailInvalid":
       "Please enter a valid email address (e.g. name@company.com). Check that @ and the domain are correct.",
     "visit.title": "Book a technical visit",
