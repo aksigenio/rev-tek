@@ -1536,6 +1536,18 @@ canvas {
   font-size: 0.9rem;
 }
 
+.form-field-error {
+  margin: -4px 0 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #f87171;
+}
+
+input[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+  border-color: #c24141;
+}
+
 input,
 textarea {
   width: 100%;

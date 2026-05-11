@@ -111,6 +111,8 @@
     "quote.upload": "Anexar imagens/ficheiros",
     "quote.send": "Enviar pedido",
     "quote.note": "Após o envio, poderá ser necessário confirmar o email no primeiro pedido.",
+    "quote.emailInvalid":
+      "Introduza um endereço de email válido (ex.: nome@empresa.pt). Verifique se não falta o @ ou o domínio.",
     "visit.title": "Agendar visita técnica",
     "visit.text": "Para avaliação no local, contacte-nos por email ou WhatsApp. Respondemos com rapidez e proposta técnica.",
     "contacts.title": "Contactos",
@@ -236,6 +238,8 @@
     "quote.upload": "Attach images/files",
     "quote.send": "Send request",
     "quote.note": "After submitting, you may need to confirm your email on the first request.",
+    "quote.emailInvalid":
+      "Please enter a valid email address (e.g. name@company.com). Check that @ and the domain are correct.",
     "visit.title": "Book a technical visit",
     "visit.text": "For on-site assessment, contact us by email or WhatsApp. We respond quickly with a technical proposal.",
     "contacts.title": "Contact",
@@ -311,6 +315,33 @@ Telefone/WhatsApp: +351 913 151 960
 Área de atuação: Portugal.`
 };
 
+function getCurrentLang() {
+  const active = document.querySelector(".lang-btn.active");
+  return active?.dataset.lang === "en" ? "en" : "pt";
+}
+
+/** Formato plausível de email (RFC simplificado). Não verifica se a caixa existe — isso exige servidor/API. */
+function validateQuoteEmail(input) {
+  const raw = input.value.trim();
+  input.value = raw;
+  if (!raw || raw.length > 254) return false;
+  const parts = raw.split("@");
+  if (parts.length !== 2) return false;
+  const [local, domain] = parts;
+  if (!local || local.length > 64 || !domain) return false;
+  if (!/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+$/.test(local)) return false;
+  if (local.startsWith(".") || local.endsWith(".") || local.includes("..")) return false;
+  if (!domain.includes(".") || domain.length > 253) return false;
+  if (domain.startsWith(".") || domain.endsWith(".") || domain.includes("..")) return false;
+  const labels = domain.toLowerCase().split(".");
+  if (labels.length < 2) return false;
+  for (const label of labels) {
+    if (!label || label.length > 63) return false;
+    if (!/^[a-z0-9]([a-z0-9-]*[a-z0-9])?$/.test(label)) return false;
+  }
+  return input.checkValidity();
+}
+
 function setLanguage(lang) {
   document.documentElement.lang = lang === "pt" ? "pt-PT" : lang;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
@@ -320,6 +351,10 @@ function setLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
+  const emailErr = document.getElementById("quoteEmailError");
+  if (emailErr && !emailErr.hidden) {
+    emailErr.textContent = i18n[lang]["quote.emailInvalid"];
+  }
 }
 
 document.querySelectorAll(".lang-btn").forEach((btn) =>
@@ -522,4 +557,43 @@ function initPortfolioImageCarousel(carouselId, trackId, jsonFile) {
 
 initPortfolioImageCarousel("mmaProjetosCarousel", "mmaProjetosTrack", "portfolio-metacrilato.json");
 initPortfolioImageCarousel("epoxiProjetosCarousel", "epoxiProjetosTrack", "portfolio-epoxi.json");
+
+function initQuoteFormEmailValidation() {
+  const form = document.querySelector("#orcamento form.form");
+  const emailInput = document.getElementById("quoteEmail");
+  const emailError = document.getElementById("quoteEmailError");
+  if (!form || !emailInput || !emailError) return;
+
+  function hideEmailError() {
+    emailError.hidden = true;
+    emailError.textContent = "";
+    emailInput.removeAttribute("aria-invalid");
+  }
+
+  function showEmailError() {
+    const lang = getCurrentLang();
+    emailError.textContent = i18n[lang]["quote.emailInvalid"];
+    emailError.hidden = false;
+    emailInput.setAttribute("aria-invalid", "true");
+  }
+
+  emailInput.addEventListener("input", hideEmailError);
+  emailInput.addEventListener("blur", () => {
+    if (!emailInput.value.trim()) {
+      hideEmailError();
+      return;
+    }
+    if (!validateQuoteEmail(emailInput)) showEmailError();
+  });
+
+  form.addEventListener("submit", (e) => {
+    if (!validateQuoteEmail(emailInput)) {
+      e.preventDefault();
+      showEmailError();
+      emailInput.focus();
+    }
+  });
+}
+
+initQuoteFormEmailValidation();
 

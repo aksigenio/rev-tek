@@ -480,7 +480,18 @@
             <input type="hidden" name="_captcha" value="false" />
             <input type="hidden" name="_template" value="table" />
             <input type="text" name="nome" placeholder="Nome" required />
-            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="email"
+              name="email"
+              id="quoteEmail"
+              placeholder="Email"
+              required
+              maxlength="254"
+              autocomplete="email"
+              inputmode="email"
+              aria-describedby="quoteEmailError"
+            />
+            <p class="form-field-error" id="quoteEmailError" hidden role="alert"></p>
             <textarea name="mensagem" placeholder="Descreva o seu projeto" rows="5" required></textarea>
             <label class="upload-label" data-i18n="quote.upload">Anexar imagens/ficheiros</label>
             <input type="file" name="anexo" multiple />
