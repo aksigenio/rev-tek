@@ -43,6 +43,17 @@
     "trabalhamos.c": "Arquitetos",
     "trabalhamos.d": "Gestores de projeto",
     "trabalhamos.e": "Clientes particulares",
+    "prep.title": "A preparação correta garante a durabilidade do pavimento",
+    "prep.lead":
+      "A durabilidade de um pavimento industrial começa na preparação do suporte. Por isso, damos especial atenção ao tratamento da base antes da aplicação do sistema.",
+    "prep.item1": "Abertura e tratamento de fissuras",
+    "prep.item2": "Reparação de juntas",
+    "prep.item3": "Lixagem e fresagem mecânica",
+    "prep.item4": "Aspiração industrial",
+    "prep.item5": "Regularização do suporte",
+    "prep.item6": "Execução de rodapé sanitário",
+    "prep.closing":
+      "A maioria dos problemas em pavimentos industriais resulta de uma preparação inadequada da base. Um suporte corretamente tratado garante melhor aderência, maior durabilidade e um acabamento de elevada qualidade.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
@@ -110,6 +121,17 @@
     "trabalhamos.c": "Architects",
     "trabalhamos.d": "Project managers",
     "trabalhamos.e": "Private clients",
+    "prep.title": "Proper preparation ensures floor durability",
+    "prep.lead":
+      "Industrial floor durability starts with substrate preparation. We therefore pay special attention to base treatment before system application.",
+    "prep.item1": "Crack opening and treatment",
+    "prep.item2": "Joint repair",
+    "prep.item3": "Mechanical grinding and milling",
+    "prep.item4": "Industrial vacuuming",
+    "prep.item5": "Substrate levelling",
+    "prep.item6": "Sanitary skirting execution",
+    "prep.closing":
+      "Most industrial flooring issues stem from inadequate base preparation. A correctly treated substrate ensures better adhesion, longer life and a high-quality finish.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
