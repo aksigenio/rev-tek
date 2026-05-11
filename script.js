@@ -101,11 +101,7 @@
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
     "projects.title": "Portfólio",
-    "projects.note":
-      "Alguns exemplos de piso em sistema de metacrilato (MMA), com projeto em Lisboa e outros trabalhos em Portugal.",
-    "projects.c4": "Piso em MMA / metacrilato - Lisboa",
-    "projects.c1": "Sistema em metacrilato - zona técnica",
-    "projects.c3": "Sistema em metacrilato - instalação sanitária",
+    "projects.portfolioCta": "Ver portfólio completo →",
     "quote.title": "Pedir orçamento",
     "quote.text": "Preencha o formulário ou contacte-nos diretamente por email ou WhatsApp para obter uma proposta personalizada.",
     "quote.upload": "Anexar imagens/ficheiros",
@@ -224,11 +220,7 @@
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
     "projects.title": "Portfolio",
-    "projects.note":
-      "Examples of MMA / methacrylate flooring, including a project in Lisbon and other work across Portugal.",
-    "projects.c4": "MMA / methacrylate floor - Lisbon",
-    "projects.c1": "Methacrylate system - technical area",
-    "projects.c3": "Methacrylate system - sanitary installation",
+    "projects.portfolioCta": "View full portfolio →",
     "viz.title": "Floor visualizer (advanced demo)",
     "viz.text": "Upload an image, paint the floor area with the brush and preview a realistic color blend result.",
     "viz.brush": "Brush size",
@@ -555,6 +547,70 @@ function initPortfolioImageCarousel(carouselId, trackId, jsonFile) {
     });
 }
 
+/** Início (#projetos): todas as imagens dos JSONs, em sequência, fade automático, sem setas nem legendas. */
+function initHomePortfolioAutoplay() {
+  const viewport = document.getElementById("homePortfolioAutoplayViewport");
+  if (!viewport) return;
+
+  const files = ["portfolio-metacrilato.json", "portfolio-epoxi.json", "portfolio-tapete.json"];
+  const base = new URL("assets/", window.location.href).href;
+
+  Promise.all(
+    files.map((f) =>
+      fetch(`${base}${f}`)
+        .then((r) => (r.ok ? r.json() : { projects: [] }))
+        .catch(() => ({ projects: [] }))
+    )
+  ).then((parts) => {
+    const projects = parts.flatMap((d) => d.projects || []);
+    if (!projects.length) {
+      viewport.innerHTML =
+        "<p class=\"mma-projetos__error\" style=\"padding:1.5rem;text-align:center;\">Não foi possível carregar imagens.</p>";
+      return;
+    }
+
+    projects.forEach((p, i) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = `home-portfolio-autoplay__slide project-open${i === 0 ? " is-active" : ""}`;
+      btn.dataset.full = p.full || p.src;
+      btn.dataset.alt = p.alt || "";
+      btn.setAttribute("aria-label", "Abrir imagem em tamanho completo");
+      btn.setAttribute("aria-hidden", i === 0 ? "false" : "true");
+
+      const img = document.createElement("img");
+      img.src = p.src;
+      img.alt = p.alt || "";
+      img.loading = i === 0 ? "eager" : "lazy";
+      img.decoding = "async";
+      if (p.width) img.width = p.width;
+      if (p.height) img.height = p.height;
+
+      btn.appendChild(img);
+      viewport.appendChild(btn);
+    });
+
+    const slides = () => [...viewport.querySelectorAll(".home-portfolio-autoplay__slide")];
+    let idx = 0;
+    const n = projects.length;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function go(to) {
+      idx = ((to % n) + n) % n;
+      slides().forEach((el, i) => {
+        const on = i === idx;
+        el.classList.toggle("is-active", on);
+        el.setAttribute("aria-hidden", on ? "false" : "true");
+      });
+    }
+
+    if (!reduceMotion && n > 1) {
+      setInterval(() => go(idx + 1), 5000);
+    }
+  });
+}
+
+initHomePortfolioAutoplay();
 initPortfolioImageCarousel("mmaProjetosCarousel", "mmaProjetosTrack", "portfolio-metacrilato.json");
 initPortfolioImageCarousel("epoxiProjetosCarousel", "epoxiProjetosTrack", "portfolio-epoxi.json");
 initPortfolioImageCarousel("tapeteProjetosCarousel", "tapeteProjetosTrack", "portfolio-tapete.json");

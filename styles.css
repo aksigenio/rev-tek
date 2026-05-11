@@ -1464,6 +1464,59 @@ p {
   margin-bottom: 8px;
 }
 
+/* Início - portfólio: autoplay em fade, sem setas nem legendas */
+.home-portfolio-autoplay {
+  margin-top: 12px;
+}
+
+.home-portfolio-autoplay__viewport {
+  position: relative;
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+  max-height: min(72vh, 640px);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #0f0f0f;
+}
+
+.home-portfolio-autoplay__slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+  opacity: 0;
+  transition: opacity 0.75s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.home-portfolio-autoplay__slide.is-active {
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+.home-portfolio-autoplay__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-portfolio-autoplay__slide {
+    transition: none;
+  }
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));

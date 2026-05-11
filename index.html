@@ -323,59 +323,21 @@
         </div>
       </section>
 
-      <section class="section" id="projetos">
+      <section class="section" id="projetos" aria-labelledby="projetos-heading">
         <div class="container">
-          <h2 data-i18n="projects.title">Portfólio</h2>
-          <p data-i18n="projects.note">
-            Alguns exemplos de trabalhos executados em sistema de metacrilato.
-          </p>
-          <div class="gallery">
-            <figure class="project-item">
-              <button
-                class="project-open"
-                type="button"
-                data-full="./assets/portfolio-mma-lisboa.png"
-                data-alt="Piso em metacrilato MMA em Lisboa - revestimento contínuo com rodapé em curva"
-                aria-label="Abrir imagem em tamanho completo"
-              >
-                <img
-                  src="./assets/portfolio-mma-lisboa.png"
-                  alt="Piso em resina de metacrilato (MMA) em Lisboa, Portugal - acabamento texturado contínuo, Rev-Tek"
-                  width="768"
-                  height="1024"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </button>
-              <figcaption data-i18n="projects.c4">Piso em MMA / metacrilato - Lisboa</figcaption>
-            </figure>
-            <figure class="project-item">
-              <button
-                class="project-open"
-                type="button"
-                data-full="./assets/metacrilato-1.png"
-                data-alt="Pavimento em metacrilato - zona técnica"
-                aria-label="Abrir imagem em tamanho completo"
-              >
-                <img src="./assets/metacrilato-1.png" alt="Pavimento em metacrilato aplicado em zona técnica industrial, Portugal" />
-              </button>
-              <figcaption data-i18n="projects.c1">Sistema em metacrilato - zona técnica</figcaption>
-            </figure>
-            <figure class="project-item">
-              <button
-                class="project-open"
-                type="button"
-                data-full="./assets/metacrilato-3.png"
-                data-alt="Pavimento em metacrilato - instalação sanitária"
-                aria-label="Abrir imagem em tamanho completo"
-              >
-                <img src="./assets/metacrilato-3.png" alt="Pavimento em metacrilato aplicado em instalação sanitária, Portugal" />
-              </button>
-              <figcaption data-i18n="projects.c3">Sistema em metacrilato - instalação sanitária</figcaption>
-            </figure>
+          <h2 id="projetos-heading" data-i18n="projects.title">Portfólio</h2>
+          <div
+            class="home-portfolio-autoplay"
+            id="homePortfolioAutoplay"
+            aria-roledescription="carousel"
+            aria-label="Destaques do portfólio"
+          >
+            <div class="home-portfolio-autoplay__viewport" id="homePortfolioAutoplayViewport"></div>
           </div>
           <div style="margin-top: 28px; text-align: center;">
-            <a href="./portfolio.html" class="btn btn-outline">Ver portfólio completo →</a>
+            <a href="./portfolio.html" class="btn btn-outline" data-i18n="projects.portfolioCta"
+              >Ver portfólio completo →</a
+            >
           </div>
         </div>
       </section>
