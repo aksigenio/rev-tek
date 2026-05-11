@@ -45,7 +45,7 @@
     "trabalhamos.e": "Clientes particulares",
     "prep.title": "A preparação correta garante a durabilidade do pavimento",
     "prep.lead":
-      "A durabilidade de um pavimento industrial começa na preparação do suporte. Por isso, damos especial atenção ao tratamento da base antes da aplicação do sistema.",
+      "A durabilidade de um pavimento industrial começa na preparação da base. Por isso, damos especial atenção ao tratamento da base antes da aplicação do sistema.",
     "prep.item1": "Abertura e tratamento de fissuras",
     "prep.item2": "Reparação de juntas",
     "prep.item3": "Lixagem e fresagem mecânica",
