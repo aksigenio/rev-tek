@@ -500,6 +500,54 @@ p {
   background: #0f0f0f;
 }
 
+.trabalhamos-mini {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: clamp(1.1rem, 2.5vw, 1.35rem) clamp(1.15rem, 2.5vw, 1.5rem);
+  border-radius: 14px;
+  border: 1px solid var(--line-bright);
+  background: linear-gradient(155deg, rgba(18, 18, 22, 0.75) 0%, rgba(10, 10, 12, 0.96) 100%);
+}
+
+.trabalhamos-mini__title {
+  margin: 0 0 0.9rem;
+  font-size: clamp(0.82rem, 0.5vw + 0.74rem, 0.9rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+
+.trabalhamos-mini__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.35rem;
+}
+
+.trabalhamos-mini__list li {
+  margin: 0;
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--muted-bright);
+  padding-left: 0.85rem;
+  position: relative;
+}
+
+.trabalhamos-mini__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 1px;
+  background: var(--red);
+  opacity: 0.9;
+}
+
 .solucoes-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
