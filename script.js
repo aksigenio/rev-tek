@@ -562,6 +562,7 @@ function initQuoteFormEmailValidation() {
   const form = document.querySelector("#orcamento form.form");
   const emailInput = document.getElementById("quoteEmail");
   const emailError = document.getElementById("quoteEmailError");
+  const honeyInput = form?.querySelector('input[name="_honey"]');
   if (!form || !emailInput || !emailError) return;
 
   function hideEmailError() {
@@ -587,6 +588,10 @@ function initQuoteFormEmailValidation() {
   });
 
   form.addEventListener("submit", (e) => {
+    if (honeyInput && honeyInput.value.trim() !== "") {
+      e.preventDefault();
+      return;
+    }
     if (!validateQuoteEmail(emailInput)) {
       e.preventDefault();
       showEmailError();

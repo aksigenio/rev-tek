@@ -477,8 +477,20 @@
             enctype="multipart/form-data"
           >
             <input type="hidden" name="_subject" value="Novo pedido de orçamento - Rev-Tek" />
-            <input type="hidden" name="_captcha" value="false" />
+            <!-- FormSubmit aplica reCAPTCHA por defeito. Se a página de confirmação ficar lenta, pode voltar a desativar:
+                 <input type="hidden" name="_captcha" value="false" /> -->
             <input type="hidden" name="_template" value="table" />
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="quoteHoney">Website</label>
+              <input
+                type="text"
+                name="_honey"
+                id="quoteHoney"
+                tabindex="-1"
+                autocomplete="off"
+                value=""
+              />
+            </div>
             <input type="text" name="nome" placeholder="Nome" required />
             <input
               type="email"

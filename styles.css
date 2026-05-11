@@ -1536,6 +1536,19 @@ canvas {
   font-size: 0.9rem;
 }
 
+/* Honeypot: FormSubmit ignora envios se _honey tiver valor; não usar display:none puro (alguns bots ignoram). */
+.form-honeypot {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 .form-field-error {
   margin: -4px 0 0;
   font-size: 0.85rem;
