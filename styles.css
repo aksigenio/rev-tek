@@ -619,6 +619,16 @@ p {
   border-top: 1px solid var(--line);
 }
 
+.faq-section--inline {
+  margin-top: clamp(1.75rem, 4vw, 2.75rem);
+  padding-top: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.faq-section--mini .faq-section__title {
+  font-size: clamp(0.98rem, 1vw + 0.82rem, 1.15rem);
+  margin-bottom: 0.85rem;
+}
+
 .faq-section__title {
   margin: 0 0 1rem;
   font-size: clamp(1.05rem, 1.1vw + 0.88rem, 1.32rem);

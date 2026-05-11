@@ -26,12 +26,48 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Pavimento em metacrilato (MMA)",
-        "url": "https://www.rev-tek.pt/metacrilato",
-        "description": "Características técnicas do pavimento em metacrilato (MMA): resistência, higiene e áreas industriais.",
-        "inLanguage": "pt-PT",
-        "isPartOf": { "@type": "WebSite", "name": "Rev-Tek", "url": "https://www.rev-tek.pt/" }
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.rev-tek.pt/metacrilato#pagina",
+            "name": "Pavimento em metacrilato (MMA)",
+            "url": "https://www.rev-tek.pt/metacrilato",
+            "description": "Características técnicas do pavimento em metacrilato (MMA): resistência, higiene e áreas industriais.",
+            "inLanguage": "pt-PT",
+            "isPartOf": { "@type": "WebSite", "name": "Rev-Tek", "url": "https://www.rev-tek.pt/" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.rev-tek.pt/metacrilato#faq",
+            "inLanguage": "pt-PT",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "O MMA tem cheiro?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Durante a aplicação do sistema MMA existe um odor mais intenso característico do metacrilato. No entanto, após a cura completa, o cheiro desaparece rapidamente."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Qual o sistema ideal para câmaras frigoríficas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Para câmaras frigoríficas e zonas sujeitas a temperaturas extremas, os sistemas poliuretano e MMA são normalmente as soluções mais recomendadas. O poliuretano apresenta excelente resistência térmica e flexibilidade, enquanto o MMA permite aplicação e cura rápida mesmo em ambientes frios."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Quanto tempo demora a aplicação?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "O tempo de aplicação depende da área, do estado da base e do sistema escolhido. Em sistemas epóxi e poliuretano, a aplicação e cura podem demorar entre 2 e 5 dias. Já os pavimentos MMA permitem, em muitos casos, voltar à utilização poucas horas após a aplicação, sendo ideais para espaços que não podem parar durante muito tempo."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="./styles.css" />
@@ -137,6 +173,44 @@
                 Revestimentos para zonas sujeitas a elevadas cargas de desgaste e abrasão
               </li>
             </ul>
+          </div>
+
+          <div class="faq-section faq-section--inline" id="faq" aria-labelledby="mma-faq-heading">
+            <h2 id="mma-faq-heading" class="faq-section__title" data-i18n="faq.title">Perguntas frequentes</h2>
+            <div class="faq-list">
+              <details class="faq-item">
+                <summary data-i18n="faq.smell.q">O MMA tem cheiro?</summary>
+                <div class="faq-item__body">
+                  <p data-i18n="faq.smell.a">
+                    Sim. Durante a aplicação do sistema MMA existe um odor mais intenso característico do metacrilato. No
+                    entanto, após a cura completa, o cheiro desaparece rapidamente.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary data-i18n="faq.pu.cold.q">Qual o sistema ideal para câmaras frigoríficas?</summary>
+                <div class="faq-item__body">
+                  <p data-i18n="faq.pu.cold.a">
+                    Para câmaras frigoríficas e zonas sujeitas a temperaturas extremas, os sistemas poliuretano e MMA são
+                    normalmente as soluções mais recomendadas. O poliuretano apresenta excelente resistência térmica e
+                    flexibilidade, enquanto o MMA permite aplicação e cura rápida mesmo em ambientes frios.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary data-i18n="faq.apply.q">Quanto tempo demora a aplicação?</summary>
+                <div class="faq-item__body">
+                  <p data-i18n="faq.apply.a1">
+                    O tempo de aplicação depende da área, do estado da base e do sistema escolhido. Em sistemas epóxi e
+                    poliuretano, a aplicação e cura podem demorar entre 2 e 5 dias.
+                  </p>
+                  <p data-i18n="faq.apply.a2">
+                    Já os pavimentos MMA permitem, em muitos casos, voltar à utilização poucas horas após a aplicação,
+                    sendo ideais para espaços que não podem parar durante muito tempo.
+                  </p>
+                </div>
+              </details>
+            </div>
           </div>
 
           <p style="margin-top: 24px;">

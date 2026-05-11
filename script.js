@@ -81,6 +81,22 @@
     "faq.price.q": "Qual o preço por m² de pavimento epóxi / PU / MMA?",
     "faq.price.a":
       "O preço varia conforme o tipo de sistema, a espessura necessária, o estado da base e a área total da obra. Fatores como preparação da base, reparação de fissuras, acabamento antiderrapante ou execução de rodapé sanitário também influenciam o valor final. Para um orçamento mais preciso, recomendamos uma avaliação técnica do espaço.",
+    "faq.ind.chem.q": "O pavimento pode ser lavado com químicos fortes?",
+    "faq.ind.chem.a":
+      "Sim. Os pavimentos industriais em resina apresentam elevada resistência química e podem ser utilizados em ambientes sujeitos a detergentes industriais, óleos, gorduras e diversos produtos químicos. A escolha do sistema mais adequado depende sempre do tipo de utilização e dos agentes químicos presentes no espaço.",
+    "faq.epoxi.repair.q": "É possível reparar zonas danificadas?",
+    "faq.epoxi.repair.a":
+      "Sim. Em muitos casos é possível reparar zonas localizadas sem necessidade de substituir todo o pavimento. A solução depende do tipo de dano, do estado do revestimento existente e do sistema aplicado. Antes da reparação é realizada uma avaliação técnica da área afetada.",
+    "faq.pu.cold.q": "Qual o sistema ideal para câmaras frigoríficas?",
+    "faq.pu.cold.a":
+      "Para câmaras frigoríficas e zonas sujeitas a temperaturas extremas, os sistemas poliuretano e MMA são normalmente as soluções mais recomendadas. O poliuretano apresenta excelente resistência térmica e flexibilidade, enquanto o MMA permite aplicação e cura rápida mesmo em ambientes frios.",
+    "faq.prepBase.title": "Preparação profissional da base",
+    "faq.prepBase.crack.q": "O pavimento pode ser aplicado sobre superfícies com fissuras?",
+    "faq.prepBase.crack.a":
+      "Antes da aplicação do revestimento, as fissuras e juntas existentes são devidamente abertas, tratadas e reparadas conforme o estado do suporte. A preparação correta da base é essencial para garantir aderência, durabilidade e evitar futuros destacamentos ou fissurações.",
+    "faq.prepBase.skirt.q": "Fazem rodapé sanitário?",
+    "faq.prepBase.skirt.a":
+      "Sim. Executamos rodapé sanitário (meia cana) para garantir uma transição contínua entre o pavimento e a parede, facilitando a limpeza e cumprindo requisitos higiénicos em indústrias alimentares, cozinhas industriais, laboratórios e hospitais.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
@@ -186,6 +202,22 @@
     "faq.price.q": "What is the price per m² for epoxy / PU / MMA flooring?",
     "faq.price.a":
       "Price varies with system type, required thickness, substrate condition and total project area. Base preparation, crack repair, anti-slip finish or sanitary skirting also affect the final figure. For a more accurate quotation we recommend a technical assessment of the space.",
+    "faq.ind.chem.q": "Can the floor be washed with strong chemicals?",
+    "faq.ind.chem.a":
+      "Yes. Industrial resin floors offer high chemical resistance and can be used where industrial detergents, oils, fats and various chemicals are present. The right system always depends on use and the specific chemicals in the space.",
+    "faq.epoxi.repair.q": "Can damaged areas be repaired?",
+    "faq.epoxi.repair.a":
+      "Yes. Localised repairs are often possible without replacing the whole floor. The approach depends on the type of damage, the existing coating and the system used. We always assess the affected area technically before repair.",
+    "faq.pu.cold.q": "Which system is best for cold rooms?",
+    "faq.pu.cold.a":
+      "For cold rooms and areas with extreme temperatures, polyurethane and MMA systems are usually the best fit. Polyurethane offers excellent thermal resistance and flexibility; MMA allows fast application and cure even in cold environments.",
+    "faq.prepBase.title": "Professional substrate preparation",
+    "faq.prepBase.crack.q": "Can flooring be applied over surfaces with cracks?",
+    "faq.prepBase.crack.a":
+      "Before applying the coating, existing cracks and joints are opened, treated and repaired according to substrate condition. Correct preparation is essential for adhesion, durability and to avoid future delamination or cracking.",
+    "faq.prepBase.skirt.q": "Do you install sanitary skirting?",
+    "faq.prepBase.skirt.a":
+      "Yes. We install sanitary (coved) skirting for a continuous transition between floor and wall, easier cleaning and hygiene requirements in food plants, industrial kitchens, laboratories and hospitals.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",

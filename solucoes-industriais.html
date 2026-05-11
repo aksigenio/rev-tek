@@ -26,12 +26,40 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Soluções industriais e comerciais em pavimento de resina",
-        "url": "https://www.rev-tek.pt/solucoes-industriais",
-        "description": "Industrial and commercial resin flooring systems in Portugal.",
-        "inLanguage": "pt-PT",
-        "isPartOf": { "@type": "WebSite", "name": "Rev-Tek", "url": "https://www.rev-tek.pt/" }
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.rev-tek.pt/solucoes-industriais#pagina",
+            "name": "Soluções industriais e comerciais em pavimento de resina",
+            "url": "https://www.rev-tek.pt/solucoes-industriais",
+            "description": "Industrial and commercial resin flooring systems in Portugal.",
+            "inLanguage": "pt-PT",
+            "isPartOf": { "@type": "WebSite", "name": "Rev-Tek", "url": "https://www.rev-tek.pt/" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.rev-tek.pt/solucoes-industriais#preparacao-base-faq",
+            "inLanguage": "pt-PT",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "O pavimento pode ser aplicado sobre superfícies com fissuras?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Antes da aplicação do revestimento, as fissuras e juntas existentes são devidamente abertas, tratadas e reparadas conforme o estado do suporte. A preparação correta da base é essencial para garantir aderência, durabilidade e evitar futuros destacamentos ou fissurações."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Fazem rodapé sanitário?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Executamos rodapé sanitário (meia cana) para garantir uma transição contínua entre o pavimento e a parede, facilitando a limpeza e cumprindo requisitos higiénicos em indústrias alimentares, cozinhas industriais, laboratórios e hospitais."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="./styles.css" />
@@ -47,11 +75,11 @@
           <span></span><span></span><span></span>
         </button>
         <nav class="menu" id="menu">
-          <a href="./index.html#solucoes">Sistemas</a>
-          <a href="./index.html#solucoes">Pavimentos</a>
-          <a href="./index.html#setores">Setores</a>
-          <a href="./portfolio.html">Portfólio</a>
-          <a href="./index.html#contactos">Contactos</a>
+          <a href="./index.html#solucoes" data-i18n="menu.systems">Sistemas</a>
+          <a href="./index.html#solucoes" data-i18n="menu.flooring">Pavimentos</a>
+          <a href="./index.html#setores" data-i18n="menu.sectors">Setores</a>
+          <a href="./portfolio.html" data-i18n="menu.portfolio">Portfólio</a>
+          <a href="./index.html#contactos" data-i18n="menu.contact">Contactos</a>
         </nav>
         <div class="lang-switcher">
           <button class="lang-btn active" data-lang="pt">PT</button>
@@ -165,6 +193,40 @@
             <span aria-hidden="true"> · </span>
             <a href="./index.html#contactos">Falar com a equipa</a>
           </p>
+        </div>
+      </section>
+
+      <section
+        class="section faq-section faq-section--mini"
+        id="preparacao-base-faq"
+        aria-labelledby="prep-base-faq-heading"
+      >
+        <div class="container">
+          <h2 id="prep-base-faq-heading" class="faq-section__title" data-i18n="faq.prepBase.title">
+            Preparação profissional da base
+          </h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary data-i18n="faq.prepBase.crack.q">O pavimento pode ser aplicado sobre superfícies com fissuras?</summary>
+              <div class="faq-item__body">
+                <p data-i18n="faq.prepBase.crack.a">
+                  Antes da aplicação do revestimento, as fissuras e juntas existentes são devidamente abertas, tratadas e
+                  reparadas conforme o estado do suporte. A preparação correta da base é essencial para garantir aderência,
+                  durabilidade e evitar futuros destacamentos ou fissurações.
+                </p>
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary data-i18n="faq.prepBase.skirt.q">Fazem rodapé sanitário?</summary>
+              <div class="faq-item__body">
+                <p data-i18n="faq.prepBase.skirt.a">
+                  Sim. Executamos rodapé sanitário (meia cana) para garantir uma transição contínua entre o pavimento e a
+                  parede, facilitando a limpeza e cumprindo requisitos higiénicos em indústrias alimentares, cozinhas
+                  industriais, laboratórios e hospitais.
+                </p>
+              </div>
+            </details>
+          </div>
         </div>
       </section>
     </main>

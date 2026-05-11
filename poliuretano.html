@@ -26,12 +26,48 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "WebPage",
-        "name": "Pavimento em poliuretano (PU)",
-        "url": "https://www.rev-tek.pt/poliuretano",
-        "description": "Piso e revestimento em poliuretano para indústria e logística em Portugal.",
-        "inLanguage": "pt-PT",
-        "isPartOf": { "@type": "WebSite", "name": "Rev-Tek", "url": "https://www.rev-tek.pt/" }
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://www.rev-tek.pt/poliuretano#pagina",
+            "name": "Pavimento em poliuretano (PU)",
+            "url": "https://www.rev-tek.pt/poliuretano",
+            "description": "Piso e revestimento em poliuretano para indústria e logística em Portugal.",
+            "inLanguage": "pt-PT",
+            "isPartOf": { "@type": "WebSite", "name": "Rev-Tek", "url": "https://www.rev-tek.pt/" }
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.rev-tek.pt/poliuretano#faq",
+            "inLanguage": "pt-PT",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qual o sistema ideal para câmaras frigoríficas?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Para câmaras frigoríficas e zonas sujeitas a temperaturas extremas, os sistemas poliuretano e MMA são normalmente as soluções mais recomendadas. O poliuretano apresenta excelente resistência térmica e flexibilidade, enquanto o MMA permite aplicação e cura rápida mesmo em ambientes frios."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O pavimento é antiderrapante?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Os pavimentos podem ser aplicados com diferentes níveis de acabamento antiderrapante, conforme as necessidades do espaço. Existem acabamentos lisos, texturados ou antiderrapantes de elevada aderência."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "O pavimento pode ser lavado com químicos fortes?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sim. Os pavimentos industriais em resina apresentam elevada resistência química e podem ser utilizados em ambientes sujeitos a detergentes industriais, óleos, gorduras e diversos produtos químicos. A escolha do sistema mais adequado depende sempre do tipo de utilização e dos agentes químicos presentes no espaço."
+                }
+              }
+            ]
+          }
+        ]
       }
     </script>
     <link rel="stylesheet" href="./styles.css" />
@@ -122,6 +158,42 @@
                 Após a secagem completa, o revestimento apresenta boa resistência ao fogo e não contribui para a
                 propagação das chamas, aumentando a segurança do espaço.
               </p>
+            </div>
+          </div>
+
+          <div class="faq-section faq-section--inline" id="faq" aria-labelledby="pu-faq-heading">
+            <h2 id="pu-faq-heading" class="faq-section__title" data-i18n="faq.title">Perguntas frequentes</h2>
+            <div class="faq-list">
+              <details class="faq-item">
+                <summary data-i18n="faq.pu.cold.q">Qual o sistema ideal para câmaras frigoríficas?</summary>
+                <div class="faq-item__body">
+                  <p data-i18n="faq.pu.cold.a">
+                    Para câmaras frigoríficas e zonas sujeitas a temperaturas extremas, os sistemas poliuretano e MMA são
+                    normalmente as soluções mais recomendadas. O poliuretano apresenta excelente resistência térmica e
+                    flexibilidade, enquanto o MMA permite aplicação e cura rápida mesmo em ambientes frios.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary data-i18n="faq.slip.q">O pavimento é antiderrapante?</summary>
+                <div class="faq-item__body">
+                  <p data-i18n="faq.slip.a">
+                    Sim. Os pavimentos podem ser aplicados com diferentes níveis de acabamento antiderrapante, conforme as
+                    necessidades do espaço. Existem acabamentos lisos, texturados ou antiderrapantes de elevada aderência.
+                  </p>
+                </div>
+              </details>
+              <details class="faq-item">
+                <summary data-i18n="faq.ind.chem.q">O pavimento pode ser lavado com químicos fortes?</summary>
+                <div class="faq-item__body">
+                  <p data-i18n="faq.ind.chem.a">
+                    Sim. Os pavimentos industriais em resina apresentam elevada resistência química e podem ser utilizados
+                    em ambientes sujeitos a detergentes industriais, óleos, gorduras e diversos produtos químicos. A
+                    escolha do sistema mais adequado depende sempre do tipo de utilização e dos agentes químicos
+                    presentes no espaço.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
 
