@@ -547,10 +547,11 @@ function initPortfolioImageCarousel(carouselId, trackId, jsonFile) {
     });
 }
 
-/** Início (#projetos): todas as imagens dos JSONs, em sequência, fade automático, sem setas nem legendas. */
+/** Início (#projetos): carrossel horizontal na caixa, mesma escala de imagem que .mma-projetos__open nas fichas. */
 function initHomePortfolioAutoplay() {
   const viewport = document.getElementById("homePortfolioAutoplayViewport");
-  if (!viewport) return;
+  const track = document.getElementById("homePortfolioAutoplayTrack");
+  if (!viewport || !track) return;
 
   const files = ["portfolio-metacrilato.json", "portfolio-epoxi.json", "portfolio-tapete.json"];
   const base = new URL("assets/", window.location.href).href;
@@ -564,19 +565,23 @@ function initHomePortfolioAutoplay() {
   ).then((parts) => {
     const projects = parts.flatMap((d) => d.projects || []);
     if (!projects.length) {
-      viewport.innerHTML =
+      track.innerHTML =
         "<p class=\"mma-projetos__error\" style=\"padding:1.5rem;text-align:center;\">Não foi possível carregar imagens.</p>";
       return;
     }
 
+    track.innerHTML = "";
     projects.forEach((p, i) => {
+      const slide = document.createElement("div");
+      slide.className = "home-portfolio-autoplay__slide";
+      slide.setAttribute("aria-hidden", i === 0 ? "false" : "true");
+
       const btn = document.createElement("button");
       btn.type = "button";
-      btn.className = `home-portfolio-autoplay__slide project-open${i === 0 ? " is-active" : ""}`;
+      btn.className = "mma-projetos__open project-open";
       btn.dataset.full = p.full || p.src;
       btn.dataset.alt = p.alt || "";
       btn.setAttribute("aria-label", "Abrir imagem em tamanho completo");
-      btn.setAttribute("aria-hidden", i === 0 ? "false" : "true");
 
       const img = document.createElement("img");
       img.src = p.src;
@@ -587,26 +592,50 @@ function initHomePortfolioAutoplay() {
       if (p.height) img.height = p.height;
 
       btn.appendChild(img);
-      viewport.appendChild(btn);
+      slide.appendChild(btn);
+      track.appendChild(slide);
     });
 
-    const slides = () => [...viewport.querySelectorAll(".home-portfolio-autoplay__slide")];
     let idx = 0;
+    const slides = () => [...track.querySelectorAll(".home-portfolio-autoplay__slide")];
     const n = projects.length;
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function applyLayout() {
+      const w = viewport.clientWidth;
+      if (!w) return;
+      slides().forEach((el) => {
+        el.style.flex = `0 0 ${w}px`;
+        el.style.width = `${w}px`;
+      });
+      track.style.transform = `translate3d(-${idx * w}px, 0, 0)`;
+    }
 
     function go(to) {
       idx = ((to % n) + n) % n;
-      slides().forEach((el, i) => {
-        const on = i === idx;
-        el.classList.toggle("is-active", on);
-        el.setAttribute("aria-hidden", on ? "false" : "true");
+      slides().forEach((el, i) => el.setAttribute("aria-hidden", i === idx ? "false" : "true"));
+      applyLayout();
+    }
+
+    let resizeT;
+    if (typeof ResizeObserver !== "undefined") {
+      const ro = new ResizeObserver(() => {
+        clearTimeout(resizeT);
+        resizeT = setTimeout(applyLayout, 50);
+      });
+      ro.observe(viewport);
+    } else {
+      window.addEventListener("resize", () => {
+        clearTimeout(resizeT);
+        resizeT = setTimeout(applyLayout, 120);
       });
     }
 
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     if (!reduceMotion && n > 1) {
       setInterval(() => go(idx + 1), 5000);
     }
+
+    requestAnimationFrame(() => requestAnimationFrame(applyLayout));
   });
 }
 
