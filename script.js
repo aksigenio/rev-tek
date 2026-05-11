@@ -54,6 +54,33 @@
     "prep.item6": "Execução de rodapé sanitário",
     "prep.closing":
       "A maioria dos problemas em pavimentos industriais resulta de uma preparação inadequada da base. Um suporte corretamente tratado garante melhor aderência, maior durabilidade e um acabamento de elevada qualidade.",
+    "faq.title": "Perguntas frequentes",
+    "faq.diff.q": "Qual é a diferença entre pavimento epóxi, poliuretano e MMA?",
+    "faq.diff.a":
+      "O pavimento epóxi oferece elevada resistência química e mecânica, sendo ideal para armazéns, oficinas e áreas industriais com tráfego intenso. O poliuretano é mais flexível, resistente a vibrações e a variações térmicas, sendo recomendado para zonas sujeitas a dilatações ou exposição solar. O sistema MMA (metacrilato) destaca-se pela cura ultrarrápida e possibilidade de aplicação mesmo em temperaturas baixas, permitindo reduzir ao mínimo o tempo de paragem da atividade.",
+    "faq.apply.q": "Quanto tempo demora a aplicação?",
+    "faq.apply.a1":
+      "O tempo de aplicação depende da área, do estado da base e do sistema escolhido. Em sistemas epóxi e poliuretano, a aplicação e cura podem demorar entre 2 e 5 dias.",
+    "faq.apply.a2":
+      "Já os pavimentos MMA permitem, em muitos casos, voltar à utilização poucas horas após a aplicação, sendo ideais para espaços que não podem parar durante muito tempo.",
+    "faq.slip.q": "O pavimento é antiderrapante?",
+    "faq.slip.a":
+      "Sim. Os pavimentos podem ser aplicados com diferentes níveis de acabamento antiderrapante, conforme as necessidades do espaço. Existem acabamentos lisos, texturados ou antiderrapantes de elevada aderência.",
+    "faq.overlay.q": "É possível aplicar sobre piso existente?",
+    "faq.overlay.a":
+      "Na maioria dos casos, sim. Os sistemas podem ser aplicados sobre betão, cimento, mosaico ou outros revestimentos existentes, desde que a base apresente boas condições de aderência e humidade controlada. Antes da aplicação é sempre realizada uma avaliação técnica do suporte.",
+    "faq.smell.q": "O MMA tem cheiro?",
+    "faq.smell.a":
+      "Sim. Durante a aplicação do sistema MMA existe um odor mais intenso característico do metacrilato. No entanto, após a cura completa, o cheiro desaparece rapidamente.",
+    "faq.load.q": "O pavimento resiste a empilhadores e maquinaria pesada?",
+    "faq.load.a":
+      "Sim. Os sistemas industriais em resina são desenvolvidos para suportar tráfego intenso e cargas mecânicas elevadas. A resistência do pavimento depende do sistema escolhido, da espessura aplicada e da preparação correta da base.",
+    "faq.food.q": "Qual o melhor sistema para indústria alimentar?",
+    "faq.food.a":
+      "Depende das condições de utilização da área. Para a indústria alimentar são normalmente recomendados sistemas com elevada resistência química, facilidade de limpeza e acabamento antiderrapante. O MMA é muito utilizado quando é necessária uma cura rápida e mínima paragem da produção, enquanto os sistemas de poliuretano apresentam excelente resistência térmica e mecânica.",
+    "faq.price.q": "Qual o preço por m² de pavimento epóxi / PU / MMA?",
+    "faq.price.a":
+      "O preço varia conforme o tipo de sistema, a espessura necessária, o estado da base e a área total da obra. Fatores como preparação da base, reparação de fissuras, acabamento antiderrapante ou execução de rodapé sanitário também influenciam o valor final. Para um orçamento mais preciso, recomendamos uma avaliação técnica do espaço.",
     "discounts.title": "Condições comerciais por escala de projeto",
     "discounts.text":
       "O preço é calculado de acordo com a metragem total da área a executar. À medida que a metragem aumenta, beneficiará de condições comerciais progressivamente mais vantajosas.",
@@ -132,6 +159,33 @@
     "prep.item6": "Sanitary skirting execution",
     "prep.closing":
       "Most industrial flooring issues stem from inadequate base preparation. A correctly treated substrate ensures better adhesion, longer life and a high-quality finish.",
+    "faq.title": "Frequently asked questions",
+    "faq.diff.q": "What is the difference between epoxy, polyurethane and MMA flooring?",
+    "faq.diff.a":
+      "Epoxy flooring offers high chemical and mechanical resistance, ideal for warehouses, workshops and industrial areas with heavy traffic. Polyurethane is more flexible, resists vibration and temperature swings, and suits areas with movement or sun exposure. MMA (methacrylate) stands out for very fast cure and application even at low temperatures, minimising downtime.",
+    "faq.apply.q": "How long does application take?",
+    "faq.apply.a1":
+      "It depends on area, substrate condition and system. Epoxy and polyurethane systems typically need roughly 2–5 days for application and cure.",
+    "faq.apply.a2":
+      "MMA floors often allow use again within a few hours in many cases, which suits spaces that cannot stop for long.",
+    "faq.slip.q": "Is the floor slip-resistant?",
+    "faq.slip.a":
+      "Yes. Floors can be finished with different slip-resistance levels to match the space. Finishes range from smooth to textured or high-grip anti-slip.",
+    "faq.overlay.q": "Can it be applied over an existing floor?",
+    "faq.overlay.a":
+      "In most cases, yes. Systems can go over concrete, cement, mosaic or other existing finishes if adhesion and moisture are suitable. A technical assessment of the substrate is always done first.",
+    "faq.smell.q": "Does MMA smell?",
+    "faq.smell.a":
+      "Yes. During MMA application there is a stronger characteristic odour. After full cure it dissipates quickly.",
+    "faq.load.q": "Will the floor withstand forklifts and heavy machinery?",
+    "faq.load.a":
+      "Yes. Industrial resin systems are designed for heavy traffic and loads. Performance depends on the system, thickness and correct substrate preparation.",
+    "faq.food.q": "Which system is best for the food industry?",
+    "faq.food.a":
+      "It depends on use. Food plants usually need high chemical resistance, easy cleaning and anti-slip finish. MMA is common when fast cure and minimal production stop are critical; polyurethane offers excellent thermal and mechanical resistance.",
+    "faq.price.q": "What is the price per m² for epoxy / PU / MMA flooring?",
+    "faq.price.a":
+      "Price varies with system type, required thickness, substrate condition and total project area. Base preparation, crack repair, anti-slip finish or sanitary skirting also affect the final figure. For a more accurate quotation we recommend a technical assessment of the space.",
     "discounts.title": "Discounts for larger projects",
     "discounts.text":
       "We offer a progressive discount system for areas from 70 m². The larger the area, the better the commercial proposal, with no compromise on quality, safety or durability.",
