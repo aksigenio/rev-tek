@@ -547,6 +547,15 @@ function initPortfolioImageCarousel(carouselId, trackId, jsonFile) {
     });
 }
 
+function resolvePageAssetUrl(src) {
+  if (!src || typeof src !== "string") return src;
+  try {
+    return new URL(src, window.location.href).href;
+  } catch {
+    return src;
+  }
+}
+
 /** Início (#projetos): carrossel horizontal na caixa, mesma escala de imagem que .mma-projetos__open nas fichas. */
 function initHomePortfolioAutoplay() {
   const viewport = document.getElementById("homePortfolioAutoplayViewport");
@@ -554,11 +563,10 @@ function initHomePortfolioAutoplay() {
   if (!viewport || !track) return;
 
   const files = ["portfolio-metacrilato.json", "portfolio-epoxi.json", "portfolio-tapete.json"];
-  const base = new URL("assets/", window.location.href).href;
 
   Promise.all(
     files.map((f) =>
-      fetch(`${base}${f}`)
+      fetch(new URL(`assets/${f}`, window.location.href).href)
         .then((r) => (r.ok ? r.json() : { projects: [] }))
         .catch(() => ({ projects: [] }))
     )
@@ -579,12 +587,14 @@ function initHomePortfolioAutoplay() {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.className = "mma-projetos__open project-open";
-      btn.dataset.full = p.full || p.src;
+      const rawSrc = p.src;
+      const rawFull = p.full || p.src;
+      btn.dataset.full = resolvePageAssetUrl(rawFull);
       btn.dataset.alt = p.alt || "";
       btn.setAttribute("aria-label", "Abrir imagem em tamanho completo");
 
       const img = document.createElement("img");
-      img.src = p.src;
+      img.src = resolvePageAssetUrl(rawSrc);
       img.alt = p.alt || "";
       img.loading = i === 0 ? "eager" : "lazy";
       img.decoding = "async";
@@ -601,7 +611,10 @@ function initHomePortfolioAutoplay() {
     const n = projects.length;
 
     function applyLayout() {
-      const w = viewport.clientWidth;
+      const w =
+        viewport.clientWidth ||
+        Math.round(viewport.getBoundingClientRect().width) ||
+        Math.round(track.getBoundingClientRect().width);
       if (!w) return;
       slides().forEach((el) => {
         el.style.flex = `0 0 ${w}px`;
@@ -636,6 +649,11 @@ function initHomePortfolioAutoplay() {
     }
 
     requestAnimationFrame(() => requestAnimationFrame(applyLayout));
+    window.addEventListener("load", applyLayout, { once: true });
+  })
+  .catch(() => {
+    track.innerHTML =
+      "<p class=\"mma-projetos__error\" style=\"padding:1.5rem;text-align:center;\">Não foi possível carregar imagens.</p>";
   });
 }
 
