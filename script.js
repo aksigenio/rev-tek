@@ -557,6 +557,7 @@ function initPortfolioImageCarousel(carouselId, trackId, jsonFile) {
 
 initPortfolioImageCarousel("mmaProjetosCarousel", "mmaProjetosTrack", "portfolio-metacrilato.json");
 initPortfolioImageCarousel("epoxiProjetosCarousel", "epoxiProjetosTrack", "portfolio-epoxi.json");
+initPortfolioImageCarousel("tapeteProjetosCarousel", "tapeteProjetosTrack", "portfolio-tapete.json");
 
 function initQuoteFormEmailValidation() {
   const form = document.querySelector("#orcamento form.form");

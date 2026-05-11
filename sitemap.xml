@@ -36,6 +36,11 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://www.rev-tek.pt/tapete-de-pedra</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://www.rev-tek.pt/portfolio</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
