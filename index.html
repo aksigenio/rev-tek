@@ -31,29 +31,38 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Rev-Tek",
-        "url": "https://www.rev-tek.pt/",
-        "image": "https://www.rev-tek.pt/assets/logo.png",
-        "logo": "https://www.rev-tek.pt/assets/logo.png",
-        "email": "technipiso@gmail.com",
-        "telephone": ["+351913151960"],
-        "areaServed": { "@type": "Country", "name": "Portugal" },
-        "serviceType": [
-          "Pavimentos industriais em resina",
-          "Sistemas em metacrilato (MMA)",
-          "Sistemas em poliuretano (PU)",
-          "Sistemas em epóxi"
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "@id": "https://www.rev-tek.pt/#faq",
-        "inLanguage": "pt-PT",
-        "mainEntity": [
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://www.rev-tek.pt/#website",
+            "url": "https://www.rev-tek.pt/",
+            "name": "Rev-Tek",
+            "inLanguage": "pt-PT",
+            "publisher": { "@id": "https://www.rev-tek.pt/#revtek" }
+          },
+          {
+            "@type": "LocalBusiness",
+            "@id": "https://www.rev-tek.pt/#revtek",
+            "name": "Rev-Tek",
+            "url": "https://www.rev-tek.pt/",
+            "image": "https://www.rev-tek.pt/assets/logo.png",
+            "logo": "https://www.rev-tek.pt/assets/logo.png",
+            "email": "technipiso@gmail.com",
+            "telephone": "+351913151960",
+            "areaServed": { "@type": "Country", "name": "Portugal" },
+            "serviceType": [
+              "Pavimentos industriais em resina",
+              "Sistemas em metacrilato (MMA)",
+              "Sistemas em poliuretano (PU)",
+              "Sistemas em epóxi"
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.rev-tek.pt/#faq",
+            "inLanguage": "pt-PT",
+            "isPartOf": { "@id": "https://www.rev-tek.pt/#website" },
+            "mainEntity": [
           {
             "@type": "Question",
             "name": "Qual é a diferença entre pavimento epóxi, poliuretano e MMA?",
@@ -117,6 +126,8 @@
               "@type": "Answer",
               "text": "O preço varia conforme o tipo de sistema, a espessura necessária, o estado da base e a área total da obra. Fatores como preparação da base, reparação de fissuras, acabamento antiderrapante ou execução de rodapé sanitário também influenciam o valor final. Para um orçamento mais preciso, recomendamos uma avaliação técnica do espaço."
             }
+          }
+            ]
           }
         ]
       }
