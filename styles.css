@@ -1907,6 +1907,31 @@ dialog::backdrop {
   padding-top: 0;
 }
 
+.paleta-outro {
+  padding-top: 0;
+}
+
+.paleta-outro__text {
+  max-width: 52rem;
+  margin: 0 0 1.25rem;
+  color: var(--muted-bright);
+  line-height: 1.65;
+  font-size: 1.05rem;
+}
+
+.paleta-outro__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 0 0 0;
+}
+
+.paleta-outro__related {
+  margin-top: 1.75rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
 .paleta-acabamentos {
   display: flex;
   flex-wrap: wrap;
