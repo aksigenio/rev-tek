@@ -1,0 +1,18 @@
+[
+  { "name": "Areia Coral", "slug": "areia-coral", "file": "revestimento-resina-areia-coral.jpg" },
+  { "name": "Azulejo", "slug": "azulejo", "file": "revestimento-resina-azulejo.jpg" },
+  { "name": "Azul Atlântico", "slug": "azul-atlantico", "file": "revestimento-resina-azul-atlantico.jpg" },
+  { "name": "Azul Dourado", "slug": "azul-dourado", "file": "revestimento-resina-azul-dourado.jpg" },
+  { "name": "Azul Horizonte", "slug": "azul-horizonte", "file": "revestimento-resina-azul-horizonte.jpg" },
+  { "name": "Azul Noturno", "slug": "azul-noturno", "file": "revestimento-resina-azul-noturno.jpg" },
+  { "name": "Cinza Mineral", "slug": "cinza-mineral", "file": "revestimento-resina-cinza-mineral.jpg" },
+  { "name": "Dourado", "slug": "dourado", "file": "revestimento-resina-dourado.jpg" },
+  { "name": "Duna", "slug": "duna", "file": "revestimento-resina-duna.jpg" },
+  { "name": "Espanhol", "slug": "espanhol", "file": "revestimento-resina-espanhol.jpg" },
+  { "name": "Grafite Vulcânico", "slug": "grafite-vulcanico", "file": "revestimento-resina-grafite-vulcanico.jpg" },
+  { "name": "Granito", "slug": "granito", "file": "revestimento-resina-granito.jpg" },
+  { "name": "Granito Atlântico", "slug": "granito-atlantico", "file": "revestimento-resina-granito-atlantico.jpg" },
+  { "name": "Rom", "slug": "rom", "file": "revestimento-resina-rom.jpg" },
+  { "name": "Vermelho Rubi", "slug": "vermelho-rubi", "file": "revestimento-resina-vermelho-rubi.jpg" },
+  { "name": "Vermelho Vulcânico", "slug": "vermelho-vulcanico", "file": "revestimento-resina-vermelho-vulcanico.jpg" }
+]
