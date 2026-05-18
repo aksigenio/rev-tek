@@ -1867,3 +1867,137 @@ dialog::backdrop {
   }
 
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.paleta-intro {
+  padding-top: 0;
+}
+
+.paleta-intro__text {
+  max-width: 52rem;
+  color: var(--muted-bright);
+  line-height: 1.65;
+}
+
+.paleta-intro__text p {
+  margin: 0 0 1rem;
+}
+
+.paleta-intro__acabamentos-list {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.paleta-intro__acabamentos-list li {
+  margin-bottom: 0.45rem;
+}
+
+.paleta-section {
+  padding-top: 0;
+}
+
+.paleta-acabamentos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 12px 28px;
+  margin-bottom: 1.75rem;
+  padding: 14px 18px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-soft);
+}
+
+.paleta-acabamentos__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+
+.paleta-acabamentos__legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+  color: var(--muted-bright);
+}
+
+.paleta-acabamentos__tag {
+  color: var(--residential-warm);
+  font-weight: 600;
+}
+
+.paleta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.paleta-card {
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0e0e10;
+  transition: border-color 0.2s ease;
+}
+
+.paleta-card:hover {
+  border-color: var(--residential-warm-dim);
+}
+
+.paleta-card__title {
+  margin: 0;
+  padding: 12px 14px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--residential-fg);
+}
+
+.paleta-card__figure {
+  margin: 0;
+  flex: 1;
+  line-height: 0;
+}
+
+.paleta-card__figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+@media (max-width: 520px) {
+  .paleta-acabamentos {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .paleta-acabamentos__legend {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
