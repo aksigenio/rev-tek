@@ -4,6 +4,7 @@
     "menu.flooring": "Pavimentos",
     "menu.sectors": "Setores",
     "menu.portfolio": "Portfólio",
+    "menu.palette": "Paleta de Cores",
     "menu.contact": "Contactos",
     "hero.eyebrow":
       "Pavimentos técnicos em resina · Espaços industriais, comerciais e residenciais",
@@ -123,6 +124,7 @@
     "menu.flooring": "Flooring",
     "menu.sectors": "Sectors",
     "menu.portfolio": "Portfolio",
+    "menu.palette": "Color palette",
     "menu.contact": "Contact",
     "hero.eyebrow":
       "Technical resin flooring · Industrial, commercial and residential spaces",
