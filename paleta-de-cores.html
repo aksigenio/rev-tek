@@ -10,7 +10,11 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.rev-tek.pt/paleta-de-cores" />
+    <link rel="alternate" hreflang="pt-PT" href="https://www.rev-tek.pt/paleta-de-cores" />
+    <link rel="alternate" hreflang="en" href="https://www.rev-tek.pt/paleta-de-cores" />
+    <link rel="alternate" hreflang="x-default" href="https://www.rev-tek.pt/paleta-de-cores" />
     <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:url" content="https://www.rev-tek.pt/paleta-de-cores" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Paleta de Cores | Epóxi, PU e Metacrilato | Rev-Tek Portugal" />
@@ -19,6 +23,7 @@
       content="Cores para pavimentos em epóxi, poliuretano e metacrilato (MMA). Acabamentos lisos e antiderrapantes para espaços industriais e comerciais."
     />
     <meta property="og:image" content="https://www.rev-tek.pt/assets/paleta/revestimento-resina-azul-atlantico.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#090909" />
     <link rel="icon" href="./favicon/favicon.ico" sizes="any" />
     <link rel="icon" href="./favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
@@ -151,14 +156,19 @@
     </script>
     <link rel="stylesheet" href="./styles.css?v=20260518" />
   </head>
-  <body>
+  <body
+    data-page-title-pt="Paleta de Cores | Epóxi, Poliuretano e Metacrilato | Rev-Tek Portugal"
+    data-page-title-en="Color Palette | Epoxy, Polyurethane and Methacrylate | Rev-Tek Portugal"
+    data-page-desc-pt="Descubra as cores disponíveis para revestimentos em resina Rev-Tek. Diferentes acabamentos lisos e antiderrapantes para piscinas, terraços, espaços exteriores e interiores."
+    data-page-desc-en="Discover available colours for Rev-Tek resin coatings. Smooth and anti-slip finishes for pools, terraces, outdoor and indoor spaces."
+  >
     <header class="topbar">
       <div class="container topbar-inner">
         <div class="logo-wrap">
           <a href="./index.html"><img src="./assets/logo.png" alt="Rev-Tek" class="logo" /></a>
-          <span class="logo-tagline">Revestimentos técnicos de resina</span>
+          <span class="logo-tagline" data-i18n="common.logoTagline">Revestimentos técnicos de resina</span>
         </div>
-        <button class="burger" id="burger" aria-label="Abrir menu">
+        <button class="burger" id="burger" aria-label="Abrir menu" data-i18n-aria="common.openMenu">
           <span></span><span></span><span></span>
         </button>
         <nav class="menu" id="menu">
@@ -179,30 +189,30 @@
     <main id="conteudo-paleta">
       <section class="subpage-hero subpage-hero--industrial" aria-labelledby="paleta-titulo">
         <div class="container">
-          <a href="./solucoes-industriais.html" class="back-link">← Voltar às soluções industriais</a>
-          <h1 id="paleta-titulo">Paleta de Cores - Epóxi, Poliuretano e Metacrilato Rev-Tek</h1>
+          <a href="./solucoes-industriais.html" class="back-link" data-i18n="common.backIndustrial">← Voltar às soluções industriais</a>
+          <h1 id="paleta-titulo" data-i18n="paleta.title">Paleta de Cores - Epóxi, Poliuretano e Metacrilato Rev-Tek</h1>
         </div>
       </section>
 
       <section class="section paleta-intro" aria-labelledby="paleta-intro-titulo">
         <div class="container">
-          <h2 id="paleta-intro-titulo" class="visually-hidden">Cores e acabamentos dos pavimentos em resina</h2>
+          <h2 id="paleta-intro-titulo" class="visually-hidden" data-i18n="paleta.intro.hiddenTitle">Cores e acabamentos dos pavimentos em resina</h2>
           <div class="paleta-intro__text">
-            <p>
+            <p data-i18n-html="paleta.intro.p1">
               Explore a nossa seleção de <strong>cores para revestimentos em resina</strong> aplicáveis em sistemas de
               <strong>epóxi</strong>, <strong>poliuretano (PU)</strong> e <strong>metacrilato (MMA)</strong>.
               Disponibilizamos tonalidades naturais e modernas para armazéns, fábricas, logística, cozinhas industriais,
               laboratórios, áreas comerciais técnicas e outros espaços de elevado tráfego.
             </p>
-            <p>Cada amostra apresentada mostra dois tipos de acabamento:</p>
+            <p data-i18n="paleta.intro.p2">Cada amostra apresentada mostra dois tipos de acabamento:</p>
             <ul class="paleta-intro__acabamentos-list">
-              <li><strong>lado esquerdo:</strong> acabamento com duas camadas finais, mais liso;</li>
-              <li>
+              <li data-i18n-html="paleta.intro.finishLeft"><strong>lado esquerdo:</strong> acabamento com duas camadas finais, mais liso;</li>
+              <li data-i18n-html="paleta.intro.finishRight">
                 <strong>lado direito:</strong> acabamento com uma camada final, ideal para um efeito mais
                 antiderrapante.
               </li>
             </ul>
-            <p>
+            <p data-i18n-html="paleta.intro.p3">
               Desta forma, é possível escolher não apenas a cor, mas também o tipo de textura mais adequado ao uso do
               pavimento - desde um <strong>acabamento liso</strong> em zonas de circulação interior até um
               <strong>pavimento antiderrapante</strong> em áreas expostas a humidade ou lavagem frequente.
@@ -213,19 +223,19 @@
 
       <section class="section paleta-section" aria-labelledby="paleta-grelha-titulo">
         <div class="container">
-          <div class="paleta-acabamentos" role="note" aria-label="Legenda dos acabamentos nas amostras">
-            <p class="paleta-acabamentos__title">Acabamentos disponíveis</p>
+          <div class="paleta-acabamentos" role="note" aria-label="Legenda dos acabamentos nas amostras" data-i18n-aria="paleta.legend.ariaLabel">
+            <p class="paleta-acabamentos__title" data-i18n="paleta.legend.title">Acabamentos disponíveis</p>
             <ul class="paleta-acabamentos__legend">
-              <li><span class="paleta-acabamentos__tag">Mais liso</span> → 2 camadas finais</li>
-              <li><span class="paleta-acabamentos__tag">Mais antiderrapante</span> → 1 camada final</li>
+              <li data-i18n-html="paleta.legend.smooth"><span class="paleta-acabamentos__tag">Mais liso</span> → 2 camadas finais</li>
+              <li data-i18n-html="paleta.legend.grip"><span class="paleta-acabamentos__tag">Mais antiderrapante</span> → 1 camada final</li>
             </ul>
           </div>
 
-          <h2 id="paleta-grelha-titulo" class="visually-hidden">Grelha de cores para epóxi, PU e metacrilato</h2>
+          <h2 id="paleta-grelha-titulo" class="visually-hidden" data-i18n="paleta.grid.hiddenTitle">Grelha de cores para epóxi, PU e metacrilato</h2>
           <ol class="paleta-grid">
             <li class="paleta-grid__item" id="areia-coral">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Areia Coral</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.areiaCoral">Areia Coral</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-areia-coral.jpg"
@@ -241,7 +251,7 @@
             </li>
             <li class="paleta-grid__item" id="azulejo">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Azulejo</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.azulejo">Azulejo</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-azulejo.jpg"
@@ -257,7 +267,7 @@
             </li>
             <li class="paleta-grid__item" id="azul-atlantico">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Azul Atlântico</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.azulAtlantico">Azul Atlântico</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-azul-atlantico.jpg"
@@ -273,7 +283,7 @@
             </li>
             <li class="paleta-grid__item" id="azul-dourado">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Azul Dourado</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.azulDourado">Azul Dourado</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-azul-dourado.jpg"
@@ -289,7 +299,7 @@
             </li>
             <li class="paleta-grid__item" id="azul-horizonte">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Azul Horizonte</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.azulHorizonte">Azul Horizonte</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-azul-horizonte.jpg"
@@ -305,7 +315,7 @@
             </li>
             <li class="paleta-grid__item" id="azul-noturno">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Azul Noturno</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.azulNoturno">Azul Noturno</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-azul-noturno.jpg"
@@ -321,7 +331,7 @@
             </li>
             <li class="paleta-grid__item" id="cinza-mineral">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Cinza Mineral</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.cinzaMineral">Cinza Mineral</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-cinza-mineral.jpg"
@@ -337,7 +347,7 @@
             </li>
             <li class="paleta-grid__item" id="dourado">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Dourado</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.dourado">Dourado</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-dourado.jpg"
@@ -353,7 +363,7 @@
             </li>
             <li class="paleta-grid__item" id="duna">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Duna</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.duna">Duna</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-duna.jpg"
@@ -369,7 +379,7 @@
             </li>
             <li class="paleta-grid__item" id="espanhol">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Espanhol</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.espanhol">Espanhol</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-espanhol.jpg"
@@ -385,7 +395,7 @@
             </li>
             <li class="paleta-grid__item" id="grafite-vulcanico">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Grafite Vulcânico</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.grafiteVulcanico">Grafite Vulcânico</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-grafite-vulcanico.jpg"
@@ -401,7 +411,7 @@
             </li>
             <li class="paleta-grid__item" id="granito">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Granito</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.granito">Granito</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-granito.jpg"
@@ -417,7 +427,7 @@
             </li>
             <li class="paleta-grid__item" id="granito-atlantico">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Granito Atlântico</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.granitoAtlantico">Granito Atlântico</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-granito-atlantico.jpg"
@@ -433,7 +443,7 @@
             </li>
             <li class="paleta-grid__item" id="rom">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Rom</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.rom">Rom</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-rom.jpg"
@@ -449,7 +459,7 @@
             </li>
             <li class="paleta-grid__item" id="vermelho-rubi">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Vermelho Rubi</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.vermelhoRubi">Vermelho Rubi</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-vermelho-rubi.jpg"
@@ -465,7 +475,7 @@
             </li>
             <li class="paleta-grid__item" id="vermelho-vulcanico">
               <article class="paleta-card" itemscope itemtype="https://schema.org/Product">
-                <h3 class="paleta-card__title" itemprop="name">Vermelho Vulcânico</h3>
+                <h3 class="paleta-card__title" itemprop="name" data-i18n="paleta.color.vermelhoVulcanico">Vermelho Vulcânico</h3>
                 <figure class="paleta-card__figure">
                   <img
                     src="./assets/paleta/revestimento-resina-vermelho-vulcanico.jpg"
@@ -485,23 +495,23 @@
 
       <section class="section paleta-outro" aria-labelledby="paleta-cor-personalizada">
         <div class="container">
-          <h2 id="paleta-cor-personalizada" class="visually-hidden">Cor personalizada</h2>
-          <p class="paleta-outro__text">
+          <h2 id="paleta-cor-personalizada" class="visually-hidden" data-i18n="paleta.custom.hiddenTitle">Cor personalizada</h2>
+          <p class="paleta-outro__text" data-i18n="paleta.custom.text">
             Se não encontrou a cor que procura na nossa paleta, entre em contacto connosco e envie-nos uma referência
             ou descreva a tonalidade desejada. Faremos o possível para encontrar a solução de cor mais adequada e dar
             vida à sua ideia.
           </p>
           <p class="paleta-outro__actions">
-            <a href="./index.html#contactos" class="btn btn-outline">Contactos</a>
-            <a href="./index.html#orcamento" class="btn btn-primary">Pedir orçamento</a>
+            <a href="./index.html#contactos" class="btn btn-outline" data-i18n="menu.contact">Contactos</a>
+            <a href="./index.html#orcamento" class="btn btn-primary" data-i18n="common.quote">Pedir orçamento</a>
           </p>
           <div class="related-systems paleta-outro__related">
-            <span>Relacionado:</span>
-            <a href="./epoxi.html">Epóxi</a>
-            <a href="./poliuretano.html">Poliuretano</a>
-            <a href="./metacrilato.html">Metacrilato (MMA)</a>
-            <a href="./solucoes-industriais.html">Soluções industriais</a>
-            <a href="./portfolio.html">Portfólio</a>
+            <span data-i18n="paleta.related.label">Relacionado:</span>
+            <a href="./epoxi.html" data-i18n="paleta.related.epoxi">Epóxi</a>
+            <a href="./poliuretano.html" data-i18n="paleta.related.pu">Poliuretano</a>
+            <a href="./metacrilato.html" data-i18n="paleta.related.mma">Metacrilato (MMA)</a>
+            <a href="./solucoes-industriais.html" data-i18n="solind.title">Soluções industriais</a>
+            <a href="./portfolio.html" data-i18n="menu.portfolio">Portfólio</a>
           </div>
         </div>
       </section>
@@ -511,9 +521,9 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Rev-Tek</p>
         <div class="legal-links">
-          <button class="legal-btn" data-legal="privacy">Política de Privacidade</button>
-          <button class="legal-btn" data-legal="cookies">Cookies</button>
-          <button class="legal-btn" data-legal="terms">Termos</button>
+          <button class="legal-btn" data-legal="privacy" data-i18n="common.legal.privacy">Política de Privacidade</button>
+          <button class="legal-btn" data-legal="cookies" data-i18n="common.legal.cookies">Cookies</button>
+          <button class="legal-btn" data-legal="terms" data-i18n="common.legal.terms">Termos</button>
         </div>
       </div>
     </footer>
@@ -521,7 +531,7 @@
     <dialog id="legalDialog">
       <h3 id="legalTitle"></h3>
       <p id="legalBody"></p>
-      <button class="btn btn-primary" id="closeLegal">Fechar</button>
+      <button class="btn btn-primary" id="closeLegal" data-i18n="common.close">Fechar</button>
     </dialog>
 
     <div class="cookie-banner" id="cookieBanner" hidden>
@@ -535,12 +545,13 @@
     </div>
 
     <dialog id="lightboxDialog" class="lightbox-dialog">
-      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem">×</button>
+      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem" data-i18n-aria="common.closeImage">×</button>
       <img id="lightboxImage" alt="" />
     </dialog>
 
     <script src="./script.js"></script>
-    <script>
+    <script src="./i18n-pages.js"></script>
+<script>
       document.querySelectorAll(".paleta-card__figure img").forEach(function (img) {
         img.addEventListener("click", function () {
           var dlg = document.getElementById("lightboxDialog");

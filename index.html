@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
@@ -14,6 +14,7 @@
     <link rel="alternate" hreflang="en" href="https://www.rev-tek.pt/" />
     <link rel="alternate" hreflang="x-default" href="https://www.rev-tek.pt/" />
     <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:url" content="https://www.rev-tek.pt/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Rev-Tek | Pavimentos industriais em resina" />
@@ -134,14 +135,19 @@
     </script>
     <link rel="stylesheet" href="./styles.css?v=20260511" />
   </head>
-  <body>
+  <body
+    data-page-title-pt="Rev-Tek | Pavimentos industriais em resina"
+    data-page-title-en="Rev-Tek | Industrial resin flooring"
+    data-page-desc-pt="Pavimentos industriais em resina epóxi, poliuretano e metacrilato em Portugal. Soluções duráveis para fábricas, armazéns e restauração. Peça orçamento gratuito!"
+    data-page-desc-en="Industrial epoxy, polyurethane and methacrylate resin flooring in Portugal. Durable solutions for factories, warehouses and food service. Request a free quote!"
+  >
     <header class="topbar">
       <div class="container topbar-inner">
         <div class="logo-wrap">
           <a href="./index.html"><img src="./assets/logo.png" alt="Rev-Tek" class="logo" /></a>
-          <span class="logo-tagline">Revestimentos técnicos de resina</span>
+          <span class="logo-tagline" data-i18n="common.logoTagline">Revestimentos técnicos de resina</span>
         </div>
-        <button class="burger" id="burger" aria-label="Abrir menu">
+        <button class="burger" id="burger" aria-label="Abrir menu" data-i18n-aria="common.openMenu">
           <span></span><span></span><span></span>
         </button>
         <nav class="menu" id="menu">
@@ -195,7 +201,7 @@
                 >
               </p>
             </div>
-            <aside class="hero-aside" aria-label="Informações de credibilidade">
+            <aside class="hero-aside" aria-label="Informações de credibilidade" data-i18n-aria="hero.panelAria">
               <div class="hero-panel">
                 <p class="hero-panel-label" data-i18n="hero.panelLabel">Execução técnica de confiança</p>
                 <ul class="hero-panel-list" role="list">
@@ -256,9 +262,9 @@
             </article>
           </div>
           <div class="card guarantee-card sol-hub-guarantee">
-            <h3>Garantia</h3>
-            <p>O prazo de execução depende da área e da preparação da base.</p>
-            <p>
+            <h3 data-i18n="solhub.guaranteeTitle">Garantia</h3>
+            <p data-i18n="solhub.guaranteeLead">O prazo de execução depende da área e da preparação da base.</p>
+            <p data-i18n="solhub.guaranteeText">
               Dispomos de garantia sobre os nossos revestimentos e aplicações, sendo as condições ajustadas e
               apresentadas de forma personalizada para cada projeto. Acompanhamos os nossos clientes também após a
               conclusão dos trabalhos, mantendo-nos disponíveis para apoio, esclarecimentos e acompanhamento sempre que
@@ -337,6 +343,7 @@
             id="homePortfolioAutoplay"
             aria-roledescription="carousel"
             aria-label="Destaques do portfólio"
+            data-i18n-aria="projects.carouselLabel"
           >
             <div class="home-portfolio-autoplay__frame">
               <div class="home-portfolio-autoplay__viewport" id="homePortfolioAutoplayViewport">
@@ -474,12 +481,13 @@
                 value=""
               />
             </div>
-            <input type="text" name="nome" placeholder="Nome" required />
+            <input type="text" name="nome" placeholder="Nome" required data-i18n-placeholder="quote.name" />
             <input
               type="email"
               name="email"
               id="quoteEmail"
               placeholder="Email"
+              data-i18n-placeholder="quote.email"
               required
               maxlength="254"
               autocomplete="email"
@@ -487,7 +495,7 @@
               aria-describedby="quoteEmailError"
             />
             <p class="form-field-error" id="quoteEmailError" hidden role="alert"></p>
-            <textarea name="mensagem" placeholder="Descreva o seu projeto" rows="5" required></textarea>
+            <textarea name="mensagem" placeholder="Descreva o seu projeto" rows="5" required data-i18n-placeholder="quote.message"></textarea>
             <label class="upload-label" data-i18n="quote.upload">Anexar imagens/ficheiros</label>
             <input type="file" name="anexo" multiple />
             <button class="btn btn-primary" type="submit" data-i18n="quote.send">Enviar pedido</button>
@@ -514,7 +522,7 @@
       <section id="contactos" class="section">
         <div class="container">
           <h2 data-i18n="contacts.title">Contactos</h2>
-          <p>Telefone: <a href="tel:+351913151960">+351 913 151 960</a></p>
+          <p data-i18n-html="contacts.phone">Telefone: <a href="tel:+351913151960">+351 913 151 960</a></p>
           <p data-i18n="contacts.area">Atendimento em Portugal.</p>
         </div>
       </section>
@@ -524,9 +532,9 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Rev-Tek</p>
         <div class="legal-links">
-          <button class="legal-btn" data-legal="privacy">Política de Privacidade</button>
-          <button class="legal-btn" data-legal="cookies">Cookies</button>
-          <button class="legal-btn" data-legal="terms">Termos</button>
+          <button class="legal-btn" data-legal="privacy" data-i18n="common.legal.privacy">Política de Privacidade</button>
+          <button class="legal-btn" data-legal="cookies" data-i18n="common.legal.cookies">Cookies</button>
+          <button class="legal-btn" data-legal="terms" data-i18n="common.legal.terms">Termos</button>
         </div>
       </div>
     </footer>
@@ -534,7 +542,7 @@
     <dialog id="legalDialog">
       <h3 id="legalTitle"></h3>
       <p id="legalBody"></p>
-      <button class="btn btn-primary" id="closeLegal">Fechar</button>
+      <button class="btn btn-primary" id="closeLegal" data-i18n="common.close">Fechar</button>
     </dialog>
 
     <div class="cookie-banner" id="cookieBanner" hidden>
@@ -548,12 +556,13 @@
     </div>
 
     <dialog id="lightboxDialog" class="lightbox-dialog">
-      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem">×</button>
+      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem" data-i18n-aria="common.closeImage">×</button>
       <img id="lightboxImage" alt="" />
     </dialog>
 
     <script src="./script.js"></script>
-  </body>
+    <script src="./i18n-pages.js"></script>
+</body>
 </html>
 
 

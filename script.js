@@ -1,4 +1,4 @@
-﻿const i18n = {
+const i18n = {
   pt: {
     "menu.systems": "Sistemas",
     "menu.flooring": "Pavimentos",
@@ -309,9 +309,32 @@ Telefone/WhatsApp: +351 913 151 960
 Área de atuação: Portugal.`
 };
 
+const LANG_STORAGE_KEY = "revtek-lang";
+
 function getCurrentLang() {
+  const stored = localStorage.getItem(LANG_STORAGE_KEY);
+  if (stored === "en" || stored === "pt") return stored;
   const active = document.querySelector(".lang-btn.active");
   return active?.dataset.lang === "en" ? "en" : "pt";
+}
+
+function cacheDomTranslations() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    if (key && !i18n.pt[key]) i18n.pt[key] = el.textContent;
+  });
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const key = el.dataset.i18nHtml;
+    if (key && !i18n.pt[key]) i18n.pt[key] = el.innerHTML;
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    const key = el.dataset.i18nAria;
+    if (key && !i18n.pt[key]) i18n.pt[key] = el.getAttribute("aria-label") || "";
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.dataset.i18nPlaceholder;
+    if (key && !i18n.pt[key]) i18n.pt[key] = el.getAttribute("placeholder") || "";
+  });
 }
 
 /** Formato plausível de email (RFC simplificado). Não verifica se a caixa existe — isso exige servidor/API. */
@@ -337,17 +360,48 @@ function validateQuoteEmail(input) {
 }
 
 function setLanguage(lang) {
-  document.documentElement.lang = lang === "pt" ? "pt-PT" : lang;
+  const dict = i18n[lang] || i18n.pt;
+  document.documentElement.lang = lang === "pt" ? "pt-PT" : "en";
+  localStorage.setItem(LANG_STORAGE_KEY, lang);
+
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.dataset.i18n;
-    if (i18n[lang][key]) el.textContent = i18n[lang][key];
+    if (dict[key]) el.textContent = dict[key];
   });
+  document.querySelectorAll("[data-i18n-html]").forEach((el) => {
+    const key = el.dataset.i18nHtml;
+    if (dict[key]) el.innerHTML = dict[key];
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    const key = el.dataset.i18nAria;
+    if (dict[key]) el.setAttribute("aria-label", dict[key]);
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.dataset.i18nPlaceholder;
+    if (dict[key]) el.setAttribute("placeholder", dict[key]);
+  });
+
+  const body = document.body;
+  if (body) {
+    const title = body.dataset[lang === "pt" ? "pageTitlePt" : "pageTitleEn"];
+    const desc = body.dataset[lang === "pt" ? "pageDescPt" : "pageDescEn"];
+    if (title) document.title = title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc && desc) metaDesc.setAttribute("content", desc);
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle && title) ogTitle.setAttribute("content", title);
+    const ogDesc = document.querySelector('meta[property="og:description"]');
+    if (ogDesc && desc) ogDesc.setAttribute("content", desc);
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute("content", lang === "pt" ? "pt_PT" : "en_GB");
+  }
+
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
   const emailErr = document.getElementById("quoteEmailError");
   if (emailErr && !emailErr.hidden) {
-    emailErr.textContent = i18n[lang]["quote.emailInvalid"];
+    emailErr.textContent = dict["quote.emailInvalid"];
   }
 }
 
@@ -364,9 +418,14 @@ const legalBody = document.getElementById("legalBody");
 document.querySelectorAll(".legal-btn").forEach((btn) => {
   btn.addEventListener("click", () => {
     const type = btn.dataset.legal;
-    const titles = { privacy: "Política de Privacidade", cookies: "Cookies", terms: "Termos" };
+    const lang = getCurrentLang();
+    const titlesPt = { privacy: "Política de Privacidade", cookies: "Cookies", terms: "Termos" };
+    const titlesEn = { privacy: "Privacy Policy", cookies: "Cookies", terms: "Terms of Use" };
+    const titles = lang === "en" ? titlesEn : titlesPt;
+    const bodyEn = window.legalContentEn;
     legalTitle.textContent = titles[type];
-    legalBody.textContent = legalContent[type];
+    legalBody.textContent =
+      lang === "en" && bodyEn?.[type] ? bodyEn[type] : legalContent[type];
     legalDialog.showModal();
   });
 });
@@ -707,4 +766,66 @@ function initQuoteFormEmailValidation() {
 }
 
 initQuoteFormEmailValidation();
+
+function initTapeteCoresGrid() {
+  const grid = document.getElementById("tapeteCoresGrid");
+  if (!grid) return;
+
+  fetch(new URL("assets/tapete-cores.json", window.location.href).href)
+    .then((r) => {
+      if (!r.ok) throw new Error("fetch");
+      return r.json();
+    })
+    .then((data) => {
+      const samples = data.samples || [];
+      grid.innerHTML = "";
+      const lang = getCurrentLang();
+      samples.forEach((sample) => {
+        const item = document.createElement("div");
+        item.className = "tapete-core-card";
+        item.setAttribute("role", "listitem");
+
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "tapete-core-card__btn project-open";
+        const full = resolvePageAssetUrl(sample.full || sample.src);
+        btn.dataset.full = full;
+        const altPt = `Amostra ${sample.id} — Tapete de Pedra Rev-Tek`;
+        const altEn = `Sample ${sample.id} — Stone Carpet Rev-Tek`;
+        btn.dataset.alt = lang === "en" ? altEn : altPt;
+        btn.setAttribute(
+          "aria-label",
+          lang === "en" ? `Open sample ${sample.id}` : `Abrir amostra ${sample.id}`
+        );
+
+        const img = document.createElement("img");
+        img.src = resolvePageAssetUrl(sample.src);
+        img.alt = btn.dataset.alt;
+        img.loading = "lazy";
+        img.decoding = "async";
+        img.width = 400;
+        img.height = 400;
+
+        const num = document.createElement("span");
+        num.className = "tapete-core-card__num";
+        num.textContent = String(sample.id);
+        num.setAttribute("aria-hidden", "true");
+
+        btn.appendChild(img);
+        btn.appendChild(num);
+        item.appendChild(btn);
+        grid.appendChild(item);
+      });
+    })
+    .catch(() => {
+      grid.innerHTML = "";
+    });
+}
+
+window.revtekInitI18n = function revtekInitI18n() {
+  cacheDomTranslations();
+  const savedLang = localStorage.getItem(LANG_STORAGE_KEY);
+  if (savedLang === "en") setLanguage("en");
+  initTapeteCoresGrid();
+};
 

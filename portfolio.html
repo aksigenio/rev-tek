@@ -3,14 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio | MMA, epóxi, PU e Tapete de Pedra | Rev-Tek Portugal</title>
+    <title>Portfólio | MMA, epóxi, PU e Stone Carpet | Rev-Tek Portugal</title>
     <meta
       name="description"
-      content="Exemplos de piso em metacrilato (MMA), epóxi, poliuretano (PU) e Tapete de Pedra em Portugal. Galeria Rev-Tek."
+      content="Exemplos de piso em metacrilato (MMA), epóxi, poliuretano (PU) e Stone Carpet (Tapete de Pedra) em Portugal. Galeria Rev-Tek."
     />
-    <meta name="robots" content="index, follow" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.rev-tek.pt/portfolio" />
+    <link rel="alternate" hreflang="pt-PT" href="https://www.rev-tek.pt/portfolio" />
+    <link rel="alternate" hreflang="en" href="https://www.rev-tek.pt/portfolio" />
+    <link rel="alternate" hreflang="x-default" href="https://www.rev-tek.pt/portfolio" />
     <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:url" content="https://www.rev-tek.pt/portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Portfólio | Piso em metacrilato e resinas | Rev-Tek Portugal" />
@@ -19,6 +23,7 @@
       content="Exemplos de piso em metacrilato (MMA), epóxi, poliuretano (PU) e Tapete de Pedra em Portugal."
     />
     <meta property="og:image" content="https://www.rev-tek.pt/assets/portfolio-mma-lisboa.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#090909" />
     <link rel="icon" href="./favicon/favicon.ico" sizes="any" />
 <link rel="icon" href="./favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
@@ -123,25 +128,30 @@
       }
     </style>
   </head>
-  <body>
+  <body
+    data-page-title-pt="Portfólio | MMA, epóxi, PU e Stone Carpet | Rev-Tek Portugal"
+    data-page-title-en="Portfolio | MMA, epoxy, PU and Stone Carpet | Rev-Tek Portugal"
+    data-page-desc-pt="Exemplos de piso em metacrilato (MMA), epóxi, poliuretano (PU) e Stone Carpet (Tapete de Pedra) em Portugal. Galeria Rev-Tek."
+    data-page-desc-en="Examples of methacrylate (MMA), epoxy, polyurethane (PU) and Stone Carpet flooring in Portugal. Rev-Tek gallery."
+  >
     <header class="topbar">
       <div class="container topbar-inner">
         <div class="logo-wrap">
           <a href="./index.html">
             <img src="./assets/logo.png" alt="Rev-Tek" class="logo" />
           </a>
-          <span class="logo-tagline">Revestimentos técnicos de superfícies</span>
+          <span class="logo-tagline" data-i18n="common.logoTagline">Revestimentos técnicos de superfícies</span>
         </div>
-        <button class="burger" id="burger" aria-label="Abrir menu">
+        <button class="burger" id="burger" aria-label="Abrir menu" data-i18n-aria="common.openMenu">
           <span></span><span></span><span></span>
         </button>
         <nav class="menu" id="menu">
-          <a href="./index.html#solucoes">Sistemas</a>
-          <a href="./index.html#solucoes">Pavimentos</a>
-          <a href="./index.html#setores">Setores</a>
-          <a href="./portfolio.html" style="color: var(--red);">Portfólio</a>
-          <a href="./paleta-de-cores.html">Paleta de Cores</a>
-          <a href="./index.html#contactos">Contactos</a>
+          <a href="./index.html#solucoes" data-i18n="menu.systems">Sistemas</a>
+          <a href="./index.html#solucoes" data-i18n="menu.flooring">Pavimentos</a>
+          <a href="./index.html#setores" data-i18n="menu.sectors">Setores</a>
+          <a href="./portfolio.html" style="color: var(--red);" data-i18n="menu.portfolio">Portfólio</a>
+          <a href="./paleta-de-cores.html" data-i18n="menu.palette">Paleta de Cores</a>
+          <a href="./index.html#contactos" data-i18n="menu.contact">Contactos</a>
         </nav>
         <div class="lang-switcher">
           <button class="lang-btn active" data-lang="pt">PT</button>
@@ -153,9 +163,9 @@
     <main>
       <section class="portfolio-hero">
         <div class="container">
-          <a href="./index.html" class="back-link">← Voltar ao início</a>
-          <h1>Portfólio</h1>
-          <p style="color: var(--muted);">
+          <a href="./index.html" class="back-link" data-i18n="common.backHome">← Voltar ao início</a>
+          <h1 data-i18n="portfolio.title">Portfólio</h1>
+          <p style="color: var(--muted);" data-i18n="portfolio.lead">
             Exemplos de piso em metacrilato (MMA), epóxi, poliuretano (PU) e Tapete de Pedra em Portugal.
           </p>
         </div>
@@ -164,12 +174,12 @@
       <section class="section">
         <div class="container">
           <div class="filter-row">
-            <button class="filter-btn active" data-filter="all">Todos</button>
-            <button class="filter-btn" data-filter="metacrilato">Metacrilato</button>
-            <button class="filter-btn" data-filter="epoxi">Epóxi</button>
-            <button class="filter-btn" data-filter="poliuretano">Poliuretano</button>
-            <button class="filter-btn" data-filter="tapete-pedra">Tapete de Pedra</button>
-            <button class="filter-btn" data-filter="video">Vídeo</button>
+            <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">Todos</button>
+            <button class="filter-btn" data-filter="metacrilato" data-i18n="portfolio.filter.metacrilato">Metacrilato</button>
+            <button class="filter-btn" data-filter="epoxi" data-i18n="portfolio.filter.epoxi">Epóxi</button>
+            <button class="filter-btn" data-filter="poliuretano" data-i18n="portfolio.filter.poliuretano">Poliuretano</button>
+            <button class="filter-btn" data-filter="tapete-pedra" data-i18n="portfolio.filter.tapete">Tapete de Pedra</button>
+            <button class="filter-btn" data-filter="video" data-i18n="portfolio.filter.video">Vídeo</button>
           </div>
 
           <div class="gallery-large" id="gallery">
@@ -183,6 +193,7 @@
                 data-full="./assets/portfolio-mma-lisboa.png"
                 data-alt="Piso em metacrilato MMA em Lisboa - revestimento contínuo com rodapé em curva"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-mma-lisboa.png"
@@ -194,8 +205,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Metacrilato</span><br/>
-                Piso em MMA / metacrilato - Lisboa
+                <span class="project-label" data-i18n="portfolio.label.metacrilato">Metacrilato</span><br/>
+                <span data-i18n="portfolio.item.mmaLisboa">Piso em MMA / metacrilato - Lisboa</span>
               </figcaption>
             </figure>
 
@@ -206,6 +217,7 @@
                 data-full="./assets/portfolio-metacrilato-porto.png"
                 data-alt="Piso em metacrilato (MMA) em Porto - revestimento contínuo com rodapé sanitário e grelha de drenagem"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-metacrilato-porto.png"
@@ -215,8 +227,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Metacrilato</span><br/>
-                Porto - piso em metacrilato (MMA)
+                <span class="project-label" data-i18n="portfolio.label.metacrilato">Metacrilato</span><br/>
+                <span data-i18n="portfolio.item.mmaPorto">Porto - piso em metacrilato (MMA)</span>
               </figcaption>
             </figure>
 
@@ -227,12 +239,13 @@
                 data-full="./assets/metacrilato-1.png"
                 data-alt="Pavimento em metacrilato - zona técnica"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img src="./assets/metacrilato-1.png" alt="Pavimento em metacrilato aplicado em zona técnica industrial, Portugal" />
               </button>
               <figcaption>
-                <span class="project-label">Metacrilato</span><br/>
-                Sistema em metacrilato - zona técnica
+                <span class="project-label" data-i18n="portfolio.label.metacrilato">Metacrilato</span><br/>
+                <span data-i18n="portfolio.item.mmaTecnica">Sistema em metacrilato - zona técnica</span>
               </figcaption>
             </figure>
 
@@ -243,12 +256,13 @@
                 data-full="./assets/metacrilato-3.png"
                 data-alt="Pavimento industrial em resina de metacrilato. Portugal, Porto"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img src="./assets/metacrilato-3.png" alt="Pavimentos industriais em metacrilato, Portugal" />
               </button>
               <figcaption>
-                <span class="project-label">Metacrilato</span><br/>
-                Sistema de revestimento em metacrilato
+                <span class="project-label" data-i18n="portfolio.label.metacrilato">Metacrilato</span><br/>
+                <span data-i18n="portfolio.item.mmaSistema">Sistema de revestimento em metacrilato</span>
               </figcaption>
             </figure>
 
@@ -263,6 +277,7 @@
                 data-full="./assets/portfolio-epoxi-garagem-flake.png"
                 data-alt="Garagem em Coimbra com pavimento epóxi decorativo em flake azul e branco - acabamento contínuo e brilhante, Rev-Tek Portugal"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-epoxi-garagem-flake.png"
@@ -274,8 +289,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Epóxi</span><br/>
-                Coimbra - garagem com pavimento epóxi
+                <span class="project-label" data-i18n="portfolio.label.epoxi">Epóxi</span><br/>
+                <span data-i18n="portfolio.item.epoxiCoimbra">Coimbra - garagem com pavimento epóxi</span>
               </figcaption>
             </figure>
 
@@ -286,6 +301,7 @@
                 data-full="./assets/portfolio-epoxi-casa-banho.png"
                 data-alt="Casa de banho na Margem Sul com piso epóxi branco contínuo - superfície impermeável e brilhante, Rev-Tek Portugal"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-epoxi-casa-banho.png"
@@ -297,8 +313,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Epóxi</span><br/>
-                Margem Sul - casa de banho com piso epóxi branco contínuo
+                <span class="project-label" data-i18n="portfolio.label.epoxi">Epóxi</span><br/>
+                <span data-i18n="portfolio.item.epoxiBanho">Margem Sul - casa de banho com piso epóxi branco contínuo</span>
               </figcaption>
             </figure>
 
@@ -309,6 +325,7 @@
                 data-full="./assets/portfolio-epoxi-interior-cinza.png"
                 data-alt="Estúdio em Nazaré com pavimento epóxi cinza claro autonivelante e alto brilho - escadas e espaço contemporâneo, Rev-Tek Portugal"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-epoxi-interior-cinza.png"
@@ -320,8 +337,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Epóxi</span><br/>
-                Nazaré - estúdio com pavimento epóxi
+                <span class="project-label" data-i18n="portfolio.label.epoxi">Epóxi</span><br/>
+                <span data-i18n="portfolio.item.epoxiNazare">Nazaré - estúdio com pavimento epóxi</span>
               </figcaption>
             </figure>
 
@@ -332,6 +349,7 @@
                 data-full="./assets/portfolio-tapete-costa-caparica.png"
                 data-alt="Tapete de Pedra em torno de piscina residencial na Costa da Caparica - brita decorativa ligada com resina, Rev-Tek Portugal"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-tapete-costa-caparica.png"
@@ -341,8 +359,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Tapete de Pedra</span><br />
-                Costa da Caparica - Tapete de Pedra
+                <span class="project-label" data-i18n="portfolio.label.tapete">Tapete de Pedra</span><br />
+                <span data-i18n="portfolio.item.tapeteCaparica">Costa da Caparica - Tapete de Pedra</span>
               </figcaption>
             </figure>
 
@@ -353,6 +371,7 @@
                 data-full="./assets/portfolio-tapete-sesimbra.png"
                 data-alt="Tapete de Pedra em torno de piscina residencial em Sesimbra - revestimento drenante com brita decorativa e resina, Rev-Tek Portugal"
                 aria-label="Abrir imagem em tamanho completo"
+                data-i18n-aria="portfolio.openImage"
               >
                 <img
                   src="./assets/portfolio-tapete-sesimbra.png"
@@ -362,8 +381,8 @@
                 />
               </button>
               <figcaption>
-                <span class="project-label">Tapete de Pedra</span><br />
-                Sesimbra - Tapete de Pedra
+                <span class="project-label" data-i18n="portfolio.label.tapete">Tapete de Pedra</span><br />
+                <span data-i18n="portfolio.item.tapeteSesimbra">Sesimbra - Tapete de Pedra</span>
               </figcaption>
             </figure>
 
@@ -376,16 +395,16 @@
                 loading="lazy"
               ></iframe>
               <figcaption>
-                <span class="project-label">Epóxi</span><br/>
-                Revestimento em epóxi
+                <span class="project-label" data-i18n="portfolio.label.epoxi">Epóxi</span><br/>
+                <span data-i18n="portfolio.item.videoEpoxi">Revestimento em epóxi</span>
               </figcaption>
             </figure>
 
           </div>
 
           <div style="margin-top: 48px; padding: 24px; border: 1px dashed var(--line); border-radius: 14px; text-align: center;">
-            <p style="color: var(--muted); margin: 0 0 16px;">Tem um projeto e quer ver resultados semelhantes ao seu caso?</p>
-            <a href="./index.html#orcamento" class="btn btn-primary">Pedir orçamento gratuito</a>
+            <p style="color: var(--muted); margin: 0 0 16px;" data-i18n="portfolio.cta.text">Tem um projeto e quer ver resultados semelhantes ao seu caso?</p>
+            <a href="./index.html#orcamento" class="btn btn-primary" data-i18n="portfolio.cta.quote">Pedir orçamento gratuito</a>
           </div>
         </div>
       </section>
@@ -395,9 +414,9 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Rev-Tek</p>
         <div class="legal-links">
-          <button class="legal-btn" data-legal="privacy">Política de Privacidade</button>
-          <button class="legal-btn" data-legal="cookies">Cookies</button>
-          <button class="legal-btn" data-legal="terms">Termos</button>
+          <button class="legal-btn" data-legal="privacy" data-i18n="common.legal.privacy">Política de Privacidade</button>
+          <button class="legal-btn" data-legal="cookies" data-i18n="common.legal.cookies">Cookies</button>
+          <button class="legal-btn" data-legal="terms" data-i18n="common.legal.terms">Termos</button>
         </div>
       </div>
     </footer>
@@ -405,24 +424,25 @@
     <dialog id="legalDialog">
       <h3 id="legalTitle"></h3>
       <p id="legalBody"></p>
-      <button class="btn btn-primary" id="closeLegal">Fechar</button>
+      <button class="btn btn-primary" id="closeLegal" data-i18n="common.close">Fechar</button>
     </dialog>
 
     <div class="cookie-banner" id="cookieBanner" hidden>
-      <p>Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.</p>
+      <p data-i18n="cookies.bannerText">Utilizamos cookies essenciais e, com o seu consentimento, cookies analíticos para melhorar o site.</p>
       <div class="cookie-actions">
-        <button class="btn btn-outline" id="cookieReject">Rejeitar</button>
-        <button class="btn btn-primary" id="cookieAccept">Aceitar</button>
+        <button class="btn btn-outline" id="cookieReject" data-i18n="cookies.reject">Rejeitar</button>
+        <button class="btn btn-primary" id="cookieAccept" data-i18n="cookies.accept">Aceitar</button>
       </div>
     </div>
 
     <dialog id="lightboxDialog" class="lightbox-dialog">
-      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem">×</button>
+      <button type="button" id="lightboxClose" class="lightbox-close" aria-label="Fechar imagem" data-i18n-aria="common.closeImage">×</button>
       <img id="lightboxImage" alt="" />
     </dialog>
 
     <script src="./script.js"></script>
-    <script>
+    <script src="./i18n-pages.js"></script>
+<script>
       document.addEventListener('DOMContentLoaded', () => {
         // Filter buttons
         document.querySelectorAll('.filter-btn').forEach(btn => {

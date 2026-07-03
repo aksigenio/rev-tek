@@ -10,7 +10,11 @@
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <link rel="canonical" href="https://www.rev-tek.pt/solucoes-industriais" />
+    <link rel="alternate" hreflang="pt-PT" href="https://www.rev-tek.pt/solucoes-industriais" />
+    <link rel="alternate" hreflang="en" href="https://www.rev-tek.pt/solucoes-industriais" />
+    <link rel="alternate" hreflang="x-default" href="https://www.rev-tek.pt/solucoes-industriais" />
     <meta property="og:locale" content="pt_PT" />
+    <meta property="og:locale:alternate" content="en_GB" />
     <meta property="og:url" content="https://www.rev-tek.pt/solucoes-industriais" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Soluções industriais e comerciais | Rev-Tek" />
@@ -19,6 +23,7 @@
       content="Sistemas de pavimento em resina para indústria, logística e grandes superfícies comerciais técnicas."
     />
     <meta property="og:image" content="https://www.rev-tek.pt/assets/logo.png" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="theme-color" content="#090909" />
     <link rel="icon" href="./favicon/favicon.ico" sizes="any" />
     <link rel="icon" href="./favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
@@ -64,14 +69,19 @@
     </script>
     <link rel="stylesheet" href="./styles.css?v=20260511" />
   </head>
-  <body>
+  <body
+    data-page-title-pt="Soluções industriais e comerciais em pavimento de resina | Rev-Tek Portugal"
+    data-page-title-en="Industrial and commercial resin flooring solutions | Rev-Tek Portugal"
+    data-page-desc-pt="Pavimentos industriais e comerciais em metacrilato (MMA), epóxi e poliuretano de elevado desempenho. Armazéns, fábricas, logística, saúde e cozinhas industriais em Portugal."
+    data-page-desc-en="High-performance industrial and commercial flooring in methacrylate (MMA), epoxy and polyurethane. Warehouses, factories, logistics, healthcare and industrial kitchens in Portugal."
+  >
     <header class="topbar">
       <div class="container topbar-inner">
         <div class="logo-wrap">
           <a href="./index.html"><img src="./assets/logo.png" alt="Rev-Tek" class="logo" /></a>
-          <span class="logo-tagline">Revestimentos técnicos de resina</span>
+          <span class="logo-tagline" data-i18n="common.logoTagline">Revestimentos técnicos de resina</span>
         </div>
-        <button class="burger" id="burger" aria-label="Abrir menu">
+        <button class="burger" id="burger" aria-label="Abrir menu" data-i18n-aria="common.openMenu">
           <span></span><span></span><span></span>
         </button>
         <nav class="menu" id="menu">
@@ -92,16 +102,16 @@
     <main>
       <section class="subpage-hero subpage-hero--industrial">
         <div class="container">
-          <a href="./index.html#solucoes" class="back-link">← Voltar às soluções</a>
-          <h1>Soluções industriais e comerciais</h1>
-          <p class="subpage-lead">
+          <a href="./index.html#solucoes" class="back-link" data-i18n="common.backSolutions">← Voltar às soluções</a>
+          <h1 data-i18n="solind.title">Soluções industriais e comerciais</h1>
+          <p class="subpage-lead" data-i18n-html="solind.hero.lead">
             Pavimentos técnicos para <strong>tráfego intenso</strong>, <strong>impacto mecânico</strong>,
             <strong>exposição química</strong> e <strong>requisitos de higiene</strong>. Selecionamos e aplicamos
             sistemas em <strong>metacrilato (MMA)</strong>, <strong>epóxi</strong> e
             <strong>poliuretano (PU)</strong> de perfil industrial, com preparação rigorosa do suporte e plano de
             execução alinhado ao seu sector.
           </p>
-          <p class="subpage-crosslinks">
+          <p class="subpage-crosslinks" data-i18n-html="solind.crosslinks">
             <span>Outros percursos:</span>
             <a href="./solucoes-residenciais.html">Soluções residenciais e decorativas</a>
             <span aria-hidden="true">·</span>
@@ -112,8 +122,8 @@
 
       <section class="section" id="sistemas-recomendados">
         <div class="container">
-          <h2>Sistemas recomendados para ambiente industrial</h2>
-          <p class="section-lead">
+          <h2 data-i18n="solind.systems.title">Sistemas recomendados para ambiente industrial</h2>
+          <p class="section-lead" data-i18n="solind.systems.lead">
             Cada tecnologia responde a combinações diferentes de prazo de obra, humidade, temperatura, tipo de
             limpeza e criticidade da operação. A escolha é sempre técnica - sem soluções genéricas.
           </p>
@@ -129,14 +139,14 @@
                   decoding="async"
                 />
               </div>
-              <h3>Metacrilato (MMA)</h3>
-              <p>
+              <h3 data-i18n="solind.card.mma.title">Metacrilato (MMA)</h3>
+              <p data-i18n="solind.card.mma.text">
                 Instalação rápida e elevada resistência, sendo uma solução indicada para espaços onde o tempo de
                 paragem da atividade deve ser reduzido ao mínimo. O revestimento pode ficar totalmente operacional
                 poucas horas após a aplicação. Os pavimentos em metacrilato são uma solução eficiente tanto para
                 projetos industriais como para espaços comerciais de utilização intensiva.
               </p>
-              <span class="sol-card-cta">Ficha técnica →</span>
+              <span class="sol-card-cta" data-i18n="solind.card.cta">Ficha técnica →</span>
             </a>
             <a class="card sol-card sol-card-epoxi" href="./epoxi.html">
               <div class="sol-card-visual" aria-hidden="true">
@@ -149,13 +159,13 @@
                   decoding="async"
                 />
               </div>
-              <h3>Epóxi</h3>
-              <p>
+              <h3 data-i18n="solind.card.epoxi.title">Epóxi</h3>
+              <p data-i18n="solind.card.epoxi.text">
                 Os pisos em epóxi destacam-se pela elevada resistência ao desgaste, sendo indicados para espaços sujeitos
                 a cargas e utilização intensiva. Apresentam excelente resistência a agentes agressivos, incluindo
                 álcalis, ácidos e solventes. Além disso, oferecem elevada resistência à humidade.
               </p>
-              <span class="sol-card-cta">Ficha técnica →</span>
+              <span class="sol-card-cta" data-i18n="solind.card.cta">Ficha técnica →</span>
             </a>
             <a class="card sol-card sol-card-pu" href="./poliuretano.html">
               <div class="sol-card-visual" aria-hidden="true">
@@ -168,31 +178,31 @@
                   decoding="async"
                 />
               </div>
-              <h3>Poliuretano (PU)</h3>
-              <p>
+              <h3 data-i18n="solind.card.pu.title">Poliuretano (PU)</h3>
+              <p data-i18n="solind.card.pu.text">
                 É um tipo de revestimento contínuo à base de resina polimérica. Destaca-se pela sua elevada
                 elasticidade, permitindo suportar impactos, vibrações e baixas temperaturas sem perder desempenho nem
                 integridade.
               </p>
-              <span class="sol-card-cta">Ficha técnica →</span>
+              <span class="sol-card-cta" data-i18n="solind.card.cta">Ficha técnica →</span>
             </a>
           </div>
           <p style="margin-top: 1.25rem; text-align: center">
-            <a href="./paleta-de-cores.html">Ver paleta de cores para epóxi, PU e metacrilato →</a>
+            <a href="./paleta-de-cores.html" data-i18n="solind.paletteLink">Ver paleta de cores para epóxi, PU e metacrilato →</a>
           </p>
         </div>
       </section>
 
       <section class="section" id="vantagens">
         <div class="container">
-          <h2>Vantagens de um parceiro técnico dedicado</h2>
+          <h2 data-i18n="solind.advantages.title">Vantagens de um parceiro técnico dedicado</h2>
           <ul class="bullet-list">
-            <li>Diagnóstico do suporte e definição do sistema em função de cargas, químicos e prazo.</li>
-            <li>Execução com controlos de qualidade entre fases (impermeabilização, regularização, acabamento).</li>
-            <li>Recomendações de manutenção e garantias articuladas com as condições reais de utilização.</li>
-            <li>Resposta organizada a projetos B2B em todo o território nacional.</li>
+            <li data-i18n="solind.advantages.item1">Diagnóstico do suporte e definição do sistema em função de cargas, químicos e prazo.</li>
+            <li data-i18n="solind.advantages.item2">Execução com controlos de qualidade entre fases (impermeabilização, regularização, acabamento).</li>
+            <li data-i18n="solind.advantages.item3">Recomendações de manutenção e garantias articuladas com as condições reais de utilização.</li>
+            <li data-i18n="solind.advantages.item4">Resposta organizada a projetos B2B em todo o território nacional.</li>
           </ul>
-          <p class="systems-hub-link" style="margin-top: 1.25rem">
+          <p class="systems-hub-link" style="margin-top: 1.25rem" data-i18n-html="solind.advantages.links">
             <a href="./index.html#orcamento">Pedir orçamento técnico</a>
             <span aria-hidden="true"> · </span>
             <a href="./index.html#contactos">Falar com a equipa</a>
@@ -239,9 +249,9 @@
       <div class="container footer-inner">
         <p>© <span id="year"></span> Rev-Tek</p>
         <div class="legal-links">
-          <button class="legal-btn" data-legal="privacy">Política de Privacidade</button>
-          <button class="legal-btn" data-legal="cookies">Cookies</button>
-          <button class="legal-btn" data-legal="terms">Termos</button>
+          <button class="legal-btn" data-legal="privacy" data-i18n="common.legal.privacy">Política de Privacidade</button>
+          <button class="legal-btn" data-legal="cookies" data-i18n="common.legal.cookies">Cookies</button>
+          <button class="legal-btn" data-legal="terms" data-i18n="common.legal.terms">Termos</button>
         </div>
       </div>
     </footer>
@@ -249,7 +259,7 @@
     <dialog id="legalDialog">
       <h3 id="legalTitle"></h3>
       <p id="legalBody"></p>
-      <button class="btn btn-primary" id="closeLegal">Fechar</button>
+      <button class="btn btn-primary" id="closeLegal" data-i18n="common.close">Fechar</button>
     </dialog>
 
     <div class="cookie-banner" id="cookieBanner" hidden>
@@ -263,5 +273,6 @@
     </div>
 
     <script src="./script.js"></script>
-  </body>
+    <script src="./i18n-pages.js"></script>
+</body>
 </html>
