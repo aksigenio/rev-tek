@@ -11,6 +11,18 @@
       "full": "./assets/portfolio-tapete-sesimbra.png",
       "alt": "Tapete de Pedra em torno de piscina residencial em Sesimbra - revestimento contínuo com brita decorativa e resina, Rev-Tek Portugal",
       "caption": "Sesimbra - Tapete de Pedra"
+    },
+    {
+      "src": "./assets/portfolio-tapete-caminho-cinza.png",
+      "full": "./assets/portfolio-tapete-caminho-cinza.png",
+      "alt": "Tapete de Pedra (Stone Carpet) cinza escuro em caminho exterior e jardim - aplicação contínua com pedra natural, Rev-Tek Portugal",
+      "caption": "Caminho exterior - Tapete de Pedra"
+    },
+    {
+      "src": "./assets/portfolio-tapete-entrada-jardim.png",
+      "full": "./assets/portfolio-tapete-entrada-jardim.png",
+      "alt": "Tapete de Pedra (Stone Carpet) cinza em entrada curva e zona ajardinada - obra Rev-Tek Portugal",
+      "caption": "Entrada e jardim - Tapete de Pedra"
     }
   ]
 }
