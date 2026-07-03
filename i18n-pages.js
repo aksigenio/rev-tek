@@ -499,6 +499,8 @@
     "portfolio.item.epoxiNazare": "Nazaré — studio with epoxy floor",
     "portfolio.item.tapeteCaparica": "Costa da Caparica — Stone Carpet",
     "portfolio.item.tapeteSesimbra": "Sesimbra — Stone Carpet",
+    "portfolio.item.tapeteCaminho": "Outdoor path — Stone Carpet",
+    "portfolio.item.tapeteEntrada": "Driveway and garden — Stone Carpet",
     "portfolio.item.videoEpoxi": "Epoxy coating",
     "portfolio.cta.text":
       "Have a project and want to see results similar to your case?",
